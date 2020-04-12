@@ -33,7 +33,7 @@ curbs, and lights.
 
 ## Education
 
-#### Master of Science, Civil Engineering
+### Master of Science, Civil Engineering
 
 - University of California
 - Los Angeles, CA
@@ -41,7 +41,7 @@ curbs, and lights.
 
 Throughout my academic career at UCLA, I furthered my knowledge in linear and dynamic programming, groundwater modeling, geographic information systems, remote sensing, and forecast verification. Some of my notable projects include:
 
-#### Bachelor of Science, Civil Engineering
+### Bachelor of Science, Civil Engineering
 
 - California Polytechnic State University
 - San Luis Obispo, CA
