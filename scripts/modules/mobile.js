@@ -1,0 +1,35 @@
+const menuBtn = document.querySelector("#menuBtn")
+const menuSvg = document.querySelector("#menuSvg use")
+const mobileNav = document.querySelector("#mobile-links")
+const mobileLinks = document.querySelectorAll("#mobile-links a")
+
+// open full curtain navigation menu
+menuBtn.addEventListener('click', toggle);
+// close menu when user clicks a link
+mobileLinks.forEach(link => {
+  link.addEventListener('click', toggle)
+});
+
+function toggle() {
+  if (mobileNav.getAttribute("aria-expanded") === "false") {
+    mobileNav.classList.replace('closed', 'open')
+    mobileNav.setAttribute('aria-expanded', "true");
+    // change menu icon
+    menuSvg.setAttribute("xlink:href", "images/defs.svg#times");
+    menuSvg.setAttribute("viewBox", "0 0 352 512");
+  } else if (mobileNav.getAttribute("aria-expanded") === "true") {
+    mobileNav.classList.replace('open', 'closed')
+    mobileNav.setAttribute('aria-expanded', "false");
+    // change menu icon
+    menuSvg.setAttribute("xlink:href", "images/defs.svg#bars");
+    menuSvg.setAttribute("viewBox", "0 0 448 512");
+  }
+}
+
+//export to main.js
+export {
+  menuBtn,
+  menuSvg,
+  mobileNav,
+  mobileLinks
+}

@@ -1,0 +1,148 @@
+/* heading layout*/
+h1 {
+    margin-block-end: 0rem;
+    line-height: var(--lh-s);
+}
+
+h2,
+h3 {
+    margin-block-end: 1rem;
+    line-height: var(--lh-m);
+}
+
+h4,
+h5,
+h6 {
+    margin-block-end: 0.25rem;
+    line-height: var(--lh-m);
+}
+
+/* heading font properties */
+h1 {
+    font-family: var(--ff-heading);
+    font-size: var(--fs-h1);
+    font-weight: var(--fw-b);
+}
+
+h2 {
+    font-family: var(--ff-heading);
+    font-size: var(--fs-h2);
+    font-weight: var(--fw-l);
+}
+
+h3 {
+    font-family: var(--ff-heading);
+    font-size: var(--fs-h3);
+    font-weight: var(--fw-l);
+}
+
+h4 {
+    font-family: var(--ff-heading);
+    font-size: var(--fs-h4);
+    font-weight: var(--fw-b);
+}
+
+h5 {
+    font-family: var(--ff-heading);
+    font-size: var(--fs-h5);
+    font-weight: var(--fw-r);
+}
+
+h6 {
+    font-family: var(--ff-heading);
+    font-size: var(--fs-h6);
+    font-weight: var(--fw-l);
+}
+
+/* semantic typographic styling */
+body {
+    color: var(--clr-dark);
+    font-family: var(--ff-body);
+    font-size: var(--fs-body);
+    font-weight: var(--fw-r);
+}
+
+p {
+    padding-block-end: 1rem;
+    line-height: var(--lh-l);
+    font-family: var(--ff-body);
+    font-size: var(--fs-body);
+    font-weight: var(--fw-r);
+}
+
+a {
+    color: var(--clr-dark);
+}
+
+strong {
+    font-weight: var(--fw-b);
+}
+
+u {
+    text-decoration: solid underline var(--clr-theme)
+}
+
+em {
+    font-style: italic;
+}
+
+i {
+    font-style: normal;
+}
+
+mark {
+    color: currentColor;
+    padding: 0 .25rem;
+    background: var(--clr-opaque);
+    border-radius: var(--radius);
+    box-decoration-break: clone;
+}
+
+blockquote {
+    margin-block-end: 1rem;
+    padding: 0 1rem;
+    border-inline-start: .25rem solid var(--clr-theme);
+    background: transparent;
+    font-weight: var(--fw-l);
+    line-height: var(--lh-m);
+}
+
+/* lists and details */
+ol,
+ul {
+    display: inline-block;
+    width: 100%;
+    padding: 0 1rem;
+    margin-block-end: 1rem;
+}
+
+li {
+    font-weight: var(--fw-r);
+    line-height: var(--lh-l);
+    list-style-position: inside;
+}
+
+details {
+    padding: 0;
+}
+
+details p {
+    font-weight: var(--fw-l);
+    padding: .25rem;
+}
+
+summary {
+    cursor: pointer;
+    font-family: var(--ff-body);
+    font-weight: var(--fw-r);
+    line-height: var(--lh-l);
+}
+
+figcaption {
+    color: var(--clr-gray);
+    text-align: center;
+    font-size: 90%;
+    font-family: var(--ff-body);
+    font-weight: var(--fw-l);
+    line-height: var(--lh-s);
+}

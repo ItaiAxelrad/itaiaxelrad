@@ -1,0 +1,27 @@
+form {
+  max-width: var(--width);
+  margin: 0 auto;
+  padding: 1rem;
+  display: block;
+}
+
+input,
+textarea {
+  width: 100%;
+  margin: .5rem 0 1rem 0;
+  padding: .5rem;
+  background: var(--clr-lighter);
+  border: var(--border);
+  border-radius: var(--radius);
+  line-height: var(--lh-l);
+}
+
+input:focus,
+textarea:focus {
+  box-shadow: var(--shadow);
+  border-color: var(--clr-theme20);
+}
+
+textarea {
+  resize: vertical;
+}

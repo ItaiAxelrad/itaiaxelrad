@@ -1,0 +1,69 @@
+/* Responsive Layout - content width */
+@media screen and (max-width: 800px) {
+    h3 {
+        padding-inline-start: 1rem;
+    }
+
+    .intro {
+        left: 1rem;
+    }
+
+    .closed {
+        visibility: hidden;
+        display: none;
+    }
+
+    .open {
+        visibility: visible;
+        display: block;
+    }
+}
+
+/* Responsive Layout - Tablet */
+@media screen and (max-width: 950px) {
+    nav {
+        display: block;
+        padding: 1rem;
+    }
+
+    .nav_link {
+        margin-block-start: 2rem;
+    }
+
+    .nav_link a {
+        display: block;
+        text-align: center;
+        font-size: 1rem;
+        padding: 1rem 0;
+    }
+
+    .btn_menu {
+        display: block;
+        float: right;
+        padding: 0 1rem;
+    }
+
+    .intro {
+        top: 4rem;
+    }
+
+    .plant {
+        right: 0%;
+        top: 80%;
+    }
+
+    .schemeBtn {
+        display: none;
+    }
+}
+
+/* Responsive Layout - Mobile */
+@media screen and (max-width: 480px) {
+    .grid-col2 {
+        display: block;
+    }
+
+    article {
+        margin: .5rem;
+    }
+}

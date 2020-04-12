@@ -1,0 +1,287 @@
+/* import other css files */
+/* use for dev only, concatenate & minify for dist */
+@import 'normalize.css';
+@import 'layout.css';
+@import 'type.css';
+@import 'forms.css';
+@import 'mobile.css';
+
+/* define vars for root elements*/
+:root {
+    /* font-families */
+    --ff-heading: 'Open Sans', sans-serif;
+    --ff-body: 'Open Sans', sans-serif;
+    /* font-size */
+    --fs-body: 16px;
+    --fs-h6: 17px;
+    --fs-h5: 18px;
+    --fs-h4: 24px;
+    --fs-h3: 32px;
+    --fs-h2: 38px;
+    --fs-h1: 56px;
+    /* font-weights */
+    --fw-l: 300;
+    --fw-r: 400;
+    --fw-b: 700;
+    /* letter-spacing */
+    --ls-s: 2px;
+    --ls-m: 3px;
+    --ls-l: 5px;
+    /* line-height */
+    --lh-s: 1.1;
+    --lh-m: 1.3;
+    --lh-l: 1.6;
+    /* hsl values */
+    --hue: 200;
+    --sat: 50%;
+    --light: 60%;
+    /* brand & theme colors - #66aacc */
+    --clr-theme: hsl(var(--hue), var(--sat), var(--light));
+    --clr-theme10: hsl(var(--hue), var(--sat), calc(var(--light) + 10%));
+    --clr-theme20: hsl(var(--hue), var(--sat), calc(var(--light) + 20%));
+    --clr-theme30: hsl(var(--hue), var(--sat), calc(var(--light) + 30%));
+    --clr-theme37: hsla(var(--hue), var(--sat), calc(var(--light) + 37%), 90%);
+    /* Grayscale font and background */
+    --clr-dark: hsl(0, 0%, 15%);
+    --clr-darkish: hsl(0, 0%, 20%);
+    --clr-gray: hsl(0, 0%, 35%);
+    --clr-light: hsl(0, 0%, 98%);
+    --clr-lighter: hsl(0, 0%, 99%);
+    --clr-opaque: hsla(0, 0%, var(--light), 0.1);
+    /* shadows & borders */
+    --radius: 3px;
+    --border: 1px solid var(--clr-theme);
+    --shadow: 0px 0px 20px 4px var(--clr-opaque);
+    --width: 680px;
+}
+
+/* BW background colors */
+.bg-dark {
+    background-color: var(--clr-dark);
+}
+
+.bg-gray {
+    background-color: var(--clr-gray);
+}
+
+.bg-light {
+    background-color: var(--clr-light);
+}
+
+.bg-lighter {
+    background-color: var(--clr-lighter);
+}
+
+.bg-opaque {
+    background-color: var(--clr-opaque);
+}
+
+/* theme background colors */
+.bg-theme {
+    background-color: var(--clr-theme);
+}
+
+.bg-theme10 {
+    background-color: var(--clr-theme10);
+}
+
+.bg-theme20 {
+    background-color: var(--clr-theme20);
+}
+
+.bg-theme30 {
+    background-color: var(--clr-theme30);
+}
+
+/* Text Color Classes */
+.dark {
+    color: var(--clr-dark);
+}
+
+.darkish {
+    color: var(--clr-darkish);
+}
+
+.gray {
+    color: var(--clr-gray);
+}
+
+.light {
+    color: var(--clr-light);
+}
+
+.lighter {
+    color: var(--clr-lighter);
+}
+
+.theme {
+    color: var(--clr-theme);
+}
+
+/* other styling classes */
+.shadow {
+    box-shadow: var(--shadow);
+}
+
+.radius {
+    border-radius: var(--radius);
+}
+
+.border {
+    border: var(--border);
+}
+
+/* padding & margin */
+.pad-1 {
+    padding: 1rem;
+}
+
+.margin-1 {
+    margin: 1rem;
+}
+
+.mb-1 {
+    margin-block-end: 1rem;
+}
+
+/* show / no shows */
+.display-none {
+    display: none;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+/* main theme classes */
+.block {
+    margin: .5rem 0;
+    padding: .25rem .75rem;
+    border-inline-start: .25rem solid var(--clr-theme);
+    background: var(--clr-theme37);
+}
+
+/* svg logo / tint icon */
+.logo {
+    fill: var(--clr-theme);
+    display: inline-block;
+    margin-inline-start: 1rem;
+    transform: translateY(2px);
+    height: 1.25rem;
+}
+
+.icon {
+    fill: var(--clr-theme);
+    display: inline-block;
+    transform: translateY(1px);
+    margin-inline-end: .25rem;
+    width: 1rem;
+    height: 1rem;
+}
+
+/* external link style */
+[rel="noreferrer"] {
+    text-decoration: solid underline var(--clr-theme);
+}
+
+[rel="noreferrer"]:hover {
+    color: var(--clr-theme)
+}
+
+.nav-home {
+    justify-self: start;
+    font-weight: var(--fw-b);
+    letter-spacing: var(--ls-m);
+    text-transform: uppercase;
+}
+
+.nav_link {
+    letter-spacing: var(--ls-m);
+}
+
+.active,
+.nav_link a:hover {
+    color: var(--clr-theme);
+    cursor: pointer;
+}
+
+.nav_link a::after {
+    content: " / ";
+    color: var(--clr-theme30);
+}
+
+/* Buttons and Link/Btn Styles */
+.btn {
+    padding: .5rem 1rem;
+    cursor: pointer;
+}
+
+/* Animation Classes */
+.comeIn {
+    animation: comeIn .7s ease forwards;
+}
+
+.comeIn:nth-child(even) {
+    animation: comeIn .9s ease forwards;
+}
+
+/* Keyframe Animations */
+@keyframes comeIn {
+    from {
+        transform: translateY(25px);
+    }
+
+    to {
+        transform: translateY(0px);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    article {
+        will-change: auto;
+    }
+
+    .comeIn {
+        animation: none;
+    }
+
+    .comeIn:nth-child(even) {
+        animation: none;
+    }
+}
+
+/* day & night mode */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --clr-dark: hsl(0, 3%, 99%);
+        --clr-darkish: hsl(0, 3%, 85%);
+        /* dark */
+        --clr-light: hsl(0, 3%, 20%);
+        /* gray */
+        --clr-lighter: hsl(0, 3%, 15%);
+        /* lighter */
+        --clr-theme37: hsla(0, 3%, 15%);
+    }
+}
+
+/* day & night mode */
+.scheme-dark {
+    --clr-dark: hsl(0, 3%, 99%);
+    --clr-darkish: hsl(0, 3%, 85%);
+    /* dark */
+    --clr-light: hsl(0, 3%, 20%);
+    /* gray */
+    --clr-lighter: hsl(0, 3%, 15%);
+    /* lighter */
+    --clr-theme37: hsla(0, 3%, 15%);
+}
+
+.scheme-light {
+    /* brand & theme colors - #66aacc */
+    --clr-theme37: hsla(var(--hue), var(--sat), calc(var(--light) + 37%), 90%);
+    /* Grayscale font and background */
+    --clr-dark: hsl(0, 0%, 15%);
+    --clr-darkish: hsl(0, 0%, 20%);
+    --clr-light: hsl(0, 0%, 98%);
+    --clr-lighter: hsl(0, 0%, 99%);
+}
