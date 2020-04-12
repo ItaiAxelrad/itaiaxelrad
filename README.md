@@ -2,7 +2,7 @@
 
 ## About
 
-Hello, I'm Itai Axelrad an in-house consultant with a focus in water and wastewater infrastructure. You can find me working in Denver or [climbing](https://www.axelradclimbing.com/) in the surrounding mountains.
+Hello, I'm Itai Axelrad, an in-house consultant with a focus in water and wastewater infrastructure. You can find me working in Denver or [climbing](https://www.axelradclimbing.com/) in the surrounding mountains.
 
 ## Experience
 
