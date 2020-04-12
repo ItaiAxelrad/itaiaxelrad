@@ -1,80 +1,50 @@
-# boilerplate
+# Itai Axelrad
 
-Just a sample markdown template.
+## About
 
-## HTML
+Hello, I'm Itai Axelrad an in-house consultant with a focus in water and wastewater infrastructure. You can find me working in Denver or [climbing](https://www.axelradclimbing.com/) in the surrounding mountains.
 
-### Standards
+## Experience
 
-Use semantic elements as much as possible. Limit to 2,000 elements, 30 nested depth.
+### Project Engineer
 
-### Architecture
+- Baseline Engineering Consultants
+- Denver, CO
+- February 2019 to Present
 
-Place the i`ndex.html` in the src project folder along with a `404-error.html` error page.
+As part of the [Baseline](https://baselinecorp.com/) team, I am responsible for the design and modeling of water treatment, reclamation facilities, lift stations, and master plans. As a project engineer, my responsibilities also include writing reports, client meetings, site visits and preparing both design and construction cost estimates for various projects.
 
-### Distribution
+### Design Engineer
 
-Copy the src html files into the distribution folder using a task runner (`Gulp` or `Grunt`).
+- Cannon Engineering Consultants
+- Los Angeles, CA
+- October 2015 to June 2017
 
-## CSS
+During my time at [Cannon](https://cannoncorp.us/), I was responsible for designing pump stations, wells, and water mains up to 2 miles in length. I became proficient in drafting civil and mechanical details in AutoCAD Civil 3D. My responsibilities also included client meetings, site visits and preparing cost estimates for projects with construction budgets up to 15 million dollars.
 
-### Standards
+### Staff Engineer
 
-Element classes shall be used for styling purposes only. Element ids are used for dynamic manipulation using JavaScript. Use `BEM` naming convention or equivalent.
+- Taylor & Syfan Consulting Engineers
+- San Luis Obispo, CA
+- May 2014 to August 2014
 
-### Architecture
+While interning as a structural engineer for [Taylor & Syfan](https://www.taylorsyfan.com/), I transformed architectural plans into structural plans, performed beam loading analysis, and beam selection. My experience there made me competent in drawing structural details using Vectorworks.
+curbs, and lights.
 
-All CSS files shall be placed inside the `src/styles` folder. The folder shall contain all styling "modules" including:
+## Education
 
-- `Main.css` – contains root styling, will be imported to other files and used for distribution
-- `normalize.css` – get latest version of browser normalization from gitHub
-- `reset.css` - user created and minimal
-- `type.css` – contains all typography elements
-- `layout.css` - contains all layout rules and elements - no style!
-- `forms.css` – standard form styling
-- `table.css`
-- `list.css`
+#### Master of Science, Civil Engineering
 
-### Distribution
+- University of California
+- Los Angeles, CA
+- Class of 2018
 
-Prepare all CSS files for distribution using a task runner (`gulp` or `grunt`). The pipline shall include `concatenation` into the main.css file, an `autoprefixer`, and lastly a `minifier`. The distribution CSS file will then be placed in the `dist/styles` folder.
+Throughout my academic career at UCLA, I furthered my knowledge in linear and dynamic programming, groundwater modeling, geographic information systems, remote sensing, and forecast verification. Some of my notable projects include:
 
-## JavaScript
+#### Bachelor of Science, Civil Engineering
 
-### Standards
+- California Polytechnic State University
+- San Luis Obispo, CA
+- Class of 2015
 
-Element ids (no classes) are used for dynamic manipulation using JavaScript. Use the most current (ES6 or later) notation. Avoid using libraries such as jQuery.
-
-### Architecture
-
-Generally, JS files should be placed in the src/scripts folder. Use `main.js` or `index.js` for core JavaScript and separate other JS files into appropriate modules and import and export as needed. The service worker file, along with the manifest.json files shall be placed in the parent project folder.
-A `Gulpfile.js` file will be place in the parent folder along with a package.json file to handle the distribution tasks.
-
-### Distribution
-
-Concatenate then minify any scripts inside the src/scripts folder to `main.js.` Copy all src JS and JSON files into the distribution folder under the same folder directory.
-
-## Assets
-
-### Standards
-
-For images, include alt and lazy loading attribute. Compress file appropriately. For documents and PDFs, keep file size small and avoid loading until user request.
-
-### Architecture
-
-**Images** shall be placed in the `src/images` folder. Icons for the web app manifest can be placed inside the `src/images/icons` folder. Use an online generator for different icon sizing.
-
-**Documents** shall be stored in the docs folder, which can include word documents, text files, and PDFs for the site.
-
-### Distribution
-
-Using a task runner, minify images and copy over all assets in the src folder to the same directory in the distribution folder.
-
-## Resources
-
-- [github](http://www.github.com)
-- [MDN](https://developer.mozilla.org/en-US/)
-- [W3 school](https://www.w3schools.com/)
-- [CSS-Tricks](https://css-tricks.com/)
-- [Medium](https://medium.com/)
-- [Stack Overflow](https://stackoverflow.com/)
+During my time at Cal Poly, I learned the fundamentals of engineering and applied this knowledge towards hands-on design projects in water resources, geotechnical engineering, transportation, structural and environmental engineering fields. I pushed myself academically and achieved Dean's List standing for Fall and Spring of 2013.
