@@ -134,6 +134,15 @@ dialog:not([open]),
  * 2. Remove the margin in Firefox and Safari.
  */
 
+/* button reset */
+button {
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
 button,
 input,
 optgroup,

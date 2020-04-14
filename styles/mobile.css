@@ -1,7 +1,12 @@
 /* Responsive Layout - Tablet */
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 725px) {
+
     h3 {
         padding-inline-start: 1rem;
+    }
+
+    article {
+        margin: .5rem;
     }
 
     .intro {
@@ -49,15 +54,5 @@
     .schemeBtn {
         display: none;
     }
-}
 
-/* Responsive Layout - Mobile */
-@media screen and (max-width: 480px) {
-    .grid-col2 {
-        display: block;
-    }
-
-    article {
-        margin: .5rem;
-    }
 }
