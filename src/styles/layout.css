@@ -107,7 +107,7 @@ figure {
 /* navigation layouts */
 nav {
     display: grid;
-    grid-template-columns: 2fr 5fr;
+    grid-template-columns: auto 1fr;
     justify-items: end;
     padding: 1rem 3rem;
     width: 100%;

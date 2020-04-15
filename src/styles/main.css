@@ -200,15 +200,19 @@
     letter-spacing: var(--ls-m);
 }
 
+.nav_link a {
+    padding-inline-end: .5rem;
+}
+
 .active,
 .nav_link a:hover {
     color: var(--clr-theme);
     cursor: pointer;
 }
 
-.nav_link a::after {
-    content: " / ";
-    color: var(--clr-theme30);
+.nav_link a::before {
+    content: "#";
+    color: var(--clr-theme20);
 }
 
 /* Buttons and Link/Btn Styles */
