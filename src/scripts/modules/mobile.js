@@ -2,15 +2,8 @@ const menuBtn = document.querySelector("#menuBtn")
 const menuSvg = document.querySelector("#menuSvg use")
 const mobileNav = document.querySelector("#mobile-links")
 const mobileLinks = document.querySelectorAll("#mobile-links a")
-
-// open full curtain navigation menu
-menuBtn.addEventListener('click', toggle);
-// close menu when user clicks a link
-mobileLinks.forEach(link => {
-  link.addEventListener('click', toggle)
-});
-
-function toggle() {
+// toggle event function
+const toggle = () => {
   if (mobileNav.getAttribute("aria-expanded") === "false") {
     mobileNav.classList.replace('closed', 'open')
     mobileNav.setAttribute('aria-expanded', "true");
@@ -25,6 +18,12 @@ function toggle() {
     menuSvg.setAttribute("viewBox", "0 0 448 512");
   }
 }
+// open full curtain navigation menu
+menuBtn.addEventListener('click', toggle);
+// close menu when user clicks a link
+mobileLinks.forEach(link => {
+  link.addEventListener('click', toggle)
+});
 
 //export to main.js
 export {
