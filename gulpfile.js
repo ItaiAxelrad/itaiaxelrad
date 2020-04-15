@@ -1,18 +1,10 @@
 // Plugins
-let gulp = require('gulp');
-let imagemin = require('gulp-imagemin');
-let concat = require('gulp-concat');
-let postcss = require('gulp-postcss');
-let autoprefixer = require('autoprefixer');
-let cssnano = require('cssnano');
-
-// name of distribution folder
-// const d = new Date();
-// const year = d.getFullYear();
-// const month = d.getMonth() + 1;
-// const day = d.getDate();
-// const dist = `dist_${year}-${month}-${day}`;
-
+const gulp = require('gulp');
+const imagemin = require('gulp-imagemin');
+const concat = require('gulp-concat');
+const postcss = require('gulp-postcss');
+const autoprefixer = require('autoprefixer');
+const cssnano = require('cssnano');
 const dist = "dist"
 
 // Logs Message
@@ -97,6 +89,7 @@ gulp.task('copyMd', async () => {
   gulp.src('src/*.md')
     .pipe(gulp.dest(dist));
 });
+
 // Scripts: minify & concat
 // gulp.task('scripts', async function(){
 //   gulp.src('src/scripts/*.js')
@@ -105,7 +98,7 @@ gulp.task('copyMd', async () => {
 //       .pipe(gulp.dest('dist/scripts'));
 // });
 
-// Default gulp task array
+// Gulp build task array
 gulp.task('build', gulp.series(['message', 'copyHtml', 'copyDocs', 'copySVG', 'copyJS', 'copyMods', 'copyJSON', 'copyMani', 'copySW', 'copyIcons', 'copyMd', 'imageMin', 'css']));
 
 // Watch files for change

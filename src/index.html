@@ -1,540 +1,719 @@
 <!DOCTYPE html>
 <!-- HTML5 -->
 <html lang="en-US" dir="ltr">
-<!-- Head element -->
-<head>
-  <title>Itai Axelrad</title>
-  <!-- Meta Data & PWA Info -->
-  <meta charset="UTF-8" />
-  <!-- Set character encoding for the document -->
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <!-- site specific stuff to change  -->
-  <meta name="description" content="Itai Axelrad's Resume Website" />
-  <meta name="keywords"
-    content="Itai, Axelrad, Resume, Engineer, Student, Professional, Water, Resources, master, science, cal, poly, ucla, linkedin, experience, education, skills, associations, civil, AutoCAD, 3D, EIT, PE, LEED, GA, AP, SAMPE, hire, Los, Angeles, firm, associate, California, Colorado, Denver" />
-  <meta name="theme-color" content="#66aacc" />
-  <!-- iOS PWA -->
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-  <meta name="apple-mobile-web-app-title" content="resume" />
-  <!-- Styles & Type  -->
-  <link href="styles/main.css" rel="stylesheet" type="text/css" />
-  <link href="https://fonts.gstatic.com/" rel="preconnect" crossorigin />
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet" />
-  <!-- Links & PWA info  -->
-  <link href="images/icon.png" rel="apple-touch-startup-image" />
-  <link href="images/icon.png" rel="apple-touch-icon" />
-  <link href="images/icon.png" rel="icon" type="image/png" />
-  <link href="manifest.json" rel="manifest" type="application/json" crossorigin="use-credentials" />
-  <!-- Scripts  -->
-  <script src="scripts/main.js" type="module"></script>
-</head>
-<!-- begin body -->
-<body>
-  <!-- Fulls screen Navbar links -->
-  <nav id="nav" class="bg-light fixed">
-    <!-- logo, home and menu nav link -->
-    <div id="mobile-nav" class="nav-mobile nav-home">
-      <svg class="logo" viewBox="0 0 45 36" aria-hidden="true" focusable="false">
-        <use xlink:href="images/defs.svg#logo"></use>
-      </svg>
-      <a href="#" id="link-logo" class="nav_link display-none">Itai Axelrad</a>
-      <!--hamburger menu button -->
-      <button id="menuBtn" class="btn_menu" aria-label="menu">
-        <svg viewBox="0 0 448 512" id="menuSvg" class="icon" role="img">
-          <use xlink:href="images/defs.svg#bars"></use>
+  <!-- Head element -->
+  <head>
+    <title>Itai Axelrad</title>
+    <!-- Meta Data & PWA Info -->
+    <meta charset="UTF-8" />
+    <!-- Set character encoding for the document -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <!-- site specific stuff to change  -->
+    <meta name="description" content="Itai Axelrad's Resume Website" />
+    <meta
+      name="keywords"
+      content="Itai, Axelrad, Resume, Engineer, Student, Professional, Water, Resources, master, science, cal, poly, ucla, linkedin, experience, education, skills, associations, civil, AutoCAD, 3D, EIT, PE, LEED, GA, AP, SAMPE, hire, Los, Angeles, firm, associate, California, Colorado, Denver"
+    />
+    <meta name="theme-color" content="#66aacc" />
+    <!-- iOS PWA -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="resume" />
+    <!-- Styles & Type  -->
+    <link href="styles/main.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.gstatic.com/" rel="preconnect" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Links & PWA info  -->
+    <link href="images/icon.png" rel="apple-touch-startup-image" />
+    <link href="images/icon.png" rel="apple-touch-icon" />
+    <link href="images/icon.png" rel="icon" type="image/png" />
+    <link
+      href="manifest.json"
+      rel="manifest"
+      type="application/json"
+      crossorigin="use-credentials"
+    />
+    <!-- Scripts  -->
+    <script src="scripts/main.js" type="module"></script>
+  </head>
+  <!-- begin body -->
+  <body>
+    <!-- Fulls screen Navbar links -->
+    <nav id="nav" class="bg-light fixed">
+      <!-- logo, home and menu nav link -->
+      <div id="mobile-nav" class="nav-mobile nav-home">
+        <svg
+          class="logo"
+          viewBox="0 0 45 36"
+          aria-hidden="true"
+          focusable="false"
+        >
+          <use xlink:href="images/defs.svg#logo"></use>
         </svg>
-      </button>
-    </div>
-    <!-- section links -->
-    <div id="mobile-links" class="nav_link closed" aria-expanded="false">
-      <a href="#experience" class="btn_link">Experience</a>
-      <a href="#education" class="btn_link">Education</a>
-      <a href="#contact" class="btn_link">Contact</a>
-      <!-- light dark mode button -->
-      <button id="schemeBtn" class="schemeBtn" title="Toggle Dark / Light Mode" aria-label="color scheme button">
-        <svg viewBox="0 0 512 512" class="icon" role="img">
-          <use xlink:href="images/defs.svg#adjust"></use>
-        </svg>
-      </button>
-    </div>
-  </nav>
-
-  <!-- Hero image title and subtitle -->
-  <header id="header" class="full-page bg-light">
-    <div class="intro pad-1 comeIn">
-      <p>Hello, I'm</p>
-      <h1>itai axelrad</h1>
-      <br />
-      <p>
-        In-house consultant with a focus in water and wastewater
-        infrastructure. You can find me working in Denver or
-        <a href="https://www.axelradclimbing.com/" target="_blank" rel="noreferrer">climbing</a>
-        in the surrounding mountains.
-      </p>
-      <br />
-      <a href="#experience" class="btn radius bg-light border" aria-label="scroll">Dive in!</a>
-      <img src="images/plant.svg" alt="Lift Station" loading="lazy" class="plant" />
-    </div>
-  </header>
-
-  <!-- Main page body -->
-  <main id="main" class="bg-light">
-    <!-- Scroll to top link / button -->
-    <a href="#" id="topBtn" class="btn btn_top radius" aria-label="scroll to top" tabindex="-1">
-      <svg viewBox="0 0 448 512" class="icon" role="img" aria-hidden="true" focusable="false">
-        <use xlink:href="images/defs.svg#chevron-up"></use>
-      </svg>
-    </a>
-
-    <!-- Section 2: 2 grid column with card style asides -->
-    <section id="experience">
-      <h3 class="theme">Experience</h3>
-
-      <!-- Row 1: with card style aside and detail/summary -->
-      <article class="pad-1 bg-lighter radius">
-        <div class="grid-col2-thumb">
-          <header>
-            <h4>Project Engineer</h4>
-            <h5>Baseline Engineering Consultants</h5>
-            <h6>
-              <svg viewBox="0 0 384 512" class="icon" role="img" aria-hidden="true" focusable="false">
-                <use xlink:href="images/defs.svg#marker"></use>
-              </svg>
-              Denver, CO
-            </h6>
-            <h6>
-              <svg viewBox="0 0 448 512" class="icon" role="img" aria-hidden="true" focusable="false">
-                <use xlink:href="images/defs.svg#calendar"></use>
-              </svg>
-              <time datetime="2019-02-25">February 2019</time> to Present
-            </h6>
-          </header>
-          <img src="images/baseline.jpg" alt="Baseline" loading="lazy" class="radius thumbnail" />
-        </div>
-        <p>
-          As part of the
-          <a href="https://baselinecorp.com/" target="_blank" rel="noreferrer">Baseline</a>
-          team, I am responsible for the design and modeling of water
-          treatment, reclamation facilities, lift stations, and master plans.
-          As a project engineer, my responsibilities also include writing
-          reports, client meetings, site visits and preparing both design and
-          construction cost estimates for various projects.
-        </p>
-        <details>
-          <summary>WTP Improvements</summary>
-          <div class="block">
-            <p>
-              As a project engineer for the Baseline team, I was responsible
-              for many improvement projects at the 8 MGD Sid Copeland Water
-              Treatment Plant in the City of Louisville, Colorado. Tasks
-              included updating phased out infrastructure, finding innovative
-              retrofitting solutions, and keeping up with the ever-changing
-              regulatory agencies. The designs focused on long term
-              future-proof solutions and value engineering.
-            </p>
-          </div>
-        </details>
-        <details>
-          <summary>Water System Model Update</summary>
-          <div class="block">
-            <p>
-              I was the project engineer on the Baseline team that developed
-              and ran a WaterCAD model for the entire district distribution
-              system. The system operated by the District consists of 2
-              treatment facilities, 7 potable storage tanks, 7 booster
-              stations, 19 pressure reducing valves, and over 50 miles of
-              distribution pipe with over 800 feet of elevation change.
-              Diurnal demands and extended period simulations were used to
-              assess the model dynamics. Average-day, max-day, peak hour, and
-              average-day plus fire flow scenarios were also considered in
-              troubleshooting areas that did not meet the model constraints.
-              Simulation results were used to improve operational set points
-              and recommend transmission improvements. The scope also included
-              design of an updated system map utilizing GIS data from the
-              district to improve the project’s visualization.
-            </p>
-          </div>
-        </details>
-        <details>
-          <summary>Public Works Washout Facility</summary>
-          <div class="block">
-            <p>
-              I was the design engineer on the Baseline project that developed
-              a public washout and grit dump facility for the City’s
-              year-round street sweeper operation. The project was designed in
-              compliance with CDPHE and the MS4 Permit, which involves
-              implementing pollution prevention measures, and proper disposal
-              of solid and liquid storm sewer and sweeper truck waste. The
-              facility includes a wash bay for the sweeper trucks capable of
-              handling the 5,000 gallons of water and sediment generated per
-              wash cycle. The project scope also included the design of the
-              site, drainage, utilities, and an HVAC system.
-            </p>
-          </div>
-        </details>
-      </article>
-
-      <!-- Row 2 -->
-      <article class="pad-1 bg-lighter radius">
-        <div class="grid-col2-thumb">
-          <header>
-            <h4>Design Engineer</h4>
-            <h5>Cannon Engineering Consultants</h5>
-            <h6>
-              <svg viewBox="0 0 384 512" class="icon" role="img" aria-hidden="true" focusable="false">
-                <use xlink:href="images/defs.svg#marker"></use>
-              </svg>
-              Los Angeles, CA
-            </h6>
-            <h6>
-              <svg viewBox="0 0 448 512" class="icon" role="img" aria-hidden="true" focusable="false">
-                <use xlink:href="images/defs.svg#calendar"></use>
-              </svg>
-              <time datetime="2015-10-15">October 2015</time> to
-              <time datetime="2017-06">June 2017</time>
-            </h6>
-          </header>
-          <img src="images/cannoncorp.jpg" alt="CannonCorp" loading="lazy" class="radius thumbnail" />
-        </div>
-        <p>
-          During my time at
-          <a href="https://cannoncorp.us/" target="_blank" rel="noreferrer">Cannon</a>, I was responsible for designing
-          pump stations, wells, and water
-          mains up to 2 miles in length. I became proficient in drafting civil
-          and mechanical details in AutoCAD Civil 3D. My responsibilities also
-          included client meetings, site visits and preparing cost estimates
-          for projects with construction budgets up to 15 million dollars.
-        </p>
-        <details>
-          <summary>Booster Pump Station & Reservoir</summary>
-          <div class="block">
-            <p>
-              I served as a project engineer on the design team responsible
-              for the supply and storage of potable water to the 400-unit
-              Runkle Canyon Home Development. In order to meet the demands of
-              the Simi Valley tract, a new 500-GPM booster pump station and
-              2.0-MG welded steel reservoir were designed, and the existing
-              Pineview pump station upgraded. The designed pump station
-              included one operating pump and one standby pump as well as a
-              pressure-reducing station with pressure relief valves - all
-              housed in a concrete masonry block building. Premium efficient
-              motors for the pumping system were selected and specified to
-              meet existing energy efficiency standards.
-            </p>
-            <p>
-              Interior and coating specifications were also prepared for the
-              proposed building. The reservoir was sized and designed to
-              provide emergency, fire, and equalizing storage and meet AWWA
-              D-100 standards. The scope of services for both the pump station
-              and reservoir included site grading, a drainage system with
-              catch basins, access road paving, piping, electrical equipment,
-              controls and SCADA system, and project management. Plan review
-              submittals were processed and approvals coordinated with all
-              agencies involved.
-            </p>
-          </div>
-        </details>
-        <details>
-          <summary>Water Main Replacement</summary>
-          <div class="block">
-            <p>
-              I was the lead project engineer for the design of half a mile of
-              new of ductile-iron pipe water main for the City of Santa
-              Monica. I performed extensive utility research, prepared a
-              construction cost estimate, and designed and drafted the
-              proposed water mains and connection details. The project
-              required effective coordination with the surveying,
-              geotechnical, and traffic engineering sub consultants and
-              regular meetings with the City in order to keep within budget
-              and time constraints.
-            </p>
-          </div>
-        </details>
-        <details>
-          <summary>Laguna WWTP</summary>
-          <div class="block">
-            <p>
-              I was a design engineer on a wastewater treatment plant
-              improvement project for the City of Santa Rosa. The 17.5 million
-              gallon average day plant required a full civil site improvement
-              as well as treatment process improvements. A site plan and civil
-              and mechanical details were created using AutoCAD civil 3D. The
-              scope also included an engineer’s cost estimate for the 15
-              million dollar project.
-            </p>
-          </div>
-        </details>
-      </article>
-
-      <!-- Row 3 -->
-      <article class="pad-1 bg-lighter radius">
-        <div class="grid-col2-thumb">
-          <header>
-            <h4>Staff Engineer</h4>
-            <h5>Taylor & Syfan Consulting Engineers</h5>
-            <h6>
-              <svg viewBox="0 0 384 512" class="icon" role="img" aria-hidden="true" focusable="false">
-                <use xlink:href="images/defs.svg#marker"></use>
-              </svg>
-              San Luis Obispo, CA
-            </h6>
-            <h6>
-              <svg viewBox="0 0 448 512" class="icon" role="img" aria-hidden="true" focusable="false">
-                <use xlink:href="images/defs.svg#calendar"></use>
-              </svg>
-              <time datetime="2014-05">May 2014</time> to
-              <time datetime="2014-08">August 2014</time>
-            </h6>
-          </header>
-          <img src="images/ts.jpg" alt="T&S" loading="lazy" class="radius thumbnail" />
-        </div>
-        <p>
-          While interning as a structural engineer for
-          <a href="https://www.taylorsyfan.com/" target="_blank" rel="noreferrer">Taylor & Syfan</a>, I transformed
-          architectural plans into structural plans,
-          performed beam loading analysis, and beam selection. My experience
-          there made me competent in drawing structural details using
-          Vectorworks.
-        </p>
-        <details>
-          <summary>Paseo Chapala Mixed Use Project</summary>
-          <div class="block">
-            <p>
-              I was a design engineer responsible for drafting structural
-              details, transforming architectural plans, performing beam
-              loading analysis, and beam selection for the Mixed Use
-              development. The Paseo Chapala project includes 27 residential
-              units, 10,000 square feet of commercial and retail space, and
-              25,000 square feet of parking in the heart of downtown Santa
-              Barbara. The project utilized Type V construction over a 14"
-              thick elevated concrete deck supported by concrete columns with
-              masonry walls and light gauge steel framing for the upper
-              floors.
-            </p>
-          </div>
-        </details>
-        <details>
-          <summary>High Water Bridge Repair</summary>
-          <div class="block">
-            <p>
-              I was the design engineer and drafter on a 3.2 million dollar
-              project to repair a major river crossing at Camp Roberts. My
-              responsibilities included drafting bridge cross sections and
-              details for the 561 foot span, and calculating the water
-              pressure at the support piles for various storm event scenarios.
-              The project scope also included repair of the existing supports,
-              adding a 14 foot-wide vehicle lane, a 6 foot wide pedestrian
-              lane, a new deck, new guard rails, curbs, and lights.
-            </p>
-          </div>
-        </details>
-      </article>
-    </section>
-
-    <!-- Section 3: long article with button -->
-    <section id="education">
-      <h3 class="theme">Education</h3>
-
-      <!-- Row 1 -->
-      <article class="pad-1 bg-lighter radius">
-        <div class="grid-col2-thumb">
-          <header>
-            <h4>Master of Science, Civil Engineering</h4>
-            <h5>University of California</h5>
-            <h6>
-              <svg viewBox="0 0 384 512" class="icon" role="img" aria-hidden="true" focusable="false">
-                <use xlink:href="images/defs.svg#marker"></use>
-              </svg>
-              Los Angeles, CA
-            </h6>
-            <h6>
-              <svg viewBox="0 0 448 512" class="icon" role="img" aria-hidden="true" focusable="false">
-                <use xlink:href="images/defs.svg#calendar"></use>
-              </svg>
-              Class of <time datetime="2018">2018</time>
-            </h6>
-          </header>
-          <img src="images/ucla.jpg" alt="UCLA" loading="lazy" class="radius thumbnail" />
-        </div>
-        <p>
-          Throughout my academic career at UCLA, I furthered my knowledge in
-          linear and dynamic programming, groundwater modeling, geographic
-          information systems, remote sensing, and forecast verification. Some
-          of my notable projects include:
-        </p>
-        <details>
-          <summary>LA Groundwater Basin Model</summary>
-          <div class="block">
-            <p>
-              I developed a model to simulate the West Coast Barrier project
-              and to assess impacts of continued pumping at average rates that
-              meet a particular demand in the West Coast Basin. The model
-              included pumping wells appropriately located in the model domain
-              and a hydraulic barrier simulated using as a series of injection
-              wells near the ocean boundary. The model contained two aquifer
-              systems, Lakewood and Upper San Pedro, which are separated by an
-              aquitard.
-            </p>
-            <figure>
-              <img src="images/model.jpg" alt="hydraulic model" loading="lazy" />
-              <figcaption>
-                ModPath Model Visualization of Seawater Intrusion
-              </figcaption>
-            </figure>
-          </div>
-        </details>
-        <details>
-          <summary>Hurricane Forecast Verification in LA</summary>
-          <div class="block">
-            <p>
-              Precipitation data used in this study was gathered by satellites
-              in the NASA Tropical Rainfall Measurement Mission (TRMM). This
-              data was organized into Network Common Data Form (NetCDF), which
-              collects array­oriented scientific data and packages it using a
-              program developed at the University Corporation for Atmospheric
-              Research (UCAR).
-            </p>
-            <figure>
-              <img src="images/forecast.png" alt="forecast map" loading="lazy" />
-              <figcaption>Forecast of Hurricane Katrina</figcaption>
-            </figure>
-          </div>
-        </details>
-        <details>
-          <summary>Water Sustainability in Los Angeles</summary>
-          <div class="block">
-            <p>
-              In this project, I explored the possibility of expanding on the
-              existing recycled water infrastructure to service nearby parks,
-              golf courses, memorial sites, and other non-potable uses. The
-              spatial analysis was conducted using ArcGIS to determine the
-              amount recycled water that could be added to Los Angeles pipe
-              system.
-            </p>
-            <figure>
-              <img src="images/maps.jpg" alt="GIS Map" loading="lazy" />
-              <figcaption>Buffer Zone: Potential for RW Expansion</figcaption>
-            </figure>
-          </div>
-        </details>
-      </article>
-
-      <!-- Row 1 -->
-      <article class="pad-1 bg-lighter radius">
-        <div class="grid-col2-thumb">
-          <header>
-            <h4>Bachelor of Science, Civil Engineering</h4>
-            <h5>California Polytechnic State University</h5>
-            <h6>
-              <svg viewBox="0 0 384 512" class="icon" role="img" aria-hidden="true" focusable="false">
-                <use xlink:href="images/defs.svg#marker"></use>
-              </svg>
-              San Luis Obispo, CA
-            </h6>
-            <h6>
-              <svg viewBox="0 0 448 512" class="icon" role="img" aria-hidden="true" focusable="false">
-                <use xlink:href="images/defs.svg#calendar"></use>
-              </svg>
-              Class of <time datetime="2015">2015</time>
-            </h6>
-          </header>
-          <img src="images/calpoly.jpg" alt="CalPoly" loading="lazy" class="radius thumbnail" />
-        </div>
-        <p>
-          During my time at Cal Poly, I learned the fundamentals of
-          engineering and applied this knowledge towards hands-on design
-          projects in water resources, geotechnical engineering,
-          transportation, structural and environmental engineering fields. I
-          pushed myself academically and achieved Dean's List standing for
-          Fall and Spring of 2013.
-        </p>
-        <details>
-          <summary>Johnson Avenue Housing Project</summary>
-          <div class="block">
-            <p>
-              The Johnson Avenue Housing Project was the culmination of all my
-              learned skills and gave me the opportunity to take on a project
-              management role.
-            </p>
-            <figure>
-              <img src="images/Garage.jpg" alt="parking garage" loading="lazy" />
-              <figcaption>Site / Garage Plan</figcaption>
-            </figure>
-          </div>
-        </details>
-        <details>
-          <summary>Alpha Range Drainage Report</summary>
-          <div class="block">
-            <p>
-              As a water resources specialist for Camp San Luis Obispo, I
-              performed hydrology analysis for the 5 acre Alpha Range and
-              subsequently developed a feasibility report for implementing
-              best management practices. The study involved determining the
-              appropriate detention basin size, designing a site plan, and
-              performing a rough order of magnitude cost estimate. I advised
-              on design practices to minimize mud build-up, erosion, and
-              sedimentation.
-            </p>
-            <figure>
-              <img src="images/range.jpg" alt="shooting range" loading="lazy" />
-              <figcaption>Alpha Range Grading Plan</figcaption>
-            </figure>
-          </div>
-        </details>
-        <details>
-          <summary>SAMPE Bridge Contest</summary>
-          <div class="block">
-            <p>
-              As the Vice President of the Cal Poly SAMPE Chapter (2012 to
-              2014) I organized fundraising events and lead a competitive
-              composite material beam design team. Our beam placed 4th in the
-              annual international SAMPE competition.
-            </p>
-            <p>
-              The beam geometry was developed using empirical evidence
-              compiled from previous test results and iterative analysis.
-              Abaqus and Mathcad solution helped us optimize the final design.
-              We also considered manufacturing concerns while designing the
-              geometry.
-            </p>
-            <figure>
-              <img src="images/beam.jpg" alt="loaded beam" loading="lazy" />
-              <figcaption>Finite Element Analysis of an I-Beam</figcaption>
-            </figure>
-          </div>
-        </details>
-      </article>
-    </section>
-
-    <!-- Section 4: long article -->
-    <section id="contact">
-      <!-- contact info and time tag -->
-      <div class="pad-1">
-        <h3 class="theme">Contact</h3>
-        <p>
-          Please feel free to reach out to me with any questions or inquiries.
-        </p>
-        <form name="contact" method="POST" data-netlify="true">
-          <label for="email">Email</label>
-          <input id="email" type="email" name="email" placeholder="your@email.com" required />
-          <label for="message">Message</label>
-          <textarea id="message" name="message" placeholder="Hello world"></textarea>
-          <input type="submit" class="btn radius bg-lighter border dark" />
-        </form>
+        <a href="#" id="link-logo" class="nav_link display-none"
+          >Itai Axelrad</a
+        >
+        <!--hamburger menu button -->
+        <button id="menuBtn" class="btn_menu" aria-label="menu">
+          <svg viewBox="0 0 448 512" id="menuSvg" class="icon" role="img">
+            <use xlink:href="images/defs.svg#bars"></use>
+          </svg>
+        </button>
       </div>
-    </section>
+      <!-- section links -->
+      <div
+        id="mobile-links"
+        class="nav_link closed"
+        role="navigation"
+        aria-expanded="false"
+      >
+        <a href="#experience" class="btn_link">Experience</a>
+        <a href="#education" class="btn_link">Education</a>
+        <a href="#contact" class="btn_link">Contact</a>
+        <!-- light dark mode button -->
+        <button
+          id="schemeBtn"
+          class="schemeBtn"
+          title="Toggle Dark / Light Mode"
+          aria-label="color scheme button"
+        >
+          <svg viewBox="0 0 512 512" class="icon" role="img">
+            <use xlink:href="images/defs.svg#adjust"></use>
+          </svg>
+        </button>
+      </div>
+    </nav>
 
-    <!-- End of MAIN -->
-  </main>
+    <!-- Hero image title and subtitle -->
+    <header id="header" class="full-page bg-light">
+      <div class="intro pad-1 comeIn">
+        <p>Hello, I'm</p>
+        <h1>itai axelrad</h1>
+        <br />
+        <p>
+          In-house consultant with a focus in water and wastewater
+          infrastructure. You can find me working in Denver or
+          <a
+            href="https://www.axelradclimbing.com/"
+            target="_blank"
+            rel="noreferrer"
+            >climbing</a
+          >
+          in the surrounding mountains.
+        </p>
+        <br />
+        <a
+          href="#experience"
+          class="btn radius bg-light border"
+          aria-label="scroll"
+          >Dive in!</a
+        >
+        <img
+          src="images/plant.svg"
+          alt="Lift Station"
+          loading="lazy"
+          class="plant"
+        />
+      </div>
+    </header>
 
-  <!-- FOOTER -->
-  <footer id="footer" class="bg-light">
-    <small id="attribute"></small>
-    <br>
-    <small>Source code hosted on a <mark>GitHub</mark> & deployed by<mark>Netlify</mark></small>
+    <!-- Main page body -->
+    <main id="main" class="bg-light">
+      <!-- Scroll to top link / button -->
+      <a
+        href="#"
+        id="topBtn"
+        class="btn btn_top radius"
+        aria-label="scroll to top"
+        tabindex="-1"
+      >
+        <svg
+          viewBox="0 0 448 512"
+          class="icon"
+          role="img"
+          aria-hidden="true"
+          focusable="false"
+        >
+          <use xlink:href="images/defs.svg#chevron-up"></use>
+        </svg>
+      </a>
+
+      <!-- Section 2: 2 grid column with card style asides -->
+      <section id="experience">
+        <h3 class="theme">Experience</h3>
+
+        <!-- Row 1: with card style aside and detail/summary -->
+        <article class="pad-1 bg-lighter radius">
+          <div class="grid-col2-thumb">
+            <header>
+              <h4>Project Engineer</h4>
+              <h5>Baseline Engineering Consultants</h5>
+              <h6>
+                <svg
+                  viewBox="0 0 384 512"
+                  class="icon"
+                  role="img"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <use xlink:href="images/defs.svg#marker"></use>
+                </svg>
+                Denver, CO
+              </h6>
+              <h6>
+                <svg
+                  viewBox="0 0 448 512"
+                  class="icon"
+                  role="img"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <use xlink:href="images/defs.svg#calendar"></use>
+                </svg>
+                <time datetime="2019-02-25">February 2019</time> to Present
+              </h6>
+            </header>
+            <img
+              src="images/baseline.jpg"
+              alt="Baseline"
+              loading="lazy"
+              class="radius thumbnail"
+            />
+          </div>
+          <p>
+            As part of the
+            <a href="https://baselinecorp.com/" target="_blank" rel="noreferrer"
+              >Baseline</a
+            >
+            team, I am responsible for the design and modeling of water
+            treatment, reclamation facilities, lift stations, and master plans.
+            As a project engineer, my responsibilities also include writing
+            reports, client meetings, site visits and preparing both design and
+            construction cost estimates for various projects.
+          </p>
+          <details>
+            <summary>WTP Improvements</summary>
+            <div class="block">
+              <p>
+                As a project engineer for the Baseline team, I was responsible
+                for many improvement projects at the 8 MGD Sid Copeland Water
+                Treatment Plant in the City of Louisville, Colorado. Tasks
+                included updating phased out infrastructure, finding innovative
+                retrofitting solutions, and keeping up with the ever-changing
+                regulatory agencies. The designs focused on long term
+                future-proof solutions and value engineering.
+              </p>
+            </div>
+          </details>
+          <details>
+            <summary>Water System Model Update</summary>
+            <div class="block">
+              <p>
+                I was the project engineer on the Baseline team that developed
+                and ran a WaterCAD model for the entire district distribution
+                system. The system operated by the District consists of 2
+                treatment facilities, 7 potable storage tanks, 7 booster
+                stations, 19 pressure reducing valves, and over 50 miles of
+                distribution pipe with over 800 feet of elevation change.
+                Diurnal demands and extended period simulations were used to
+                assess the model dynamics. Average-day, max-day, peak hour, and
+                average-day plus fire flow scenarios were also considered in
+                troubleshooting areas that did not meet the model constraints.
+                Simulation results were used to improve operational set points
+                and recommend transmission improvements. The scope also included
+                design of an updated system map utilizing GIS data from the
+                district to improve the project’s visualization.
+              </p>
+            </div>
+          </details>
+          <details>
+            <summary>Public Works Washout Facility</summary>
+            <div class="block">
+              <p>
+                I was the design engineer on the Baseline project that developed
+                a public washout and grit dump facility for the City’s
+                year-round street sweeper operation. The project was designed in
+                compliance with CDPHE and the MS4 Permit, which involves
+                implementing pollution prevention measures, and proper disposal
+                of solid and liquid storm sewer and sweeper truck waste. The
+                facility includes a wash bay for the sweeper trucks capable of
+                handling the 5,000 gallons of water and sediment generated per
+                wash cycle. The project scope also included the design of the
+                site, drainage, utilities, and an HVAC system.
+              </p>
+            </div>
+          </details>
+        </article>
+
+        <!-- Row 2 -->
+        <article class="pad-1 bg-lighter radius">
+          <div class="grid-col2-thumb">
+            <header>
+              <h4>Design Engineer</h4>
+              <h5>Cannon Engineering Consultants</h5>
+              <h6>
+                <svg
+                  viewBox="0 0 384 512"
+                  class="icon"
+                  role="img"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <use xlink:href="images/defs.svg#marker"></use>
+                </svg>
+                Los Angeles, CA
+              </h6>
+              <h6>
+                <svg
+                  viewBox="0 0 448 512"
+                  class="icon"
+                  role="img"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <use xlink:href="images/defs.svg#calendar"></use>
+                </svg>
+                <time datetime="2015-10-15">October 2015</time> to
+                <time datetime="2017-06">June 2017</time>
+              </h6>
+            </header>
+            <img
+              src="images/cannoncorp.jpg"
+              alt="CannonCorp"
+              loading="lazy"
+              class="radius thumbnail"
+            />
+          </div>
+          <p>
+            During my time at
+            <a href="https://cannoncorp.us/" target="_blank" rel="noreferrer"
+              >Cannon</a
+            >, I was responsible for designing pump stations, wells, and water
+            mains up to 2 miles in length. I became proficient in drafting civil
+            and mechanical details in AutoCAD Civil 3D. My responsibilities also
+            included client meetings, site visits and preparing cost estimates
+            for projects with construction budgets up to 15 million dollars.
+          </p>
+          <details>
+            <summary>Booster Pump Station & Reservoir</summary>
+            <div class="block">
+              <p>
+                I served as a project engineer on the design team responsible
+                for the supply and storage of potable water to the 400-unit
+                Runkle Canyon Home Development. In order to meet the demands of
+                the Simi Valley tract, a new 500-GPM booster pump station and
+                2.0-MG welded steel reservoir were designed, and the existing
+                Pineview pump station upgraded. The designed pump station
+                included one operating pump and one standby pump as well as a
+                pressure-reducing station with pressure relief valves - all
+                housed in a concrete masonry block building. Premium efficient
+                motors for the pumping system were selected and specified to
+                meet existing energy efficiency standards.
+              </p>
+              <p>
+                Interior and coating specifications were also prepared for the
+                proposed building. The reservoir was sized and designed to
+                provide emergency, fire, and equalizing storage and meet AWWA
+                D-100 standards. The scope of services for both the pump station
+                and reservoir included site grading, a drainage system with
+                catch basins, access road paving, piping, electrical equipment,
+                controls and SCADA system, and project management. Plan review
+                submittals were processed and approvals coordinated with all
+                agencies involved.
+              </p>
+            </div>
+          </details>
+          <details>
+            <summary>Water Main Replacement</summary>
+            <div class="block">
+              <p>
+                I was the lead project engineer for the design of half a mile of
+                new of ductile-iron pipe water main for the City of Santa
+                Monica. I performed extensive utility research, prepared a
+                construction cost estimate, and designed and drafted the
+                proposed water mains and connection details. The project
+                required effective coordination with the surveying,
+                geotechnical, and traffic engineering sub consultants and
+                regular meetings with the City in order to keep within budget
+                and time constraints.
+              </p>
+            </div>
+          </details>
+          <details>
+            <summary>Laguna WWTP</summary>
+            <div class="block">
+              <p>
+                I was a design engineer on a wastewater treatment plant
+                improvement project for the City of Santa Rosa. The 17.5 million
+                gallon average day plant required a full civil site improvement
+                as well as treatment process improvements. A site plan and civil
+                and mechanical details were created using AutoCAD civil 3D. The
+                scope also included an engineer’s cost estimate for the 15
+                million dollar project.
+              </p>
+            </div>
+          </details>
+        </article>
+
+        <!-- Row 3 -->
+        <article class="pad-1 bg-lighter radius">
+          <div class="grid-col2-thumb">
+            <header>
+              <h4>Staff Engineer</h4>
+              <h5>Taylor & Syfan Consulting Engineers</h5>
+              <h6>
+                <svg
+                  viewBox="0 0 384 512"
+                  class="icon"
+                  role="img"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <use xlink:href="images/defs.svg#marker"></use>
+                </svg>
+                San Luis Obispo, CA
+              </h6>
+              <h6>
+                <svg
+                  viewBox="0 0 448 512"
+                  class="icon"
+                  role="img"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <use xlink:href="images/defs.svg#calendar"></use>
+                </svg>
+                <time datetime="2014-05">May 2014</time> to
+                <time datetime="2014-08">August 2014</time>
+              </h6>
+            </header>
+            <img
+              src="images/ts.jpg"
+              alt="T&S"
+              loading="lazy"
+              class="radius thumbnail"
+            />
+          </div>
+          <p>
+            While interning as a structural engineer for
+            <a
+              href="https://www.taylorsyfan.com/"
+              target="_blank"
+              rel="noreferrer"
+              >Taylor & Syfan</a
+            >, I transformed architectural plans into structural plans,
+            performed beam loading analysis, and beam selection. My experience
+            there made me competent in drawing structural details using
+            Vectorworks.
+          </p>
+          <details>
+            <summary>Paseo Chapala Mixed Use Project</summary>
+            <div class="block">
+              <p>
+                I was a design engineer responsible for drafting structural
+                details, transforming architectural plans, performing beam
+                loading analysis, and beam selection for the Mixed Use
+                development. The Paseo Chapala project includes 27 residential
+                units, 10,000 square feet of commercial and retail space, and
+                25,000 square feet of parking in the heart of downtown Santa
+                Barbara. The project utilized Type V construction over a 14"
+                thick elevated concrete deck supported by concrete columns with
+                masonry walls and light gauge steel framing for the upper
+                floors.
+              </p>
+            </div>
+          </details>
+          <details>
+            <summary>High Water Bridge Repair</summary>
+            <div class="block">
+              <p>
+                I was the design engineer and drafter on a 3.2 million dollar
+                project to repair a major river crossing at Camp Roberts. My
+                responsibilities included drafting bridge cross sections and
+                details for the 561 foot span, and calculating the water
+                pressure at the support piles for various storm event scenarios.
+                The project scope also included repair of the existing supports,
+                adding a 14 foot-wide vehicle lane, a 6 foot wide pedestrian
+                lane, a new deck, new guard rails, curbs, and lights.
+              </p>
+            </div>
+          </details>
+        </article>
+      </section>
+
+      <!-- Section 3: long article with button -->
+      <section id="education">
+        <h3 class="theme">Education</h3>
+
+        <!-- Row 1 -->
+        <article class="pad-1 bg-lighter radius">
+          <div class="grid-col2-thumb">
+            <header>
+              <h4>Master of Science, Civil Engineering</h4>
+              <h5>University of California</h5>
+              <h6>
+                <svg
+                  viewBox="0 0 384 512"
+                  class="icon"
+                  role="img"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <use xlink:href="images/defs.svg#marker"></use>
+                </svg>
+                Los Angeles, CA
+              </h6>
+              <h6>
+                <svg
+                  viewBox="0 0 448 512"
+                  class="icon"
+                  role="img"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <use xlink:href="images/defs.svg#calendar"></use>
+                </svg>
+                Class of <time datetime="2018">2018</time>
+              </h6>
+            </header>
+            <img
+              src="images/ucla.jpg"
+              alt="UCLA"
+              loading="lazy"
+              class="radius thumbnail"
+            />
+          </div>
+          <p>
+            Throughout my academic career at UCLA, I furthered my knowledge in
+            linear and dynamic programming, groundwater modeling, geographic
+            information systems, remote sensing, and forecast verification. Some
+            of my notable projects include:
+          </p>
+          <details>
+            <summary>LA Groundwater Basin Model</summary>
+            <div class="block">
+              <p>
+                I developed a model to simulate the West Coast Barrier project
+                and to assess impacts of continued pumping at average rates that
+                meet a particular demand in the West Coast Basin. The model
+                included pumping wells appropriately located in the model domain
+                and a hydraulic barrier simulated using as a series of injection
+                wells near the ocean boundary. The model contained two aquifer
+                systems, Lakewood and Upper San Pedro, which are separated by an
+                aquitard.
+              </p>
+              <figure>
+                <img
+                  src="images/model.jpg"
+                  alt="hydraulic model"
+                  loading="lazy"
+                />
+                <figcaption>
+                  ModPath Model Visualization of Seawater Intrusion
+                </figcaption>
+              </figure>
+            </div>
+          </details>
+          <details>
+            <summary>Hurricane Forecast Verification in LA</summary>
+            <div class="block">
+              <p>
+                Precipitation data used in this study was gathered by satellites
+                in the NASA Tropical Rainfall Measurement Mission (TRMM). This
+                data was organized into Network Common Data Form (NetCDF), which
+                collects array­oriented scientific data and packages it using a
+                program developed at the University Corporation for Atmospheric
+                Research (UCAR).
+              </p>
+              <figure>
+                <img
+                  src="images/forecast.png"
+                  alt="forecast map"
+                  loading="lazy"
+                />
+                <figcaption>Forecast of Hurricane Katrina</figcaption>
+              </figure>
+            </div>
+          </details>
+          <details>
+            <summary>Water Sustainability in Los Angeles</summary>
+            <div class="block">
+              <p>
+                In this project, I explored the possibility of expanding on the
+                existing recycled water infrastructure to service nearby parks,
+                golf courses, memorial sites, and other non-potable uses. The
+                spatial analysis was conducted using ArcGIS to determine the
+                amount recycled water that could be added to Los Angeles pipe
+                system.
+              </p>
+              <figure>
+                <img src="images/maps.jpg" alt="GIS Map" loading="lazy" />
+                <figcaption>Buffer Zone: Potential for RW Expansion</figcaption>
+              </figure>
+            </div>
+          </details>
+        </article>
+
+        <!-- Row 1 -->
+        <article class="pad-1 bg-lighter radius">
+          <div class="grid-col2-thumb">
+            <header>
+              <h4>Bachelor of Science, Civil Engineering</h4>
+              <h5>California Polytechnic State University</h5>
+              <h6>
+                <svg
+                  viewBox="0 0 384 512"
+                  class="icon"
+                  role="img"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <use xlink:href="images/defs.svg#marker"></use>
+                </svg>
+                San Luis Obispo, CA
+              </h6>
+              <h6>
+                <svg
+                  viewBox="0 0 448 512"
+                  class="icon"
+                  role="img"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <use xlink:href="images/defs.svg#calendar"></use>
+                </svg>
+                Class of <time datetime="2015">2015</time>
+              </h6>
+            </header>
+            <img
+              src="images/calpoly.jpg"
+              alt="CalPoly"
+              loading="lazy"
+              class="radius thumbnail"
+            />
+          </div>
+          <p>
+            During my time at Cal Poly, I learned the fundamentals of
+            engineering and applied this knowledge towards hands-on design
+            projects in water resources, geotechnical engineering,
+            transportation, structural and environmental engineering fields. I
+            pushed myself academically and achieved Dean's List standing for
+            Fall and Spring of 2013.
+          </p>
+          <details>
+            <summary>Johnson Avenue Housing Project</summary>
+            <div class="block">
+              <p>
+                The Johnson Avenue Housing Project was the culmination of all my
+                learned skills and gave me the opportunity to take on a project
+                management role.
+              </p>
+              <figure>
+                <img
+                  src="images/Garage.jpg"
+                  alt="parking garage"
+                  loading="lazy"
+                />
+                <figcaption>Site / Garage Plan</figcaption>
+              </figure>
+            </div>
+          </details>
+          <details>
+            <summary>Alpha Range Drainage Report</summary>
+            <div class="block">
+              <p>
+                As a water resources specialist for Camp San Luis Obispo, I
+                performed hydrology analysis for the 5 acre Alpha Range and
+                subsequently developed a feasibility report for implementing
+                best management practices. The study involved determining the
+                appropriate detention basin size, designing a site plan, and
+                performing a rough order of magnitude cost estimate. I advised
+                on design practices to minimize mud build-up, erosion, and
+                sedimentation.
+              </p>
+              <figure>
+                <img
+                  src="images/range.jpg"
+                  alt="shooting range"
+                  loading="lazy"
+                />
+                <figcaption>Alpha Range Grading Plan</figcaption>
+              </figure>
+            </div>
+          </details>
+          <details>
+            <summary>SAMPE Bridge Contest</summary>
+            <div class="block">
+              <p>
+                As the Vice President of the Cal Poly SAMPE Chapter (2012 to
+                2014) I organized fundraising events and lead a competitive
+                composite material beam design team. Our beam placed 4th in the
+                annual international SAMPE competition.
+              </p>
+              <p>
+                The beam geometry was developed using empirical evidence
+                compiled from previous test results and iterative analysis.
+                Abaqus and Mathcad solution helped us optimize the final design.
+                We also considered manufacturing concerns while designing the
+                geometry.
+              </p>
+              <figure>
+                <img src="images/beam.jpg" alt="loaded beam" loading="lazy" />
+                <figcaption>Finite Element Analysis of an I-Beam</figcaption>
+              </figure>
+            </div>
+          </details>
+        </article>
+      </section>
+
+      <!-- Section 4: long article -->
+      <section id="contact">
+        <!-- contact info and time tag -->
+        <div class="pad-1">
+          <h3 class="theme">Contact</h3>
+          <p>
+            Please feel free to reach out to me with any questions or inquiries.
+          </p>
+          <form name="contact" method="POST" data-netlify="true">
+            <label for="email">Email</label>
+            <input
+              id="email"
+              type="email"
+              name="email"
+              placeholder="your@email.com"
+              required
+            />
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Hello world"
+            ></textarea>
+            <input type="submit" class="btn radius bg-lighter border dark" />
+          </form>
+        </div>
+      </section>
+
+      <!-- End of MAIN -->
+    </main>
+
+    <!-- FOOTER -->
+    <footer id="footer" class="bg-light">
+      <small id="attribute"></small>
+      <br />
+      <small
+        >Source code hosted on a <mark>GitHub</mark> & deployed by<mark
+          >Netlify</mark
+        ></small
+      >
+    </footer>
     <!-- End Body -->
-</body>
-
+  </body>
 </html>
