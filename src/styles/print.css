@@ -1,0 +1,22 @@
+@media print {
+    body, header, main, footer {
+        background: transparent;
+    }
+ 
+    nav, footer, img {
+        display: none;
+    }
+ 
+    section { 
+        page-break-before: always;
+    }
+
+    header, pre, blockquote {
+        page-break-inside: avoid;
+    }
+ 
+    p {
+        orphans: 3;
+        widows: 3;
+    }
+}
