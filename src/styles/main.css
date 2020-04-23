@@ -5,6 +5,7 @@
 @import 'type.css';
 @import 'forms.css';
 @import 'mobile.css';
+@import 'print.css';
 
 /* define vars for root elements*/
 :root {

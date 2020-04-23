@@ -71,7 +71,7 @@ p {
 }
 
 a {
-    color: var(--clr-dark);
+    color: currentColor;
 }
 
 strong {
@@ -98,15 +98,6 @@ mark {
     box-decoration-break: clone;
 }
 
-blockquote {
-    margin-block-end: 1rem;
-    padding: 0 1rem;
-    border-inline-start: .25rem solid var(--clr-theme);
-    background: transparent;
-    font-weight: var(--fw-l);
-    line-height: var(--lh-m);
-}
-
 /* lists and details */
 ol,
 ul {
@@ -120,10 +111,6 @@ li {
     font-weight: var(--fw-r);
     line-height: var(--lh-l);
     list-style-position: inside;
-}
-
-details {
-    padding: 0;
 }
 
 details p {
