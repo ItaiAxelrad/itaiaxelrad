@@ -132,6 +132,13 @@
     border: var(--border);
 }
 
+hr {
+    border: none;
+    background: var(--clr-opaque);
+    height: 1px;
+    margin: 1rem auto;
+}
+
 /* padding & margin */
 .pad-1 {
     padding: 1rem;

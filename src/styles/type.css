@@ -6,7 +6,7 @@ h1 {
 
 h2,
 h3 {
-    margin-block-end: 1rem;
+    margin-block-end: .5rem;
     line-height: var(--lh-m);
 }
 
