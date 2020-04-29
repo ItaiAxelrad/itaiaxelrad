@@ -1,58 +1,56 @@
 /* Responsive Layout - Tablet */
 @media screen and (max-width: 750px) {
+  h3 {
+    padding-inline-start: 1rem;
+  }
 
-    h3 {
-        padding-inline-start: 1rem;
-    }
+  article {
+    margin: 0.5rem;
+  }
 
-    article {
-        margin: .5rem;
-    }
+  .intro {
+    top: 4rem;
+    left: 1rem;
+  }
 
-    .intro {
-        top: 4rem;
-        left: 1rem;
-    }
+  .plant {
+    right: 0%;
+    top: 80%;
+  }
 
-    .plant {
-        right: 0%;
-        top: 80%;
-    }
+  nav {
+    display: block;
+    padding: 1rem;
+  }
 
-    nav {
-        display: block;
-        padding: 1rem;
-    }
+  .nav_link {
+    margin-block-start: 2rem;
+  }
 
-    .nav_link {
-        margin-block-start: 2rem;
-    }
+  .nav_link a {
+    display: block;
+    text-align: center;
+    font-size: 1rem;
+    padding: 1rem 0;
+  }
 
-    .nav_link a {
-        display: block;
-        text-align: center;
-        font-size: 1rem;
-        padding: 1rem 0;
-    }
+  .btn_menu {
+    display: block;
+    float: right;
+    padding: 0 1rem;
+  }
 
-    .btn_menu {
-        display: block;
-        float: right;
-        padding: 0 1rem;
-    }
+  .closed {
+    visibility: hidden;
+    display: none;
+  }
 
-    .closed {
-        visibility: hidden;
-        display: none;
-    }
+  .open {
+    visibility: visible;
+    display: block;
+  }
 
-    .open {
-        visibility: visible;
-        display: block;
-    }
-
-    .schemeBtn {
-        display: none;
-    }
-
+  .schemeBtn {
+    display: none;
+  }
 }
