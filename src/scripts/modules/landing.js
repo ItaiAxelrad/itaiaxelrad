@@ -1,5 +1,4 @@
-// create landing element observer
-const items = document.querySelectorAll("article"); // declare a target(s) to be observed 
+// create landing element observer 
 const landingObserver = new IntersectionObserver((entries, landingObserver) => { // create observer
   entries.forEach(entry => {
     if (entry.isIntersecting) {
@@ -9,6 +8,7 @@ const landingObserver = new IntersectionObserver((entries, landingObserver) => {
 });
 
 // create forEach loop to observe all array items
+const items = document.querySelectorAll("article"); // declare a target(s) to be observed
 items.forEach(item => {
   landingObserver.observe(item);
 });

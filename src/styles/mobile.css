@@ -18,6 +18,10 @@
     top: 80%;
   }
 
+  main a[href] {
+    text-decoration: underline var(--theme);
+  }
+
   nav {
     display: block;
     padding: 1rem;

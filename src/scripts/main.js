@@ -9,7 +9,7 @@ if ('serviceWorker' in navigator) {
 };
 
 // import JS modules
-import './modules/attr.js';
+import './modules/attr.js'
 import {
   menuBtn,
   menuSvg,
@@ -26,11 +26,7 @@ import {
   hero,
   heroObserver
 } from './modules/btn.js'
-import {
-  options,
-  sections,
-  linkObserver
-} from './modules/links.js'
+import './modules/links.js'
 import {
   body,
   toggleBtn

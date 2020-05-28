@@ -1,36 +1,36 @@
 // observer options
-let options = {
+const options = {
   root: null,
   rootMargin: '0px',
-  threshold: 0.25,
+  threshold: 0.50,
 }
-// active link observer
-const sections = document.querySelectorAll("section");
-const linkObserver = new IntersectionObserver(function (entries, linkObserver) {
+
+// create observer
+const observer = new IntersectionObserver( entries => {
   entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      let sectionID = "#" + entry.target.id;
-      // navigation link array
-      const links = document.querySelectorAll("nav a");
-      links.forEach(link => {
-        if (link.hash === sectionID) {
-          link.classList.add("active");
+    if(entry.isIntersecting) {
+      // add an observed class to the section
+      entry.target.classList.add('observed'); 
+      // check the section's id
+      document.querySelectorAll('nav a').forEach( link => {
+        if(link.hash === `#${entry.target.id}`) {
+          link.classList.add('active');
         } else {
-          link.classList.remove("active");
+          link.classList.remove('active');
         }
       });
     };
   });
 }, options);
 
-// call link observer
-sections.forEach(section => {
-  linkObserver.observe(section);
+// Observe all sections that have an `id` applied
+const sections = document.querySelectorAll('section[id]').forEach(section => {
+  observer.observe(section);
 });
 
 //export module
 export {
   options,
   sections,
-  linkObserver
+  observer
 }
