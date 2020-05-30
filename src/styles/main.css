@@ -10,8 +10,7 @@
 /* define vars for root elements*/
 :root {
   /* font-families */
-  --ff-heading: 'Open Sans', sans-serif;
-  --ff-body: 'Open Sans', sans-serif;
+  --ff: 'Open Sans', sans-serif;
   /* font-size */
   --fs-body: 16px;
   --fs-h6: 17px;
@@ -46,7 +45,7 @@
   --clr-dark: hsl(0, 0%, 15%);
   --clr-darkish: hsl(0, 0%, 20%);
   --clr-gray: hsl(0, 0%, 35%);
-  --clr-light: hsl(0, 0%, 96%);
+  --clr-light: hsl(0, 0%, 97%);
   --clr-lighter: hsl(0, 0%, 99%);
   --clr-opaque: hsla(0, 0%, var(--light), 0.1);
   /* shadows & borders */
@@ -61,37 +60,12 @@
   background-color: var(--clr-dark);
 }
 
-.bg-gray {
-  background-color: var(--clr-gray);
-}
-
 .bg-light {
   background-color: var(--clr-light);
 }
 
 .bg-lighter {
   background-color: var(--clr-lighter);
-}
-
-.bg-opaque {
-  background-color: var(--clr-opaque);
-}
-
-/* theme background colors */
-.bg-theme {
-  background-color: var(--clr-theme);
-}
-
-.bg-theme10 {
-  background-color: var(--clr-theme10);
-}
-
-.bg-theme20 {
-  background-color: var(--clr-theme20);
-}
-
-.bg-theme30 {
-  background-color: var(--clr-theme30);
 }
 
 /* Text Color Classes */
@@ -132,24 +106,9 @@
   border: var(--border);
 }
 
-hr {
-  border: none;
-  background: var(--clr-opaque);
-  height: 1px;
-  margin: 1rem auto;
-}
-
 /* padding & margin */
 .pad-1 {
   padding: 1rem;
-}
-
-.margin-1 {
-  margin: 1rem;
-}
-
-.mb-1 {
-  margin-block-end: 1rem;
 }
 
 /* show / no shows */
@@ -174,16 +133,14 @@ hr {
 .logo {
   fill: var(--clr-theme);
   display: inline-block;
-  margin-inline-start: 1rem;
-  transform: translateY(2px);
+  vertical-align: bottom;
   height: 1.25rem;
 }
 
 .icon {
   fill: var(--clr-theme);
   display: inline-block;
-  transform: translateY(1px);
-  margin-inline-end: 0.25rem;
+  vertical-align: baseline;
   width: 1rem;
   height: 1rem;
 }
@@ -195,6 +152,13 @@ hr {
 
 [rel='noreferrer']:hover {
   color: var(--clr-theme);
+}
+
+a[href^="http://"]::after,
+a[href^="https://"]::after,
+a[rel='noreferrer']::after {
+  content: '↗';
+  font-size: small;
 }
 
 .nav-home {

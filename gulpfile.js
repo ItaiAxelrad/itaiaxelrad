@@ -5,6 +5,7 @@ const dist = 'dist';
 const gulp = require('gulp');
 const htmlmin = require('gulp-htmlmin');
 const imagemin = require('gulp-imagemin');
+const responsive = require('gulp-responsive')
 const concat = require('gulp-concat');
 const postcss = require('gulp-postcss');
 const autoprefixer = require('autoprefixer');
@@ -24,12 +25,12 @@ gulp.task('htmlMin', async () => {
 });
 
 // Images: copy and minify all images (no SVG)
-gulp.task('imageMin', async () => {
-  gulp
-    .src([`${src}/images/*.jpg`,`${src}/images/*.jpeg`, `${src}/images/*.png`])
-    .pipe(imagemin())
-    .pipe(gulp.dest(`${dist}/images`));
-});
+// gulp.task('imageMin', async () => {
+//   gulp
+//     .src(`${src}/images/*.{jpg,jpeg,png}`)
+//     .pipe(imagemin())
+//     .pipe(gulp.dest(`${dist}/images`));
+// });
 
 // SVG: copy all files
 gulp.task('copySVG', async () => {
@@ -42,6 +43,47 @@ gulp.task('copyIcons', async () => {
     .src(`${src}/images/icons/*.png`)
     .pipe(gulp.dest(`${dist}/images/icons/`));
 });
+
+// responsive images
+
+gulp.task('imageMin', async () => {
+  return gulp
+    .src(`${src}/images/*.{jpg,jpeg,png}`)
+    .pipe(
+      responsive(
+        {
+           '*.jpg': {
+             // Resize all JPG images to 200 pixels wide
+             width: '100%'
+           },
+           '*.png': {
+             // Resize all PNG images to 50% of original pixels wide
+             width: '100%'
+          },
+          // Resize all images to 100 pixels wide and add suffix -thumbnail
+          '*': {
+            width: 125,
+            rename: { suffix: '-thumbnail' }
+          }
+        },
+        {
+          // Global configuration for all images
+          // The output quality for JPEG, WebP and TIFF output formats
+          quality: 80,
+          // Use progressive (interlace) scan for JPEG and PNG output
+          progressive: true,
+          // Zlib compression level of PNG output format
+          compressionLevel: 4,
+          // Strip all metadata
+          withMetadata: false
+        }
+      )
+    )
+    .pipe(gulp.dest(`${dist}/images`))
+})
+
+
+
 
 // CSS: concat, autoprefix and nano
 gulp.task('cssMin', async () => {

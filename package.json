@@ -29,7 +29,7 @@
     "gulp-htmlmin": "^5.0.1",
     "gulp-uglify-es": "^1.0.4",
     "rellax": "^1.12.1",
-    "sharp": "^0.25.1"
+    "sharp": "^0.25.3"
   },
   "browserslist": [
     "> 1%",
