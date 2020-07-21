@@ -83,8 +83,6 @@ gulp.task('imageMin', async () => {
 })
 
 
-
-
 // CSS: concat, autoprefix and nano
 gulp.task('cssMin', async () => {
   var plugins = [autoprefixer(), cssnano()];

@@ -9,13 +9,11 @@ const toggle = () => {
     mobileNav.setAttribute('aria-expanded', "true");
     // change menu icon
     menuSvg.setAttribute("xlink:href", "images/defs.svg#times");
-    menuSvg.setAttribute("viewBox", "0 0 352 512");
   } else if (mobileNav.getAttribute("aria-expanded") === "true") {
     mobileNav.classList.replace('open', 'closed')
     mobileNav.setAttribute('aria-expanded', "false");
     // change menu icon
     menuSvg.setAttribute("xlink:href", "images/defs.svg#bars");
-    menuSvg.setAttribute("viewBox", "0 0 448 512");
   }
 }
 // open full curtain navigation menu

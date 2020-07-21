@@ -47,12 +47,16 @@
   --clr-gray: hsl(0, 0%, 35%);
   --clr-light: hsl(0, 0%, 97%);
   --clr-lighter: hsl(0, 0%, 99%);
-  --clr-opaque: hsla(0, 0%, var(--light), 0.1);
+  --clr-opaque: hsla(0, 0%, var(--gray), 0.1);
   /* shadows & borders */
   --radius: 3px;
   --border: 1px solid var(--clr-theme);
   --shadow: 0px 0px 20px 4px var(--clr-opaque);
   --width: 680px;
+}
+
+body {
+  transition: 0.4s ease-in-out;
 }
 
 /* BW background colors */
@@ -126,7 +130,6 @@
   padding: 0.25rem 0.75rem;
   border-inline-start: 0.25rem solid var(--clr-theme);
   color: currentColor;
-  background: var(--clr-theme37);
 }
 
 /* svg logo / tint icon */
@@ -228,9 +231,9 @@ a[rel='noreferrer']::after {
     --clr-dark: hsl(0, 3%, 99%);
     --clr-darkish: hsl(0, 3%, 85%);
     /* dark */
-    --clr-light: hsl(0, 3%, 20%);
+    --clr-light: hsl(0, 3%, 15%);
     /* gray */
-    --clr-lighter: hsl(0, 3%, 15%);
+    --clr-lighter: hsl(0, 3%, 20%);
     /* lighter */
     --clr-theme37: hsla(0, 3%, 15%);
   }
@@ -241,9 +244,9 @@ a[rel='noreferrer']::after {
   --clr-dark: hsl(0, 3%, 99%);
   --clr-darkish: hsl(0, 3%, 85%);
   /* dark */
-  --clr-light: hsl(0, 3%, 20%);
+  --clr-light: hsl(0, 3%, 15%);
   /* gray */
-  --clr-lighter: hsl(0, 3%, 15%);
+  --clr-lighter: hsl(0, 3%, 20%);
   /* lighter */
   --clr-theme37: hsla(0, 3%, 15%);
 }
@@ -252,8 +255,8 @@ a[rel='noreferrer']::after {
   /* brand & theme colors - #66aacc */
   --clr-theme37: hsla(var(--hue), var(--sat), calc(var(--light) + 37%), 90%);
   /* Grayscale font and background */
-  --clr-dark: hsl(0, 0%, 15%);
-  --clr-darkish: hsl(0, 0%, 20%);
-  --clr-light: hsl(0, 0%, 98%);
-  --clr-lighter: hsl(0, 0%, 99%);
+  --clr-dark: hsl(0, 0%, 13%);
+  --clr-darkish: hsl(0, 0%, 27%);
+  --clr-light: hsl(0, 0%, 94%);
+  --clr-lighter: hsl(0, 0%, 98%);
 }

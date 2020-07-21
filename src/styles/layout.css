@@ -111,7 +111,7 @@ nav {
   justify-items: end;
   padding: 1rem 3rem;
   width: 100%;
-  border-bottom: 1px solid var(--clr-opaque);
+  border-bottom: 1px solid var(--clr-theme30);
 }
 
 .btn_menu {
@@ -120,6 +120,8 @@ nav {
 
 .btn_top {
   position: fixed;
+  text-align: center;
+  line-height: 1;
   bottom: 1rem;
   right: 1rem;
   z-index: 900;
