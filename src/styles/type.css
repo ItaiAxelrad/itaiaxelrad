@@ -77,7 +77,7 @@ summary {
 }
 
 figcaption {
-  color: var(--clr-gray);
+  color: var(--clr-darkish);
   text-align: center;
   font-size: small;
 }

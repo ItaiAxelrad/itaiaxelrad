@@ -23,13 +23,13 @@
     "url": "git+https://github.com/ItaiAxelrad/itaiaxelrad.git"
   },
   "dependencies": {
-    "autoprefixer": "^9.7.4",
+    "autoprefixer": "^9.8.6",
     "cssnano": "^4.1.10",
     "gulp-concat": "^2.6.1",
     "gulp-htmlmin": "^5.0.1",
     "gulp-uglify-es": "^1.0.4",
     "rellax": "^1.12.1",
-    "sharp": "^0.25.3"
+    "sharp": "^0.25.4"
   },
   "browserslist": [
     "> 1%",
