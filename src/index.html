@@ -34,8 +34,12 @@
     <!-- Styles & Type  -->
     <link href="styles/main.css" rel="stylesheet" type="text/css" />
     <link href="https://fonts.gstatic.com/" rel="preconnect" crossorigin />
-    <link
+    <!-- <link
       href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap"
+      rel="stylesheet"
+    /> -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
     <!-- Links & PWA info  -->
@@ -60,7 +64,7 @@
   <!-- begin body -->
   <body>
     <!-- Fulls screen Navbar links -->
-    <nav id="nav" class="bg-light fixed">
+    <nav id="nav" class="bg-lighter fixed">
       <!-- logo, home and menu nav link -->
       <div id="mobile-nav" class="nav-mobile nav-home">
         <svg
@@ -71,9 +75,7 @@
         >
           <use xlink:href="images/defs.svg#logo"></use>
         </svg>
-        <a href="#" id="link-logo" class="nav_link display-none"
-          >Itai Axelrad</a
-        >
+        <a href="#" id="link-logo" class="nav_link">itai axelrad</a>
         <!--hamburger menu button -->
         <button id="menuBtn" class="btn_menu" aria-label="menu">
           <svg viewBox="0 0 24 24" id="menuSvg" class="icon" role="img">
@@ -108,7 +110,7 @@
     <!-- Hero image title and subtitle -->
     <header id="header" class="full-page bg-light">
       <div class="intro pad-1 comeIn">
-        <p>Hello, I'm</p>
+        <span>Hello, I'm</span>
         <h1>itai axelrad</h1>
         <p>
           In-house consultant with a focus on water and wastewater
@@ -119,10 +121,7 @@
           in the surrounding mountains.
         </p>
         <br />
-        <a
-          href="#experience"
-          class="btn radius bg-light border"
-          aria-label="scroll"
+        <a href="#experience" class="btn radius bg-lighter" aria-label="scroll"
           >Dive in!</a
         >
         <img
@@ -152,7 +151,8 @@
           focusable="false"
         >
           <use xlink:href="images/defs.svg#chevron-up"></use>
-        </svg><br>
+        </svg>
+        <br />
         <small>Top</small>
       </a>
 
@@ -165,7 +165,7 @@
             <header>
               <h4>Project Engineer</h4>
               <h5>Baseline Engineering Consultants</h5>
-              <h6>
+              <h5>
                 <svg
                   viewBox="0 0 24 24"
                   class="icon"
@@ -176,8 +176,8 @@
                   <use xlink:href="images/defs.svg#marker"></use>
                 </svg>
                 Denver, CO
-              </h6>
-              <h6>
+              </h5>
+              <h5>
                 <svg
                   viewBox="0 0 24 24"
                   class="icon"
@@ -188,7 +188,7 @@
                   <use xlink:href="images/defs.svg#calendar"></use>
                 </svg>
                 <time datetime="2019-02-25">February 2019</time> to Present
-              </h6>
+              </h5>
             </header>
             <img
               src="images/baseline.jpg"
@@ -272,7 +272,7 @@
             <header>
               <h4>Design Engineer</h4>
               <h5>Cannon Engineering Consultants</h5>
-              <h6>
+              <h5>
                 <svg
                   viewBox="0 0 24 24"
                   class="icon"
@@ -283,8 +283,8 @@
                   <use xlink:href="images/defs.svg#marker"></use>
                 </svg>
                 Los Angeles, CA
-              </h6>
-              <h6>
+              </h5>
+              <h5>
                 <svg
                   viewBox="0 0 24 24"
                   class="icon"
@@ -296,7 +296,7 @@
                 </svg>
                 <time datetime="2015-10-15">October 2015</time> to
                 <time datetime="2017-06">June 2017</time>
-              </h6>
+              </h5>
             </header>
             <img
               srcset="
@@ -385,7 +385,7 @@
             <header>
               <h4>Staff Engineer</h4>
               <h5>Taylor & Syfan Consulting Engineers</h5>
-              <h6>
+              <h5>
                 <svg
                   viewBox="0 0 24 24"
                   class="icon"
@@ -396,8 +396,8 @@
                   <use xlink:href="images/defs.svg#marker"></use>
                 </svg>
                 San Luis Obispo, CA
-              </h6>
-              <h6>
+              </h5>
+              <h5>
                 <svg
                   viewBox="0 0 24 24"
                   class="icon"
@@ -409,7 +409,7 @@
                 </svg>
                 <time datetime="2014-05">May 2014</time> to
                 <time datetime="2014-08">August 2014</time>
-              </h6>
+              </h5>
             </header>
             <img
               src="images/ts.jpg"
@@ -473,7 +473,7 @@
             <header>
               <h4>Master of Science, Civil Engineering</h4>
               <h5>University of California</h5>
-              <h6>
+              <h5>
                 <svg
                   viewBox="0 0 24 24"
                   class="icon"
@@ -484,8 +484,8 @@
                   <use xlink:href="images/defs.svg#marker"></use>
                 </svg>
                 Los Angeles, CA
-              </h6>
-              <h6>
+              </h5>
+              <h5>
                 <svg
                   viewBox="0 0 24 24"
                   class="icon"
@@ -496,7 +496,7 @@
                   <use xlink:href="images/defs.svg#calendar"></use>
                 </svg>
                 Class of <time datetime="2018">2018</time>
-              </h6>
+              </h5>
             </header>
             <img
               src="images/ucla.jpg"
@@ -583,7 +583,7 @@
             <header>
               <h4>Bachelor of Science, Civil Engineering</h4>
               <h5>California Polytechnic State University</h5>
-              <h6>
+              <h5>
                 <svg
                   viewBox="0 0 24 24"
                   class="icon"
@@ -594,8 +594,8 @@
                   <use xlink:href="images/defs.svg#marker"></use>
                 </svg>
                 San Luis Obispo, CA
-              </h6>
-              <h6>
+              </h5>
+              <h5>
                 <svg
                   viewBox="0 0 24 24"
                   class="icon"
@@ -606,7 +606,7 @@
                   <use xlink:href="images/defs.svg#calendar"></use>
                 </svg>
                 Class of <time datetime="2015">2015</time>
-              </h6>
+              </h5>
             </header>
             <img
               src="images/calpoly.jpg"
@@ -726,7 +726,7 @@
               type="submit"
               name="submit"
               aria-label="undefined"
-              class="btn radius bg-lighter border dark"
+              class="btn radius border"
             />
           </form>
         </div>

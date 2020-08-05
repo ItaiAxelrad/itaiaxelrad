@@ -11,15 +11,15 @@ const heroObserver = new IntersectionObserver((entries, heroObserver) => { // cr
       topBtn.style.visibility = "visible";
       topBtn.classList.add("comeIn");
       // do something else
-      logo.style.display = "initial";
-      logo.classList.add("comeIn");
+      // logo.style.display = "initial";
+      // logo.classList.add("comeIn");
     } else {
       // hide button
       topBtn.style.visibility = "hidden";
       topBtn.classList.remove("comeIn");
       // do something else
-      logo.style.display = "none";
-      logo.classList.remove("comeIn");
+      // logo.style.display = "none";
+      // logo.classList.remove("comeIn");
     };
   })
 });

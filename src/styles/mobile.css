@@ -26,7 +26,13 @@
     display: block;
     padding: 1rem;
   }
-
+  svg#menuSvg {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  a#topBtn {
+    display: none;
+  }
   .nav_link {
     margin-block-start: 2rem;
   }

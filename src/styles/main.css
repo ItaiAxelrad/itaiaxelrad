@@ -10,7 +10,7 @@
 /* define vars for root elements*/
 :root {
   /* font-families */
-  --ff: 'Open Sans', sans-serif;
+  --ff: 'Nunito', Helvetica, Arial, sans-serif;
   /* font-size */
   --fs-body: 16px;
   --fs-h6: 17px;
@@ -36,17 +36,17 @@
   --sat: 50%;
   --light: 60%;
   /* brand & theme colors - #66aacc */
-  --clr-theme: hsl(var(--hue), var(--sat), var(--light));
+  --clr-theme: hsl(203, 51%, 60%);
   --clr-theme10: hsl(var(--hue), var(--sat), calc(var(--light) + 10%));
   --clr-theme20: hsl(var(--hue), var(--sat), calc(var(--light) + 20%));
   --clr-theme30: hsl(var(--hue), var(--sat), calc(var(--light) + 30%));
   --clr-theme37: hsla(var(--hue), var(--sat), calc(var(--light) + 37%), 90%);
   /* Grayscale font and background */
-  --clr-dark: hsl(0, 0%, 15%);
-  --clr-darkish: hsl(0, 0%, 20%);
-  --clr-gray: hsl(0, 0%, 35%);
-  --clr-light: hsl(0, 0%, 97%);
-  --clr-lighter: hsl(0, 0%, 99%);
+  --clr-dark: hsl(203, 64%, 23%);
+  --clr-darkish: hsl(203, 64%, 28%);
+  --clr-gray: hsl(203, 51%, 78%);
+  --clr-light: hsl(203, 51%, 89%);
+  --clr-lighter: hsl(203, 67%, 95%);
   --clr-opaque: hsla(0, 0%, var(--gray), 0.1);
   /* shadows & borders */
   --radius: 3px;
@@ -57,6 +57,11 @@
 
 body {
   transition: 0.4s ease-in-out;
+  font-size: 17px;
+}
+
+img {
+  filter: brightness(1);
 }
 
 /* BW background colors */
@@ -138,6 +143,7 @@ body {
   display: inline-block;
   vertical-align: bottom;
   height: 1.25rem;
+  margin-inline-end: 0.5rem;
 }
 
 .icon {
@@ -146,6 +152,7 @@ body {
   vertical-align: baseline;
   width: 1rem;
   height: 1rem;
+  transform: translateY(1px);
 }
 
 /* external link style */
@@ -166,9 +173,11 @@ a[rel='noreferrer']::after {
 
 .nav-home {
   justify-self: start;
+  font-size: 1.25rem;
+  line-height: 0.75;
   font-weight: var(--fw-b);
   letter-spacing: var(--ls-m);
-  text-transform: uppercase;
+  vertical-align: bottom;
 }
 
 .nav_link {
@@ -185,12 +194,28 @@ a[rel='noreferrer']::after {
   cursor: pointer;
 }
 
+h3 {
+  color: var(--clr-darkish);
+}
+
+h5 {
+  line-height: 1.2;
+}
+
+h5:first-of-type::before {
+  content: '@';
+  color: var(--clr-theme);
+  padding-inline-end: 0.25rem;
+}
+
 /* Buttons and Link/Btn Styles */
 .btn {
   padding: 0.5rem 1rem;
-  cursor: pointer;
 }
 
+.btn:hover {
+  cursor: pointer;
+}
 /* Animation Classes */
 .comeIn {
   animation: comeIn 0.7s ease forwards;
@@ -228,35 +253,33 @@ a[rel='noreferrer']::after {
 /* day & night mode */
 @media (prefers-color-scheme: dark) {
   :root {
-    --clr-dark: hsl(0, 3%, 99%);
-    --clr-darkish: hsl(0, 3%, 85%);
-    /* dark */
-    --clr-light: hsl(0, 3%, 15%);
-    /* gray */
-    --clr-lighter: hsl(0, 3%, 20%);
-    /* lighter */
-    --clr-theme37: hsla(0, 3%, 15%);
+    --clr-dark: #ebedef;
+    --clr-darkish: #d6dbdf;
+    --clr-gray: #aeb6bf;
+    --clr-light: #1b2631;
+    --clr-lighter: #212f3c;
+    --clr-opaque: hsla(0, 0%, var(--gray), 0.1);
+  }
+  img {
+    filter: brightness(0.9);
   }
 }
 
 /* day & night mode */
 .scheme-dark {
-  --clr-dark: hsl(0, 3%, 99%);
-  --clr-darkish: hsl(0, 3%, 85%);
-  /* dark */
-  --clr-light: hsl(0, 3%, 15%);
-  /* gray */
-  --clr-lighter: hsl(0, 3%, 20%);
-  /* lighter */
-  --clr-theme37: hsla(0, 3%, 15%);
+  --clr-dark: #ebedef;
+  --clr-darkish: #d6dbdf;
+  --clr-gray: #aeb6bf;
+  --clr-light: #1b2631;
+  --clr-lighter: #212f3c;
+  --clr-opaque: hsla(0, 0%, var(--gray), 0.1);
 }
 
 .scheme-light {
-  /* brand & theme colors - #66aacc */
-  --clr-theme37: hsla(var(--hue), var(--sat), calc(var(--light) + 37%), 90%);
-  /* Grayscale font and background */
-  --clr-dark: hsl(0, 0%, 13%);
-  --clr-darkish: hsl(0, 0%, 27%);
-  --clr-light: hsl(0, 0%, 94%);
-  --clr-lighter: hsl(0, 0%, 98%);
+  --clr-dark: hsl(203, 64%, 23%);
+  --clr-darkish: hsl(203, 64%, 28%);
+  --clr-gray: hsl(203, 51%, 78%);
+  --clr-light: hsl(203, 51%, 89%);
+  --clr-lighter: hsl(203, 67%, 95%);
+  --clr-opaque: hsla(0, 0%, var(--gray), 0.1);
 }
