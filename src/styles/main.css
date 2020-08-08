@@ -41,7 +41,7 @@
   --clr-dark: hsl(var(--hue), var(--sat), 23%);
   --clr-darkish: hsl(var(--hue), var(--sat), 28%);
   --clr-gray: hsl(var(--hue), var(--sat), 78%);
-  --clr-light: hsl(var(--hue), var(--sat), 89%);
+  --clr-light: hsl(var(--hue), var(--sat), 90%);
   --clr-lighter: hsl(var(--hue), var(--sat), 95%);
   --clr-opaque: hsla(0, 0%, var(--gray), 0.1);
   /* shadows & borders */
