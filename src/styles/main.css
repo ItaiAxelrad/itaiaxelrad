@@ -10,7 +10,7 @@
 /* define vars for root elements*/
 :root {
   /* font-families */
-  --ff: 'Nunito', Helvetica, Arial, sans-serif;
+  --ff: 'Nunito', Roboto, Helvetica, sans-serif;
   /* font-size */
   --fs-body: 17px;
   --fs-h6: 15px;
@@ -185,13 +185,27 @@ img {
   transform: translateY(2px);
   margin-inline-end: 0.15rem;
 }
+/* Plant svg layer colors */
+.layer-0 {  font-weight: var(--fw-l);
+  fill: var(--clr-lighter);
+}
 
+.layer-1 {
+  fill: var(--clr-light);
+}
+
+.layer-2 {
+  fill: var(--clr-theme);
+}
 /* external link style */
-[rel='noreferrer'] {
+a {
+  text-decoration: none;
+}
+a[rel='noreferrer'] {
   text-decoration: solid underline var(--clr-theme);
 }
 
-[rel='noreferrer']:hover {
+a[rel='noreferrer']:hover {
   color: var(--clr-theme);
 }
 
@@ -234,6 +248,11 @@ a[rel='noreferrer']::after {
 .btn:hover {
   cursor: pointer;
 }
+
+*:focus {
+  outline: none;
+  color: var(--clr-theme);
+}
 /* Animation Classes */
 .comeIn {
   animation: comeIn 0.7s ease forwards;
@@ -266,28 +285,4 @@ a[rel='noreferrer']::after {
   .comeIn:nth-child(even) {
     animation: none;
   }
-}
-
-.layer-0 {
-  fill: var(--clr-lighter);
-}
-
-.layer-1 {
-  fill: var(--clr-light);
-}
-
-.layer-2 {
-  fill: var(--clr-theme);
-}
-
-.layer-3 {
-  fill: hsl(calc(var(--hue) - 180), var(--sat), 80%);
-}
-
-.layer-4 {
-  fill: hsl(calc(var(--hue) - 180), var(--sat), 70%);
-}
-
-.layer-5 {
-  fill: var(--clr-comp);
 }

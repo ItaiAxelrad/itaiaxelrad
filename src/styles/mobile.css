@@ -1,11 +1,16 @@
 /* Responsive Layout - Tablet */
 @media screen and (max-width: 750px) {
-  h3 {
-    padding-inline-start: 1rem;
+  body,
+  section {
+    display: block;
+  }
+
+  h2 {
+    padding-block-end: 1rem;
   }
 
   article {
-    margin: 0.5rem;
+    margin: 1rem 0.5rem;
   }
 
   .intro {
@@ -14,8 +19,13 @@
   }
 
   .plant {
+    width: 90vw;
     right: 0%;
     top: 80%;
+  }
+
+  #header {
+    padding-block-end: 2rem;
   }
 
   main a[href] {
