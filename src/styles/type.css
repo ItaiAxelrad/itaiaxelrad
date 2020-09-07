@@ -31,7 +31,7 @@ h4 {
   font-weight: var(--fw-l);
   line-height: 1.05;
   margin-block-end: 0.25rem;
-  text-transform: lowercase;
+  /* text-transform: lowercase; */
 }
 
 h4:first-of-type::before {
