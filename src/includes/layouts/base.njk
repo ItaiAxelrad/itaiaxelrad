@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!-- HTML5 -->
+<html lang="en-US" dir="ltr">
+  <!-- Head element -->
+  {% include "components/head.njk" %}
+  <!-- begin body -->
+  <body class="bg-light">
+
+    {% include "components/nav.njk" %}
+
+  <!-- Main page body -->
+  <main id="main" class="bg-light">
+  <!-- Scroll to top link / button -->
+      <a
+        href="#"
+        id="topBtn"
+        class="btn btn_top radius"
+        aria-label="scroll to top"
+        tabindex="-1"
+      >
+        <svg
+          viewBox="0 0 24 24"
+          class="icon"
+          role="img"
+          aria-hidden="true"
+          focusable="false"
+        >
+          <use xlink:href="images/defs.svg#chevron-up"></use>
+        </svg>
+        <br />
+        <small>Top</small>
+      </a>
+
+    <!-- page content -->
+
+      {{ content | safe }}
+
+  <!-- End of MAIN -->
+  </main>
+  <!-- FOOTER -->
+  <footer id="footer" class="bg-light">
+    <small id="attribute"></small>
+  </footer>
+
+  <!-- capture the JS content as a Nunjucks variable -->
+  {% set js %}
+    {% include "../scripts/main.js" %}
+  {% endset %}
+  <!-- feed it through our jsmin filter to minify -->
+  <script>
+    {{ js | jsmin | safe }}
+  </script>
+
+  <!-- End Body -->
+  </body>
+</html>

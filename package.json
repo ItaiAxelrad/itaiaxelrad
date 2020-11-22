@@ -2,46 +2,36 @@
   "name": "itaiaxelrad",
   "version": "1.0.0",
   "description": "personal website",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "eleventy",
+    "watch": "eleventy --watch",
+    "serve": "eleventy --serve",
+    "debug": "DEBUG=Eleventy* eleventy",
+    "update": "npm i -g npm-check-updates && ncu -u && npm install"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "gulp": "^4.0.2",
-    "gulp-concat": "^2.6.1",
-    "gulp-imagemin": "^7.1.0",
-    "gulp-postcss": "^8.0.0",
-    "gulp-responsive": "^3.0.1",
-    "gulp-sass": "^4.1.0",
-    "gulp-uglify": "^3.0.2",
-    "imagemin-mozjpeg": "^9.0.0"
+    "@11ty/eleventy": "^0.11.1",
+    "@11ty/eleventy-plugin-rss": "^1.0.9",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.4",
+    "autoprefixer": "^10.0.2",
+    "cssnano": "^4.1.10",
+    "luxon": "^1.25.0",
+    "markdown-it": "^12.0.2",
+    "markdown-it-image-lazy-loading": "^1.0.2",
+    "postcss": "^8.1.7",
+    "terser": "^5.3.8"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ItaiAxelrad/itaiaxelrad.git"
   },
-  "dependencies": {
-    "autoprefixer": "^9.8.6",
-    "cssnano": "^4.1.10",
-    "gulp-concat": "^2.6.1",
-    "gulp-htmlmin": "^5.0.1",
-    "gulp-uglify-es": "^2.0.0",
-    "rellax": "^1.12.1",
-    "sharp": "^0.26.0"
-  },
   "browserslist": [
-    "> 1%",
-    "ie >= 8",
-    "edge >= 15",
-    "ie_mob >= 10",
-    "ff >= 45",
-    "chrome >= 45",
-    "safari >= 7",
-    "opera >= 23",
-    "ios >= 7",
-    "android >= 4",
-    "bb >= 10"
+    "defaults",
+    "not IE 11",
+    "not IE_Mob 11",
+    "maintained node versions"
   ]
 }

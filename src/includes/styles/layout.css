@@ -1,0 +1,135 @@
+/* main content layout*/
+body {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  overflow-x: hidden;
+  gap: 1rem;
+}
+
+main {
+  margin: 0 auto;
+}
+
+section {
+  display: grid;
+  gap: 2rem;
+  justify-content: center;
+  scroll-margin-top: 3rem;
+  padding: 3rem 0;
+}
+
+article {
+  width: var(--width);
+  border: 1px solid var(--clr-opaque);
+  will-change: transform;
+}
+
+footer {
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+figure {
+  margin-block-end: 1rem;
+}
+
+.intro {
+  position: absolute;
+  top: 18%;
+  left: calc((100% - var(--width)) / 2);
+  max-width: 28rem;
+}
+
+/* svg hero layers */
+.plant {
+  position: absolute;
+  right: -68%;
+  top: 12%;
+  z-index: -1;
+  width: 450px;
+}
+
+.thumbnail {
+  border: 1px solid var(--clr-opaque);
+  justify-self: end;
+  max-width: 114px;
+}
+
+.full-page {
+  width: 100vw;
+  height: 100vh;
+}
+
+/* grid layout with one column  */
+.grid-col1 {
+  max-width: var(--width);
+  display: grid;
+  gap: 0rem;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  align-items: start;
+  justify-items: start;
+}
+
+/* grid layout with two uneven columns  */
+.grid-col2 {
+  max-width: var(--width);
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: auto;
+  align-items: start;
+  justify-items: center;
+}
+
+/* grid layout with two uneven columns  */
+.grid-col2-thumb {
+  display: grid;
+  gap: 2rem 1rem;
+  grid-template-columns: 3fr 1fr;
+  margin-block-end: 1rem;
+}
+
+/* navigation layouts */
+nav {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  justify-items: end;
+  padding: 1rem 3rem;
+  width: 100%;
+}
+
+.btn_menu {
+  display: none;
+}
+
+.btn_top {
+  position: fixed;
+  text-align: center;
+  line-height: 1;
+  bottom: 1rem;
+  right: 1rem;
+  z-index: 900;
+}
+
+.sticky {
+  position: sticky;
+  will-change: transform;
+  top: 0;
+  z-index: 1000;
+}
+
+.fixed {
+  position: fixed;
+  will-change: transform;
+  top: 0;
+  z-index: 1000;
+}

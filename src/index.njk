@@ -1,0 +1,39 @@
+---
+title: Home
+layout: layouts/base.njk
+permalink: index.html
+---
+
+{% include "components/header.njk" %}
+
+<!-- Section 2: 2 grid column with card style asides -->
+<section id="experience">
+  <h2>Experience</h2>
+
+  {% for exp in collections.experience %}
+    {% include "components/exp.njk" %}
+  {% endfor %}
+
+</section>
+
+<!-- Section 3: long article with button -->
+<section id="education">
+  <h2>Education</h2>
+
+  {% for edu in collections.education %}
+    {% include "components/edu.njk" %}
+  {% endfor %}
+
+</section>
+
+<!-- Section 3: contact -->
+<section id="contact">
+  <h2>Contact</h2>
+  <!-- contact info and time tag -->
+  <div class="pad-1">
+    <p>
+      Please feel free to reach out to me with any questions or inquiries.
+    </p>
+    {% include "components/contactForm.njk"%}
+  </div>
+</section>

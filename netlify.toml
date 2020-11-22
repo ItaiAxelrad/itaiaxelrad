@@ -1,7 +1,10 @@
 [build]
   publish = "dist"
-  command = "gulp build"
+  command = "DEBUG=* eleventy"
 
+[[plugins]]
+  package = "netlify-plugin-image-optim"
+  
 [[plugins]]
   package = "netlify-plugin-minify-html"
 

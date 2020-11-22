@@ -1,0 +1,77 @@
+<head>
+    <title>Itai Axelrad</title>
+    <!-- Meta Data and PWA Info -->
+    <meta charset="UTF-8" />
+    <!-- Set character encoding for the document -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <!-- site specific stuff to change  -->
+    <meta name="description" content="Itai Axelrad's Resume Website" />
+    <meta
+      name="keywords"
+      content="Itai, Axelrad, Resume, Portfolio, Engineer, Student, Professional, Water, Resources, master, science, cal, poly, ucla, linkedin, experience, education, skills, associations, civil, AutoCAD, 3D, BIM, EIT, PE, LEED, GA, AP, SAMPE, hire, Los, Angeles, firm, associate, California, Colorado, Denver"
+    />
+    <meta name="theme-color" content="#66aacc" />
+    <!-- link preview -->
+    <meta property="og:title" content="Itai Axelrad" />
+    <meta property="og:description" content="A portfolio site" />
+    <meta
+      property="og:image"
+      content="https://itaiaxelrad.com/images/icon.png"
+    />
+    <meta property="og:url" content="https://itaiaxelrad.com/" />
+    <!-- iOS PWA -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="portfolio" />
+    <!-- Styles and Type  -->
+    <!-- capture the CSS content as a Nunjucks variable -->
+    {% set css %}
+      {% include "../styles/normalize.css" %}
+      {% include "../styles/main.css" %}
+      {% include "../styles/forms.css" %}
+      {% include "../styles/layout.css" %}
+      {% include "../styles/mobile.css" %}
+      {% include "../styles/type.css" %}
+      {% include "../styles/print.css" %}
+    {% endset %}
+    <!-- feed it through our cssmin filter to minify -->
+    {% if layout != null %}
+    <style>
+      {{ css | postCSS | safe }}
+    </style>
+    {% endif %}
+
+    {% if stylesheet %}
+    <link href="/includes/styles/{{ stylesheet }}.css" rel="stylesheet">
+    {% endif %}
+
+    {# <link href="/styles/main.css" rel="stylesheet" type="text/css" /> #}
+    <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
+    <link href="https://fonts.gstatic.com/" rel="preconnect" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Links and PWA info  -->
+    <link href="/images/icon.png" rel="apple-touch-startup-image" />
+    <link href="/images/icon.png" rel="apple-touch-icon" />
+    <link href="/images/icon.png" rel="icon" type="image/png" />
+    <link
+      href="/manifest.json"
+      rel="manifest"
+      type="application/json"
+      crossorigin="use-credentials"
+    />
+    <!-- Scripts  (and module pre-loads) -->
+    <link href="/scripts/modules/attr.js" rel="modulepreload" />
+    <link href="/scripts/modules/btn.js" rel="modulepreload" />
+    <link href="/scripts/modules/landing.js" rel="modulepreload" />
+    <link href="/scripts/modules/links.js" rel="modulepreload" />
+    <link href="/scripts/modules/mobile.js" rel="modulepreload" />
+    <link href="/scripts/modules/mode.js" rel="modulepreload" />
+    <script src="/scripts/main.js" type="module"></script>
+  </head>

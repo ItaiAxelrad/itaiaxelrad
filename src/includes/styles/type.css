@@ -1,0 +1,97 @@
+/* semantic typographic styling */
+body {
+  color: var(--clr-dark);
+  font-size: var(--fs-body);
+  font-family: var(--ff);
+}
+
+/* heading font properties */
+h1 {
+  line-height: 1;
+  font-size: var(--fs-h1);
+}
+
+h2 {
+  font-size: var(--fs-h2);
+  font-weight: var(--fw-l);
+  color: var(--clr-darkish);
+  text-transform: lowercase;
+  text-align: center;
+  font-family: monospace;
+}
+
+h3 {
+  font-size: var(--fs-h3);
+  margin-block-end: 0.5rem;
+  font-weight: var(--fw-b);
+}
+
+h4 {
+  font-size: var(--fs-h4);
+  color: var(--clr-darkish);
+  font-weight: var(--fw-l);
+  line-height: 1.05;
+  margin-block-end: 0.25rem;
+  /* text-transform: lowercase; */
+}
+
+h4:first-of-type::before {
+  content: '@';
+  font-family: var(--ff);
+  color: var(--clr-theme);
+  padding-inline-end: 0.35rem;
+}
+
+h5 {
+  font-size: var(--fs-h5);
+  font-weight: var(--fw-r);
+}
+
+h6 {
+  font-size: var(--fs-h6);
+  font-weight: var(--fw-l);
+}
+
+p {
+  padding-block-end: 1rem;
+}
+
+a {
+  color: currentColor;
+}
+
+mark {
+  color: currentColor;
+  padding: 0 0.25rem;
+  background: var(--clr-opaque);
+  border-radius: var(--radius);
+  box-decoration-break: clone;
+}
+
+/* lists and details */
+ol,
+ul {
+  display: inline-block;
+  width: 100%;
+  padding: 0 1rem;
+  margin-block-end: 1rem;
+}
+
+li {
+  list-style-position: inside;
+}
+
+details p {
+  font-weight: var(--fw-l);
+  padding: 0.25rem;
+}
+
+summary {
+  cursor: pointer;
+}
+
+figcaption {
+  color: var(--clr-darkish);
+  text-align: center;
+  font-size: small;
+}
