@@ -25,7 +25,7 @@
           aria-hidden="true"
           focusable="false"
         >
-          <use xlink:href="images/defs.svg#chevron-up"></use>
+          <use xlink:href="/images/defs.svg#chevron-up"></use>
         </svg>
         <br />
         <small>Top</small>
@@ -44,10 +44,10 @@
 
   <!-- capture the JS content as a Nunjucks variable -->
   {% set js %}
-    {% include "../scripts/main.js" %}
+    {% include "../../scripts/main.js" %}
   {% endset %}
   <!-- feed it through our jsmin filter to minify -->
-  <script>
+  <script type="module">
     {{ js | jsmin | safe }}
   </script>
 

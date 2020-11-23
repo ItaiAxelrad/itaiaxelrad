@@ -1,5 +1,5 @@
 
-<article class="pad-1 bg-lighter radius">
+<article class="card">
   <div class="grid-col2-thumb">
     <header>
       <h3>{{ edu.data.degree }}</h3>
@@ -26,7 +26,7 @@
         >
           <use xlink:href="images/defs.svg#calendar"></use>
         </svg>
-        Class of <time datetime="{{ edu.data.dateTo }}">{{ edu.data.dateTo | readableDate }}</time>
+        Class of <time datetime="{{ edu.data.dateTo }}">{{ edu.data.dateTo | fullYear }}</time>
       </h4>
     </header>
     <img
@@ -37,8 +37,6 @@
     />
   </div>
 
-  {# <p>
-    {{ edu.data.content | safe }}
-  </p> #}
-  
+  {{- edu.templateContent | safe -}}
+
 </article>

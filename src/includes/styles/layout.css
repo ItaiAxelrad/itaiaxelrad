@@ -9,6 +9,8 @@ body {
 
 main {
   margin: 0 auto;
+  padding-top: 5rem;
+  min-height: 100vh;
 }
 
 section {
@@ -21,7 +23,6 @@ section {
 
 article {
   width: var(--width);
-  border: 1px solid var(--clr-opaque);
   will-change: transform;
 }
 
@@ -132,4 +133,30 @@ nav {
   will-change: transform;
   top: 0;
   z-index: 1000;
+}
+
+ul.projects {
+  margin: 1rem auto;
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  gap: 1rem;
+}
+
+li.project {
+  list-style: none;
+  text-align: center;
+}
+
+li.project:hover {
+  cursor: pointer;
+  filter: brightness(1.01);
+  box-shadow: var(--shadow);
+}
+
+.card {
+  padding: 1rem;
+  border: 1px solid var(--clr-opaque);
+  background: var(--clr-lighter);
+  border-radius: var(--radius);
+  transition: .2s ease-out;
 }

@@ -1,5 +1,5 @@
 
-<article class="pad-1 bg-lighter radius">
+<article class="card">
   <div class="grid-col2-thumb">
     <header>
       <h3>{{exp.data.position}}</h3>
@@ -38,8 +38,6 @@
     />
   </div>
 
-  {# <p>
-  {{ exp.data.content | safe }}
-  </p> #}
+  {{- exp.templateContent | safe -}}
   
 </article>
