@@ -7,23 +7,21 @@ date: 2018-06-15
 
 This study aims to test the effects of land surface degradation on surface water and energy balances in the Sahel. The control vegetation type used consists of shrubs with ground cover (SEBEX Data), while the experimental vegetation was changed to a degraded vegetation type of shrub with bare soil (Type 9 Data). The results indicate a large increase in the sensible heat flux, and significant changes in the water balance that can mostly be attributed to the evapotranspiration properties.
 
-![](images/image1.png)
+---
 
-Figure 1: The Sahel Region of Africa
+## Introduction
 
-* * *
+The Sahel, the study area under consideration, sits in the ecoclimatic zone in Africa between the Sahara and the Sudanian Savanna. The 5,400 kilometer belt of the Sahel region spans from the Atlantic Ocean to the Red Sea (see Figure 1 below).
 
-Introduction
-============
+![The Sahel Region of Africa](images/image1.png)
 
-The Sahel, the study area under consideration, sits in the ecoclimatic zone in Africa between the Sahara and the Sudanian Savanna. The 5,400 kilometer belt of the Sahel region spans from the Atlantic Ocean to the Red Sea (see Figure 1 above). This region contains many countries, cultures and varying geography. The grasslands of the Sahel provide the basis for livestock production, a major part of the economies of several Sahelian countries and the livelihoods of millions of people (Fensholt, 2013). Sadly, the historic famine, instability, and violence in the region may be attributed to the megadroughts it frequently experiences.
+This region contains many countries, cultures and varying geography. The grasslands of the Sahel provide the basis for livestock production, a major part of the economies of several Sahelian countries and the livelihoods of millions of people (Fensholt, 2013). Sadly, the historic famine, instability, and violence in the region may be attributed to the megadroughts it frequently experiences.
 
 The Sahel region is characterized by a semi-arid (using the Köppen climate classification) and highly variable climate. The Sahel has a tropical, hot steppe, and somewhat windy climate with a high sunshine duration year-round, between 2,700 hours and 3,500 hours (more than 79% of the daylight hours). The region typically experiences an intense rainy season during July - August - September (JAS) and prolonged dry seasons (Giannini, 2008), though in the second half of the 20th century the Sahel underwent a drastic shift in climate. An abundant period of rain in the 1950's and 1960's gave way to a progressively drier period in the 1970's and early 1980's. Around the late 1980s, summer rainfall in the Sahel had been increasing, and with it vegetation. This new trend has been called the 'greening' of the Sahel. Although this partial recovery occurred around 1980, the most recent drought occurred very recently, in 2012.
 
 These persistent drought periods that occurred were initially attributed to human mismanagement of land resources, such as the expansion of agriculture into marginal zones, overgrazing, and woodcutting for fuel (Giannini, 2008). The first theories claimed that anthropogenic activity affected the vegetation cover and made the savanna desert-like, and that the regional atmospheric circulation had perpetuated that change. Major dust storms have ravaged the region over the last century, as woodlands disappeared with the rise of population and industrialization. While anthropogenic effects are undeniable, more recent studies have begun to explore alternative causal effects. Now, the anthropogenic causes explored are not related to mismanagement of land resources at the regional scale, but rather to the larger scale land transformation. It is now accepted that changes to the land surface affect the surface energy balance, exchanges of water, and heat, it is necessary to develop analytical tools to examine whether a process may be significant. The large role that land and atmosphere interactions play in determining the Sahel’s sensitive climate calls for a deeper understanding.
 
-Experimental Design
-===================
+## Experimental Design
 
 This study aims to test the effects of land surface degradation on surface water and energy balances. The control vegetation type used consists of shrubs with ground cover, while the experimental vegetation was changed to a degraded vegetation type of shrub with bare soil classified as Type 9 (see Table 1). The experimental design is set-up in a way that a meaningful comparison can be made between the two vegetation types.
 
@@ -37,20 +35,17 @@ The control vegetation data used is field measurements provided by the Institute
 
 The data collected for the experimental vegetation is from within the framework of a global terrestrial biosphere model called the Simplified Simple Biosphere Model version 2.0, or SSiB2. In this experiment, the comparison land of Type 9 is selected to simulate a degraded land type previously classified as Type 6 (Savanna) or Type 8 (shrubs with ground cover). The type selected is one of twelve vegetation types recognized by SSiB2, including trees, short vegetation, arable crops, and desert (Xue & Fennessy, 2002).
 
-Results
-=======
+## Results
 
 The following figures illustrate the difference in the two cases of different vegetation types in terms of energy balance, water balance, temperature, soil moisture, plant productivity, and diurnal variation.
 
-Energy Balance
---------------
+### Energy Balance
 
 The monthly mean net radiation (1), latent heat (2), sensible heat (3), and ground heat fluxes (4) for the one-year simulation can be seen below.
 
 ![](images/image8.jpg)
 
-Water Balance
--------------
+#### Water Balance
 
 The monthly mean precipitation (5), runoff (6), and evapotranspiration (7) for the one-year simulation can be seen below.
 
@@ -58,42 +53,35 @@ The monthly mean precipitation (5), runoff (6), and evapotranspiration (7) for t
 
 The monthly mean evaporation from canopy (9), transpiration (10), and soil evaporation (11) for one-year simulation can be seen below.
 
-#### ![](images/image6.jpg)
-
-* * *
+![](images/image6.jpg)
 
 #### Temperature
 
 The monthly mean temperature at air space (13), canopy air space (14), soil surface (15), and deep soil (16) for a one-year simulation can be seen below.
 
-#### ![](images/image7.jpg)
-
-* * *
+![](images/image7.jpg)
 
 #### Soil Moisture
 
 The monthly mean soil moisture at layer 1 (17), layer 2 (18), and layer (19) for the one- year simulation can be seen below.
 
-#### ![](images/image9.jpg)
-
-* * *
+![](images/image9.jpg)
 
 #### Productivity
 
 The Net Primary Productivity (21), and Gross Primary Productivity (22) for the one- year simulation can be seen below.
 
-#### ![](images/image4.jpg)
-
-* * *
+![](images/image4.jpg)
 
 #### Diurnal Variation
 
 The July-August-September (JAS) mean of diurnal variations of net radiation (25), latent heat (26), sensible heat (27), ground heat fluxes (28) and temperature at canopy airspace (29) can be seen below.
 
-![](images/image5.jpg)![](images/image2.jpg)
+![](images/image5.jpg)
 
-Discussions
------------
+![](images/image2.jpg)
+
+## Discussions
 
 The results demonstrate a large difference in the June-July-August-September (JJAS) mean energy balance (\-49.93 W/m2) between the two vegetation types over the simulation period (see Appendix A). Most of the difference may be attributed to the sensible heat flux (\-32.77 W/m2) component of the budget, with about half as much coming from the latent heat (-16.94 W/m2), and little to no change in ground heat flux (-0.21 W/m2). The diurnal variation in the energy budget exhibits a similar pattern, with the sensible heat flux component accounting for a majority of the difference between the two vegetation types. The upward longwave radiation is the only component that increases with the degraded land cover (+12.17 W/m2).
 
@@ -105,17 +93,13 @@ It has been deduced that soil moisture is one of the more important land environ
 
 The Net Primary Productivity (NPP), the amount of carbon uptake after subtracting Plant Respiration (RES) from Gross Primary Productivity (GPP), shows unreasonably large variation with land cover change. The Gross Primary Productivity (GPP), which is the total rate at which the ecosystem captures and stores carbon as plant biomass for a given length of time, also shows unreasonable patterns. Unfortunately, the GPP and NPP output in SSiB2 exhibit some problems due to faulty Fortran 77 code. The GPP and NPP results must therefore be ignored in the conclusion of this study.
 
-Conclusions
-============
+## Conclusions
 
 The characteristics of the diurnal and seasonal variations of these variables, as well as the energy and water partitioning under different land cover conditions exhibit differences over the year long simulation. The July-August-September (JAS) mean energy balances and water balance from the model simulation for the different vegetation types typically reflect the same increase or decrease patterns.
 
 The change in energy balance is mostly dictated by the sensible heat flux. Changes in the water balance can be mostly attributed to the evapotranspiration properties. The change in soil moisture content mostly occurred in the second layer. Variations in soil moisture produce significant changes in surface energy balance, regional runoff, and vegetation productivity (Goward, 2002). The temperatures at the land \- atmosphere boundary layer show a slight, yet potentially serious increase. In the future, more realistic land surface models and changes in land-surface conditions will help improve the understanding of the mechanisms of land–atmosphere interactions in this region.
 
-* * *
-
-References
-----------
+## References
 
 Clark, Douglas B., et al. "Modeling the impact of land surface degradation on the climate of tropical North Africa." Journal of Climate 14.8 (2001): 1809-1822.
 
@@ -137,10 +121,7 @@ Xue, Yongkang, and Jagadish Shukla. "The influence of land surface properties on
 
 Xue, Yongkang, and Jagadish Shukla. "The influence of land surface properties on Sahel climate. Part II. Afforestation." Journal of Climate 9.12 (1996): 3260-3275.
 
-* * *
-
-Appendix A
-----------
+## Appendix A
 
 Table 1: The Impact Of Land Degradation On Soil Moisture in JJAS
 

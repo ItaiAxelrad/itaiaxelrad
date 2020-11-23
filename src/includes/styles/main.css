@@ -12,13 +12,8 @@
   /* font-families */
   --ff: 'Nunito', system-ui,  Roboto, Helvetica, sans-serif;
   /* font-size */
-  --fs-body: 17px;
-  --fs-h6: 15px;
-  --fs-h5: 16px;
-  --fs-h4: 19px;
-  --fs-h3: 24px;
-  --fs-h2: 32px;
-  --fs-h1: 56px;
+  --fs-body: 18px;
+
   /* font-weights */
   --fw-l: 300;
   --fw-r: 400;
@@ -87,7 +82,16 @@
 }
 
 body {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  gap: 1rem;
+  color: var(--clr-dark);
+  font-size: 18px;
+  font-family: var(--ff);
+  line-height: 1.5;
   transition: 0.4s ease-in-out;
+  overflow-x: hidden;
 }
 
 img {
@@ -178,11 +182,11 @@ img {
 
 .icon {
   fill: var(--clr-theme);
+  color: var(--clr-theme);
   display: inline-block;
   vertical-align: baseline;
   width: 1rem;
   height: 1rem;
-  transform: translateY(2px);
   margin-inline-end: 0.15rem;
 }
 /* Plant svg layer colors */
@@ -199,6 +203,7 @@ img {
 }
 /* external link style */
 a {
+  color: currentColor;
   text-decoration: none;
 }
 
@@ -208,8 +213,8 @@ a[rel='noreferrer'] {
   text-decoration: solid underline var(--clr-theme);
 }
 
-a[href^="http://"],
-a[href^="https://"],
+a[href^="http://"]:hover ,
+a[href^="https://"]:hover ,
 a[rel='noreferrer']:hover {
   color: var(--clr-theme);
 }
@@ -252,6 +257,15 @@ a[rel='noreferrer']::after {
 
 .btn:hover {
   cursor: pointer;
+  filter: brightness(1.01);
+}
+
+.tag {
+  color: currentColor;
+  padding: 0 0.25rem;
+  background: var(--clr-opaque);
+  border-radius: var(--radius);
+  box-decoration-break: clone;
 }
 
 *:focus {

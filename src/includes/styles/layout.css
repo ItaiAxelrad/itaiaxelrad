@@ -1,12 +1,4 @@
 /* main content layout*/
-body {
-  display: grid;
-  grid-template-columns: 1fr;
-  justify-content: center;
-  overflow-x: hidden;
-  gap: 1rem;
-}
-
 main {
   margin: 0 auto;
   padding-top: 5rem;
@@ -137,14 +129,11 @@ nav {
 
 ul.projects {
   margin: 1rem auto;
-  display: grid;
-  grid-template-columns: repeat(3, 200px);
-  gap: 1rem;
 }
 
 li.project {
   list-style: none;
-  text-align: center;
+  margin: .5rem 0;
 }
 
 li.project:hover {
