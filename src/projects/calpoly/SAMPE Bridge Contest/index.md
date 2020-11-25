@@ -1,14 +1,11 @@
 ---
 title: SAMPE Bridge Contest
+date: 2014-06-06
+tags: ['SAMPE', 'matlab', 'modeling', 'beams']
 ---
-As the Vice President of the Cal Poly SAMPE Chapter (2012 to 2014) I organized fundraising events and lead a competitive composite material beam design team. Our beam placed 4th in the
-annual international SAMPE competition.
+As the Vice President of the Cal Poly SAMPE Chapter (2012 to 2014) I organized fundraising events and lead a competitive composite material beam design team. Our beam placed 4th in the annual international SAMPE competition.
 
-The beam geometry was developed using empirical evidence
-compiled from previous test results and iterative analysis.
-Abaqus and Mathcad solution helped us optimize the final design.
-We also considered manufacturing concerns while designing the
-geometry.
+The beam geometry was developed using empirical evidence compiled from previous test results and iterative analysis. Abaqus and Mathcad solution helped us optimize the final design. We also considered manufacturing concerns while designing the geometry.
 
 ![Finite Element Analysis of an I-Beam](/images/beam.jpg)
 
@@ -91,8 +88,6 @@ Manufacturing Process
 
  2. Four 6-strip ply paulownia wood web cores are layered with the hemp canvas. Four are placed in the web, one on the bottom and one on top to withstand compressive force.
 
-  
-
 -   The majority of the force applied to the bridge will be absorbed by the web. The web of the bridge will make up the majority of the weight and will have a thickness of 0.55 inches in order to comply with the design restrictions.
 -   Hemp canvas is good in tension so there are extra layers on the bottom of the beam.
 -   We wetted the hemp canvas with epoxy, squeegeed excess off, and then layered each piece on our metal mold.  
@@ -171,9 +166,9 @@ Manufacturing Process
 
 1. 2.5x26 inch strips of hemp canvas were cut. These strips are used for constructing the web of the bridge. Since the thickness of the web will determine the amount of shear reinforcement we cut out 7 strips.
 
- 2. Six 5.5x26 inch strips of hemp canvas were then cut. These strips will be used to construct the outward pointing C-channels to create the full I-beam.
+ 1. Six 5.5x26 inch strips of hemp canvas were then cut. These strips will be used to construct the outward pointing C-channels to create the full I-beam.
 
- 3. Four 6-strip ply bamboo web cores are layered with the hemp canvas. Four are placed in the web, one on the bottom and one on top to withstand compressive force.
+ 2. Four 6-strip ply bamboo web cores are layered with the hemp canvas. Four are placed in the web, one on the bottom and one on top to withstand compressive force.
 
   
 

@@ -1,5 +1,8 @@
 ---
 title: Alpha Range Drainage Report
+date: 2014-06-12
+image: './images/range.jpg'
+tags: ['Drainage','LID','EC']
 ---
 As a water resources specialist for Camp San Luis Obispo, I
 performed hydrology analysis for the 5 acre Alpha Range and

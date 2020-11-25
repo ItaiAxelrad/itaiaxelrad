@@ -2,6 +2,7 @@
 title: West Coast Basin Model
 date: 2017-12-15
 image: '/images/model.jpg'
+tags: ['MODFLOW ', 'Seawater', 'Basin']
 ---
 
 ## Abstract
@@ -52,7 +53,7 @@ The MODFLOW model output was read using the GWCHART program, and a plot of head 
 
 # Conclusions
 
-Groundwater over development in coastal regions can cause water-level declines that are not sustainable, and a solution to this problem must be developed. As this report indicates, the use of hydraulic barriers is a viable technique for mitigating such hazards. The MODFLOW model constructed shows that the implementation of injection wells does achieve the goal of reducing seawater intrusion in the West Coast Basin. Less fresh water is injected than pumped so the barrier appears to be feasible. While results from the model simulation are promising, it is important to note that many simplifications and assumptions were made, including only modeling a single basin, only modeling three layers, and averaging of elevation levels and hydraulic gradient across these layers. 
+Groundwater over development in coastal regions can cause water-level declines that are not sustainable, and a solution to this problem must be developed. As this report indicates, the use of hydraulic barriers is a viable technique for mitigating such hazards. The MODFLOW model constructed shows that the implementation of injection wells does achieve the goal of reducing seawater intrusion in the West Coast Basin. Less fresh water is injected than pumped so the barrier appears to be feasible. While results from the model simulation are promising, it is important to note that many simplifications and assumptions were made, including only modeling a single basin, only modeling three layers, and averaging of elevation levels and hydraulic gradient across these layers.
 
 # References
 
@@ -64,7 +65,7 @@ Emch, P.G. and Yeh, W.W-G., "Management Model for Conjunctive Use of Coastal Sur
 
 Reichard, E. G. and Johnson, T. A. “Assessment of Regional Management Strategies for Controlling Seawater Intrusion.” Journal of Water Resources Planning and Management, ASCE, 131(4), 280-291, 2005.
 
-Reichard, E. G., et al. (2003). “Geohydrology, geochemistry, and groundwater-water simulation-optimization of the Central and West Coast basins, Los Angeles County, California” U.S. Geological Survey Water-Resources Investigations Rep. 03-4065, Sacramento < https://pubs.usgs.gov/wri/wrir034065/wrir034065.html >.
+Reichard, E. G., et al. (2003). “Geohydrology, geochemistry, and groundwater-water simulation-optimization of the Central and West Coast basins, Los Angeles County, California” U.S. Geological Survey Water-Resources Investigations Rep. 03-4065, Sacramento < <https://pubs.usgs.gov/wri/wrir034065/wrir034065.html> >.
 
 # Appendix A
 
@@ -76,7 +77,7 @@ Reichard, E. G., et al. (2003). “Geohydrology, geochemistry, and groundwater-w
 
 ![](images/image2.jpg)
 
-### Figure 2: Layer 1 Head Contour Map at Time 0 (prestressed) 
+### Figure 2: Layer 1 Head Contour Map at Time 0 (prestressed)
 
 ![](images/image6.jpg)
 

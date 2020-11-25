@@ -1,15 +1,16 @@
 ---
 title: Green Street Retrofit
 date: 2018-06-15
+tags: ['green', 'retrofit', 'streets', 'LID']
 ---
 
 # Santa Monica Boulevard Green & Complete Street Retrofit
 
-### Abstract
+## Abstract
 
 Santa Monica Boulevard, in Los Angeles, California serves as a major regional conduit and has potential to improve the lives of the large surrounding community through a green streetscape retrofit. This study assesses the costs and benefits of green infrastructure alternatives that may be implemented to achieve this goal. The proposed green infrastructure elements include rain gardens, permeable pavement, stormwater planters, and bike lanes. Our findings demonstrate that implementation of these mitigation techniques would result in a 57% runoff reduction and 45% contaminant removal while maintaining the street’s level of service.
 
-- - -
+---
 
 ## Introduction
 
@@ -17,7 +18,9 @@ Santa Monica Boulevard in Los Angeles, California serves as a major regional con
 
 The site receives stormwater potentially contaminated with pollutants deposited from traffic activities. Moreover, the study area is lacking in green infrastructures that may help treat these contaminants on site. Storm water runoff flows down the streets and into catch basins that are connected to storm drain lines that flow directly into channels, rivers, lakes and the ocean. As the storm water is not treated prior to being discharged into the receiving water bodies, all pollutants, including trash, grease, oil, and sediments, are carried into the ocean causing pollution in the waterways and along the shores (Lukes, 2008). Contaminated stormwater runoff is the number one source of ocean pollution in Southern California, and the city’s street infrastructure plays a major role in flushing these pollutants out to sea.
 
-Figure 1: Vicinity Map (Google Maps)![](images/image2.png)![](images/image10.png)
+![Vicinity Map (Google Maps)](images/image2.png)
+
+![](images/image10.png)
 
 ## Design
 
@@ -25,9 +28,7 @@ Streets comprise a significant percentage of publicly owned land in most communi
 
 Green streets refer to an interconnected network of natural features (vegetation, parks, wetlands, etc.) that provide beneficial ecosystem services for human populations walking in that street. Green streets achieve multiple benefits, such as, improved water quality and more liveable communities through the integration of stormwater treatment techniques which use natural processes and landscaping (Chau, 2009).
 
-### ![](images/image6.jpg)
-
-Figure 2: Location of Proposed Improvements (Google Earth)
+![Location of Proposed Improvements (Google Earth)](images/image6.jpg)
 
 The existing wider sidewalks allow for the implementation of infiltration systems, without disturbing the pedestrian walkways. The necessity of having wider sidewalks comes from the fact that bioinfiltration systems such as bioswales, buffer zones or planter boxes, require a lot of space. The sidewalk re-design is restricted mainly by the standards set by the ADA (American with Disabilities Act) and the existing public right of way.
 
@@ -39,7 +40,7 @@ The proposed planter box locations on the north sidewalk aligns with the existin
 
 The planter box should contain a soil and compost mixture with an infiltration bed of clean, uniformly graded stone. The planter box depth is dictated by the selected plants, which may require a 6 to 18-inch rooting zone. Small trees and shrubs placed in the planters will consume less water, provide better filtration and cooling effects than grasses (Shashua-Bar, 2000) but require more space. The minimum planter width is typically 30 inches with no minimum length or required shape (Ackermann, 2008). The dimension of the proposed wooden rectangular planter boxes will have an 18 inch depth and a total area of 750 square feet (A1: 5\*50=250 ft2, A3: 5\*100=500 ft2). The total calculated planter box capacity is roughly 1,080 ft3. Taking into account the dimension of our planter boxes, the soil, the materials needed and the delivery, the cost will total around $850 (using the Budget Estimate Calculator for Planter Boxes).
 
-Figure 3: Stormwater Planter Box (City of Portland)![](images/image9.png)
+![Stormwater Planter Box (City of Portland)](images/image9.png)
 
 ### Rain Gardens
 
@@ -57,7 +58,7 @@ Installation of permeable pavement will help reduce runoff and increase groundwa
 
 ### Bikeways
 
-Implementation of safe bikeways requires the addition of space, as the existing road lacks bicycle-lanes. The safest design option is the Class 1 bikeway (California Streets and Highways Code) which provides a completely separated right of way for the exclusive use of bicycles and pedestrians with crossflow by motorists minimized. Unfortunately, this design is not feasible with the limited space availability and the need to maintain the existing traffic level of service. While traffic lanes may not be removed, the benefits may outweigh the drawbacks of tightening the cars’ path by reducing lane width to accommodate bike lanes. A traffic assessment is necessary to determine the extent that traffic congestion may be affected. While fully separated right of ways is infeasible, green bikeway striping provides highly visible contrast on the street and increases motorists' awareness of cyclists. 
+Implementation of safe bikeways requires the addition of space, as the existing road lacks bicycle-lanes. The safest design option is the Class 1 bikeway (California Streets and Highways Code) which provides a completely separated right of way for the exclusive use of bicycles and pedestrians with crossflow by motorists minimized. Unfortunately, this design is not feasible with the limited space availability and the need to maintain the existing traffic level of service. While traffic lanes may not be removed, the benefits may outweigh the drawbacks of tightening the cars’ path by reducing lane width to accommodate bike lanes. A traffic assessment is necessary to determine the extent that traffic congestion may be affected. While fully separated right of ways is infeasible, green bikeway striping provides highly visible contrast on the street and increases motorists' awareness of cyclists.
 
 ## Discussion
 
@@ -69,7 +70,7 @@ Traffic is oftentimes thought of as an unintended consequence of retrofit projec
 
 A second factor to consider is quality of life. Implementing these features will increase the quality of life of the nearby residents and will encourage more people to enjoy the street and frequent the surrounding businesses. The quality of life for the residents of the city is not simply limited to aesthetics, including rain gardens and planter boxes reduce runoff and contamination. In big storm events, when sewers mains reach capacity, the overflows are diverted to the nearby creeks which eventually discharge into the ocean. The Bicknell Avenue Green Street Urban Project in Santa Monica demonstrates how comprehensive structural Best Management Practices (BMPs) can harvest urban runoff, keeping the single largest source of water pollution out of the Santa Monica Bay. The project report shows that the BMPs improved water quality by drastically reducing the concentration of pollutants. Similarly, the Burnsville stormwater retrofit study analyzed two similar watersheds, one a control and the other a watershed with rain garden implementation. They found a 90% runoff reduction when comparing the control to the rain garden watershed.
 
-## Conclusion 
+## Conclusion
 
 Santa Monica Boulevard holds the potential to better the lives of its surrounding community through a feasible retrofit project. The reasonable cost of implementing the above mentioned green infrastructure is fully justified by the tremendous benefits received. Installing a rain garden adjacent to the gas station will reduce the oil contamination by capturing most of the runoff and allowing it to infiltrate. Using compost in the rain gardens will allow further removal of oil contamination, as the addition of compost in an oil field was found to remove up to 45% of crude oil (Mao et al. 2009). The addition of both the planter boxes and rain gardens account for a potential capture capacity of 3,327 ft3. The total runoff flow rate for the site (see Appendix A) was found to be 5,800 ft3, therefore, the total runoff volume after implantation is approximately 2,500 ft3. This results in a 57% runoff reduction for the overall site.
 
@@ -81,7 +82,7 @@ Chau, Haan‐Fawn. “Green Infrastructure for Los Angeles: Addressing Urban Run
 
 Choi, Yea Lim, "Public Stormwater Management with Green Streets. " University of Tennessee (2016). www.trace.tennessee.edu.
 
-Dietz, M.E. & Clausen, J.C. Water Air Soil Pollut (2005) 167: 123. https://doi.org 
+Dietz, M.E. & Clausen, J.C. Water Air Soil Pollut (2005) 167: 123. <https://doi.org>
 
 Dill, Jennifer et al., “Demonstrating the Benefits of Green Streets for Active Aging: Final Report to EPA”, www.friendsoftrees.org.
 
@@ -109,7 +110,7 @@ Shu, Shi, et al. "Changes of street use and on-road air quality before and after
 
 Wise, Steve. "Green infrastructure rising." Planning 74.8 (2008): 14-19.
 
-- - -
+---
 
 ## Appendix A
 
@@ -153,8 +154,8 @@ cpropsed = ( cimp \* Aimp\+ cper\* Aper ) / Atot
 
 According to the LADWP Hydrological Manual, Table 5.1.1
 
--   Peak storm duration = 2.27 hours
--   Rainfall intensity = 1.1 inches an hour
+- Peak storm duration = 2.27 hours
+- Rainfall intensity = 1.1 inches an hour
 
 The peak depth of rainfall is then found to be 2.27 x 1.10 =  2.5 inches
 
@@ -198,7 +199,7 @@ Pervious Site Area Runoff Coefficient4
 
 Existing Site Area Runoff Coefficient
 
-![](images/image11.png)
+![Existing Site Area Runoff Coefficient](images/image11.png)
 
 \=
 
@@ -260,14 +261,14 @@ Proposed Site Area Runoff Coefficient
 
 Standard Planter Box Plans
 
-## ![](images/image7.jpg)
+![Standard Planter Box Plans](images/image7.jpg)
 
 Standard Planter Box Details
 
-## ![](images/image5.jpg)
+![Standard Planter Box Details](images/image5.jpg)
 
 ## Appendix C
 
 Assessment of Monetization Potential of Categories
 
-![](images/image3.png)
+![Assessment of Monetization Potential of Categories](images/image3.png)

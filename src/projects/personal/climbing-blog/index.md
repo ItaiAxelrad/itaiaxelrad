@@ -1,6 +1,6 @@
 ---
 title: Climbing Blog Migration
-date: 2020-11-22
+date: 2020-11-25
 tags: ['blog', 'CMS', 'SSG', 'eleventy', 'python', 'Netlify', 'climbing']
 ---
 

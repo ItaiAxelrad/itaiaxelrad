@@ -1,6 +1,7 @@
 ---
 title: Hurricane Forecasting and Verification in Louisiana
 date: 2017-12-07
+tags: ['Forecasting', 'Weather', 'R', 'modeling']
 ---
 
 # Part 1: Evaluation of Hurricane Forecasting and Impacts in Louisiana
@@ -69,7 +70,7 @@ As seen in Figure 3 below, the ability of the HWRF model to predict both track a
 
 ![Comparison of Atlantic track and intensity errors](images/image5.png)
 
-Figure 3. Comparison of Atlantic track and intensity errors with multiple HWRF models against the 5-year (20% reduction in error) and 10-year (50% reduction in error) goals. 
+Figure 3. Comparison of Atlantic track and intensity errors with multiple HWRF models against the 5-year (20% reduction in error) and 10-year (50% reduction in error) goals.
 
 When [Gopalakrishnan](https://www.google.com/url?q=http://journals.ametsoc.org/author/Gopalakrishnan%252C%2BS%2BG&sa=D&ust=1606077043737000&usg=AOvVaw0yJfLPeH8M7OTeAPSxdpCQ) et al. utilized the OMEGA model on eight previous storms, it was found that OMEGA forecasted the specific storms approximately 20% better than those forecasts provided by the National Hurricane Center. It was also determined that the OMEGA system was more accurate in determining large-scale predictions about precipitation and that OMEGA-simulated storms often gave more information about conditions surrounding the storm. Although the model functioned well when compared with real data, there was no instance mentioned in the paper where forecasts were utilized in real-life situations. Even with increases in accuracy and intensity, the paths of the OMEGA-simulated storms still had track errors of up to 58 kilometers. ([Gopalakrishnan](https://www.google.com/url?q=http://journals.ametsoc.org/author/Gopalakrishnan%252C%2BS%2BG&sa=D&ust=1606077043737000&usg=AOvVaw0yJfLPeH8M7OTeAPSxdpCQ) et al. 2002).
 
@@ -304,7 +305,7 @@ If additional NMME forecast data was provided, one could potentially use the for
 
 American Meteorological Society. (2007). Hurricane Forecasting in the United States . American
 
-Meteorological Society: Bulletin 88. https://www.ametsoc.org/ams/index.cfm/about­ams/ams­statements/statements­of­the­ams­in­ force/hurricane­forecasting­in­the­united­states/
+Meteorological Society: Bulletin 88. <https://www.ametsoc.org/ams/index.cfm/about­ams/ams­statements/statements­of­the­ams­in>­ force/hurricane­forecasting­in­the­united­states/
 
 Cangialosi, John P, and James L Franklin. “NATIONAL HURRICANE CENTER FORECAST
 
@@ -320,11 +321,11 @@ atmospheric moisture during landfall of three Atlantic hurricanes. The Geographi
 
 National Aeronautics and Space Administration (NASA). (2015) Precipitation Measurement Missions .
 
-https://pmm.nasa.gov/trmm.
+<https://pmm.nasa.gov/trmm>.
 
 National Center for Atmospheric Research. (2017). Project: NMME CanCM4 data. NCAR Climate Data
 
-Gateway , https://www.earthsystemgrid.org/project/nmme.html
+Gateway , <https://www.earthsystemgrid.org/project/nmme.html>
 
 15
 
@@ -354,7 +355,7 @@ seasonal forecast of North Atlantic and US landfalling tropical cyclones using t
 
 National Atmospheric and Oceanic Administration (NOAA). 2017. Improving the accuracy and
 
- reliability of hurricane forecasts. Miami, FL: National Hurricane Center. 
+ reliability of hurricane forecasts. Miami, FL: National Hurricane Center.
 
  [http://www.hfip.org/documents/HFIP\_StrategicPlan\_Yrs5-10\_Nov05\_2014\_Update.pdf](https://www.google.com/url?q=http://www.hfip.org/documents/HFIP_StrategicPlan_Yrs5-10_Nov05_2014_Update.pdf&sa=D&ust=1606077043742000&usg=AOvVaw0IL87S4zD5QCqWUH6VRrb-)
 

@@ -1,9 +1,9 @@
 ---
 title: Water System Model Update
 company: Baseline
-date: 
+date: 2019-07-01
 image:
-tags: ['WTP','water']
+tags: ['WTP','water','modeling']
 ---
 I was the project engineer on the Baseline team that developed
 and ran a WaterCAD model for the entire district distribution

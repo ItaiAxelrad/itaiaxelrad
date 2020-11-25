@@ -39,6 +39,13 @@ module.exports = function (eleventyConfig) {
     return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat("yyyy");
   });
 
+  // Sort with `Array.sort`
+  eleventyConfig.addCollection("projectSorted", function(collectionApi) {
+    return collectionApi.getFilteredByTag("projects").sort(function(a, b) {
+      return b.date - a.date;
+    });
+  });
+
 /* Markdown */
   let markdownLibrary = markdownIt({
     html: true,

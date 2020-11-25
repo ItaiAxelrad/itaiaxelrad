@@ -12,6 +12,10 @@
   font-family: monospace;
 }
 
+h1 {
+  font-size: 2rem;
+}
+
 h4 {
   margin-block-end: 0.25rem;
   color: var(--clr-darkish);

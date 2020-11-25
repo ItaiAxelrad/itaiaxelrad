@@ -1,5 +1,7 @@
 ---
 title: Laguna WWTP
+date: 2016-10-16
+tags: ['WWTP','estimation']
 ---
 I was a design engineer on a wastewater treatment plant
 improvement project for the City of Santa Rosa. The 17.5 million

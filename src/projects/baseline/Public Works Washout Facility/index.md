@@ -1,8 +1,8 @@
 ---
 title: Public Works Washout Facility
 company: Baseline
-date: 
-image:
+date: 2019-07-21
+image: './images/20158 Isometric Base.png'
 tags: ['WTP','water']
 ---
 I was the design engineer on the Baseline project that developed

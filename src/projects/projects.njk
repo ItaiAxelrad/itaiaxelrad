@@ -4,14 +4,19 @@ layout: layouts/base.njk
 permalink: /projects/index.html
 eleventyExcludeFromCollections: true
 ---
-
+<article>
 <h1>{{ title }}</h1>
 
 <ul class="projects">
-{% for project in collections.projects %}
+{% for project in collections.projectSorted %}
   <li class="project card">
   {# <img src="{{ project.data.image }}" alt="{{ project.data.title }}"> #}
-    <a href="{{ project.url | url }}">{{ project.data.title }}</a>
+    <h2><a href="{{ project.url | url }}">{{ project.data.title }}</a></h2>
+    <time>{{ project.data.date | readableDate }}</time><br>
+    {% for tag in project.data.tags %}
+      <span class="tag">{{ tag }}</span>
+    {% endfor %}
   </li>
 {% endfor %}
 </ul>
+</article>

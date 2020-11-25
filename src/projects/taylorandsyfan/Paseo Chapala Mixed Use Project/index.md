@@ -1,5 +1,7 @@
 ---
 title: Paseo Chapala Mixed Use Project
+date: 2014-08-12
+tags: ['residential','structural','loading']
 ---
 I was a design engineer responsible for drafting structural
 details, transforming architectural plans, performing beam

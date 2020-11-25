@@ -1,8 +1,10 @@
 ---
 title: Highway Overpass Analysis
+date: 2013-03-06
+tags: ['structural', 'bridge', 'matlab']
 ---
 
-# Problem Introduction
+## Problem Introduction
 
 ![Diagram](images/image139.jpg)
 
@@ -30,7 +32,7 @@ In approaching our problem, we hoped to meet the objectives of:
 
 To ensure a realistic bridge design, we based the distance between the supports on the Krenek bridge in Crosby, Texas (“Chapter 3”) and the cross-section on a sample provided by the U.S. Department of Transportation (“Concrete Deck Design”). We determined the distributed load due to the concrete deck by multiplying a typical concrete density supplied by the Portland Cement Association (“Frequently Asked Questions”) times the deck’s cross-sectional area. The distributed load representing traffic was estimated based on maximum truck lengths (“Vehicle Lengths”) and weights (“Weight Limitations”) allowed by CalTrans. Our factor of safety was based on a CalTrans document on bridge design stating 2.2 is a typical factor of safety for structural steel (“Chapter 1”). Material properties were drawn from Mechanics of Materials by Beer, while some of our superposition equations used in our solution also came from Strength and Stiffness of Engineering Systems by Frederick Leckie and a sheet put out by the National Technical University of Athens (“Beam Deflection Formulae”).
 
-# Problem Statement
+## Problem Statement
 
 ![](images/image143.jpg)
 
@@ -38,17 +40,17 @@ To ensure a realistic bridge design, we based the distance between the supports 
 
 The above freeway bridge is held up by one pin support and three roller supports. The concrete deck is supported by five wide-flanged I-beams, and it can be represented by a distributed load of 8350 lbs/ft. The bridge’s maximum potential load can be approximated by a distributed load of 2150 lbs/ft (assuming bumper-to-bumper semi-trucks carrying maximum loads). Assume that all five I-beams carry an equal load, the weights of the beams are negligible, and that the concrete deck has no structural significance. For one beam:
 
-1.  Find all reaction forces and moments.
-2.  Plot the shear and bending moment diagrams.
-3.  Find the positions on the beam where the bending moment is zero.
-4.  Find the minimum and maximum shear force and bending moment.
-5.  Using the maximum bending moment, for the following materials, find a wide-flanged beam cross-section that will support the bridge, given a factor of safety of 2.2.
+1. Find all reaction forces and moments.
+2. Plot the shear and bending moment diagrams.
+3. Find the positions on the beam where the bending moment is zero.
+4. Find the minimum and maximum shear force and bending moment.
+5. Using the maximum bending moment, for the following materials, find a wide-flanged beam cross-section that will support the bridge, given a factor of safety of 2.2.
     - Structural steel: σyield = 58 ksi, E = 29x106 psi
     - Aluminum alloy 7075-T6: σyield = 73 ksi, E = 10.4x106 psi
     - Titanium: σyield = 120 ksi, E = 16.5x106 psi
-    1.  Plot deflection and slope, and find the maximum deflection and slope.
-6.  Find the state of stress (σxx, σyy, τxy) for the point on the beam x = 100 ft, y = 9 in. Transform the stress to an angle of 45° use stress transformation equations. Plot σxx, σyy, τxy with respect to transformation angle, and draw Mohr’s Circle for the point.
-7.  Make a false color plot of factor of safety using von Mises failure criteria. Identify the beam’s overall factor of safety.
+    1. Plot deflection and slope, and find the maximum deflection and slope.
+6. Find the state of stress (σxx, σyy, τxy) for the point on the beam x = 100 ft, y = 9 in. Transform the stress to an angle of 45° use stress transformation equations. Plot σxx, σyy, τxy with respect to transformation angle, and draw Mohr’s Circle for the point.
+7. Make a false color plot of factor of safety using von Mises failure criteria. Identify the beam’s overall factor of safety.
 
 ## Calculations
 
@@ -283,9 +285,9 @@ I-Beam Selection (Structural Steel)
 
 Beams that exceed this S:
 
- W36x302, ![](images/image73.png)
+W36x302, ![](images/image73.png)
 
- Only possible beam, therefore it must be used
+Only possible beam, therefore it must be used
 
 W36x302
 
@@ -2131,7 +2133,7 @@ Moment of Inertia: 7800.000 in^4
 
  -1.169         14.268         -15.970         74.030
 
- Overall Factor of Safety: 2.317189
+Overall Factor of Safety: 2.317189
 
 ![Macintosh HD:Users:itaiaxelrad:Desktop:CE 251 Project:fig1.jpg](images/image136.jpg)![](images/image147.png)
 
@@ -2159,13 +2161,13 @@ Moment of Inertia: 7800.000 in^4
 
 ![Macintosh HD:Users:itaiaxelrad:Desktop:CE 251 Project:fig13.jpg](images/image126.jpg)![](images/image152.png)
 
-Conclusion
+## Conclusion
 
 For this project, we analyzed I-beam structural members of a freeway overpass. We determined the beam reactions; plotted shear, bending moment, slope, and deflection; found the maximum and minimum shear, moment, slope and deflection; located where the moment equals zero; found a suitable I-beam for each material; analyzed stress states across the beam; and found factor of safety. As thorough as our solution was, many possible sources of error exist. The most error will come from our numerous assumptions needed to make our problem solvable, given our limited knowledge. Realistically, our beams do have weight, all five beams do not carry equal loading, and traffic loading is not truly uniform. Small errors may potentially exist due to rounding errors with Matlab’s limited precision, but this precision is high enough that these are negligible. Errors may also exist in finding maximum shear, moment, slope, or deflection because they are found by calculating a series of points and choosing the maximum of those values; accuracy is therefore dependent on the number of points analyzed. Error might be also found in the calculation of our moment roots because Matlab’s fzero function, a numerical method, only finds an approximation rather than an exact solution. Lastly, there is also the very real possibility of human error in deriving the formulae and functions used in solving this problem.
 
- Our chosen solution has several advantages. By defining everything in our program in terms of a few easily obtained variables, we can now analyze any similar symmetrical, pin-roller supported beam with a distributed load by only changing these variables at the beginning of the program. Furthermore, by implementing this as a Matlab program, calculating results takes only a fraction of the time of doing it by hand. Matlab is also capable of carrying out calculations to much higher precision than by hand or with a calculator. A disadvantage is that this is a fairly specific case, restricted to a symmetrical bridge under a uniform distributed load with exactly four supports. We also have the disadvantage of having to rely on our assumptions, when they do not perfectly represent reality.
+Our chosen solution has several advantages. By defining everything in our program in terms of a few easily obtained variables, we can now analyze any similar symmetrical, pin-roller supported beam with a distributed load by only changing these variables at the beginning of the program. Furthermore, by implementing this as a Matlab program, calculating results takes only a fraction of the time of doing it by hand. Matlab is also capable of carrying out calculations to much higher precision than by hand or with a calculator. A disadvantage is that this is a fairly specific case, restricted to a symmetrical bridge under a uniform distributed load with exactly four supports. We also have the disadvantage of having to rely on our assumptions, when they do not perfectly represent reality.
 
-- - -
+---
 
 ## References
 
@@ -2175,13 +2177,7 @@ Beer, Ferdinand P., et al. Mechanics of Materials. 6th ed. New York: McGraw-Hill
 
 Carmichael, Adam and Nathan Desrosiers. Comparative Highway Bridge Design. Worchester Polytechnic Institute, 28 Feb. 2008. Web. 14 Feb. 2013. <www.wpi.edu/Pubs/E-project/>
 
-Available/E-project-022608-180459/unrestricted/
-
-Comparative\_Highway\_Bridge\_Design\_LDA0802.pdf>.
-
 “Chapter 1: Bridge Design Specifications.” Bridge Design Practice. California Department of Transportation, Oct. 2011. Web. 14 Feb. 2013. <www.dot.ca.gov/hq/esc/techpubs/>
-
- manual/bridgemanuals/bridge-design-practice/pdf/bdp\_1.pdf>.
 
 “Chapter 3: Applications for Transportation Projects.” Geotechnical Engineering Circular No. 8: Design and Construction of Continuous Flight Auger Piles. U.S. Department of Transportation Federal Highway Administration, 7 April 2011. Web. 14 Feb. 2013. <www.fhwa.dot.gov/engineering/geotech/pubs/gec8/03.cfm>.
 
@@ -2192,7 +2188,5 @@ Comparative\_Highway\_Bridge\_Design\_LDA0802.pdf>.
 Leckie, Frederick and Dominic Dal Bello. Strength and Stiffness of Engineering Systems. New York: Springer Science + Business Media, 2009.
 
 “Weight Limitations.” California Department of Transportation. California Department of Transportation, 6 July 2012. Web. 9 Feb. 2013. <www.dot.ca.gov/hq/traffops/trucks/>
-
- trucksize/weight.htm>.
 
 “Vehicle Lengths.” California Department of Transportation. California Department of Transportation, 19 July 2012. Web. 8 Feb. 2013. <www.dot.ca.gov/hq/traffops/trucks/>

@@ -1,5 +1,7 @@
 ---
 title: Water Sustainability in Los Angeles
+date: 2018-03-14
+tags: ['Water', 'Sustainability', 'recycled', 'GIS']
 ---
 
 ### Abstract
@@ -42,7 +44,7 @@ Potable
 
 Aquifer recharge for [drinking water](https://www.google.com/url?q=https://en.wikipedia.org/wiki/Drinking_water&sa=D&ust=1606078890743000&usg=AOvVaw2W3fZEAZwcVsuk-Jh8EI6K) use; Augmentation of surface drinking water supplies; Treatment until drinking water quality.
 
- In this project, we explore an option for increasing Los Angeles’ local water supply sources and help reduce its dependence on imported water. Through GIS (Geographic Information System) we can better our understanding of the situation and assess how and where this recycled water may be used. While the California water crisis has made recycled water use gradually become a necessary part of the state’s sustainable water management plan, there is public push-back regarding its origin. Therefore, a major barrier to wastewater reuse is psychological, not technical (Postel 1997). A number of proposed potable wastewater reuse projects have been abandoned due to lack of local community acceptance - including some in nearby San Diego. Despite its public view, recycled water is now offered as a new commodity to select consumers in distinct locations around the city. The delivery of recycled water requires significant infrastructure development and is another challenge faced in expanding the existing system (Australian Academy of Technological Sciences and Engineering, 2004).
+In this project, we explore an option for increasing Los Angeles’ local water supply sources and help reduce its dependence on imported water. Through GIS (Geographic Information System) we can better our understanding of the situation and assess how and where this recycled water may be used. While the California water crisis has made recycled water use gradually become a necessary part of the state’s sustainable water management plan, there is public push-back regarding its origin. Therefore, a major barrier to wastewater reuse is psychological, not technical (Postel 1997). A number of proposed potable wastewater reuse projects have been abandoned due to lack of local community acceptance - including some in nearby San Diego. Despite its public view, recycled water is now offered as a new commodity to select consumers in distinct locations around the city. The delivery of recycled water requires significant infrastructure development and is another challenge faced in expanding the existing system (Australian Academy of Technological Sciences and Engineering, 2004).
 
 The City of Los Angeles’ three out of the four water reclamation plants currently providing recycled water include the Los Angeles Glendale Water Reclamation Plant, Donald C. Tillman Water Reclamation Plant, and the Terminal Island Water Reclamation Plant. Los Angeles’ Hyperion Water Reclamation Plant only treats wastewater to a secondary level and discharges it into the ocean. The total average flows to the four water reclamation plants in 2015 was 305 million gallons per day (see Table 2 below).
 

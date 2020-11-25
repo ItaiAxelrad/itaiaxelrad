@@ -1,5 +1,7 @@
 ---
 title: Water Main Replacement
+date: 2017-06-19
+tags: ['water', 'main', 'utilities']
 ---
 I was the lead project engineer for the design of half a mile of
 new of ductile-iron pipe water main for the City of Santa
