@@ -14,7 +14,7 @@ The blog was originally created using blogger, Google's blogging platform. Over 
 
 ## Data Migration
 
-The first step for this project is one that I find very familiar now, as it is often the way my projects begin. The dreaded data migration 😱. Thankfully, blogger being a Google platform, offered an easy to use API (though I took the opportunity to practice my scraping skills first - perhaps a different write-up). I consumed the API using my beloved python, code sample can be found below:
+The first step for this project is one that I find very familiar now, as it is often the way my projects begin. The dreaded data migration 😱. Thankfully, blogger being a Google platform, offered an easy to use API (though I took the opportunity to practice my scraping skills first - perhaps a different write-up). I consumed the API using python, the code sample can be found below:
 
 ```python
 import os

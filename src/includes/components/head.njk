@@ -28,6 +28,8 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="default" />
     <meta name="apple-mobile-web-app-title" content="portfolio" />
     <!-- Styles and Type  -->
+    {# syntax highlighting stylesheet #}
+    <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
     <!-- capture the CSS content as a Nunjucks variable -->
     {% set css %}
       {% include "../styles/normalize.css" %}
@@ -49,8 +51,6 @@
     <link href="/includes/styles/{{ stylesheet }}.css" rel="stylesheet">
     {% endif %}
 
-    {# <link href="/styles/main.css" rel="stylesheet" type="text/css" /> #}
-    <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
     <link href="https://fonts.gstatic.com/" rel="preconnect" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap"

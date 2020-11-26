@@ -268,6 +268,44 @@ a[rel='noreferrer']::after {
   box-decoration-break: clone;
 }
 
+article code {
+  background: var(--clr-opaque);
+  padding: .15rem .25rem;
+  border-radius: var(--radius);
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  font-size: .95rem;
+}
+
+article code[class*="language-"],
+article pre[class*="language-"] {
+  font-size: .9rem;
+  line-height: 1.4;
+}
+
+pre.language-js::before {
+  content: 'JS';
+  padding: .15rem .25rem;
+  background: var(--clr-opaque);
+  border-radius: var(--radius);
+  float: right;
+}
+
+pre.language-r::before {
+  content: 'R';
+  padding: .15rem .25rem;
+  background: var(--clr-opaque);
+  border-radius: var(--radius);
+  float: right;
+}
+
+pre.language-python::before {
+  content: 'Python';
+  padding: .15rem .25rem;
+  background: var(--clr-opaque);
+  border-radius: var(--radius);
+  float: right;
+}
+
 *:focus {
   outline: none;
   color: var(--clr-theme);
