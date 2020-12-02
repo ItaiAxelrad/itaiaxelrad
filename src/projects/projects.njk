@@ -7,16 +7,17 @@ eleventyExcludeFromCollections: true
 <article>
 <h1>{{ title }}</h1>
 
-<ul class="projects">
+<ol class="projects" reversed >
 {% for project in collections.projectSorted %}
-  <li class="project card">
+  <li class="project">
   {# <img src="{{ project.data.image }}" alt="{{ project.data.title }}"> #}
-    <h2><a href="{{ project.url | url }}">{{ project.data.title }}</a></h2>
-    <time>{{ project.data.date | readableDate }}</time><br>
-    {% for tag in project.data.tags %}
+    <a href="{{ project.url | url }}">{{ project.data.title }}</a><br>
+    <time class="dt-published">{{ project.data.date | readableDate }}</time>
+    {# <div class="caption">{{- project.templateContent | truncate(140, true, "...") | safe -}}</div> #}
+    {# {% for tag in project.data.tags %}
       <span class="tag">{{ tag }}</span>
-    {% endfor %}
+    {% endfor %} #}
   </li>
 {% endfor %}
-</ul>
+</ol>
 </article>

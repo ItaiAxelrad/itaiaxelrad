@@ -1,0 +1,83 @@
+article.project {
+  margin-block-start: 5rem;
+}
+
+article code {
+  background: var(--clr-opaque);
+  padding: .15rem .25rem;
+  border-radius: var(--radius);
+  font-family: var(--ff-mono);
+  font-size: .95rem;
+}
+
+article code[class*="language-"],
+article pre[class*="language-"] {
+  font-size: .9rem;
+  line-height: 1.4;
+}
+
+pre.language-js::before,
+pre.language-javascript::before {
+  content: 'JS';
+  padding: .15rem .25rem;
+  background: var(--clr-lighter);
+  border-radius: var(--radius);
+  position: fixed;
+  right: 0.5rem;
+  margin-top: -0.5rem;
+}
+
+pre.language-r::before {
+  content: 'R';
+  padding: .15rem .25rem;
+  background: var(--clr-lighter);
+  border-radius: var(--radius);
+  position: fixed;
+  right: 0.5rem;
+  margin-top: -0.5rem;
+}
+
+pre.language-py::before,
+pre.language-python::before {
+  content: 'Python';
+  padding: .15rem .25rem;
+  background: var(--clr-lighter);
+  border-radius: var(--radius);
+  position: fixed;
+  right: 0.5rem;
+  margin-top: -0.5rem;
+}
+
+ol.projects {
+  margin: 1rem auto;
+}
+
+li.project {
+  list-style-position: outside;
+  margin: 0.5rem 0;
+  padding: 0.5rem 0;
+}
+
+time.dt-published {
+  color: var(--clr-gray);
+  font-family: var(--ff-mono);
+}
+
+header.article-header {
+  margin: 1.5rem 0;
+  padding: .5rem 0;
+  border-block-end: var(--border);
+}
+
+.tag {
+  color: currentColor;
+  padding: 0 0.25rem;
+  background: var(--clr-opaque);
+  border-radius: var(--radius);
+  box-decoration-break: clone;
+}
+
+blockquote p {
+  padding: 0 1rem;
+  border-inline-start: .25rem solid var(--clr-theme);
+}

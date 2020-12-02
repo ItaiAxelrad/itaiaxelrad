@@ -41,9 +41,6 @@ hr {
 
 /* Text-level semantics
    ========================================================================== */
-p {
-  padding-block-end: 1rem;
-}
 
 time {
   font-style: normal;

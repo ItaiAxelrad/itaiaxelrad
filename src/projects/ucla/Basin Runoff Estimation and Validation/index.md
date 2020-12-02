@@ -29,20 +29,19 @@ The time period of January 2004 to December 2006 (with monthly time step).
 
 ## Proposed Methods and Data
 
-1. Preprocessing of Data: Download and preprocess P, ET and ds/dt datasets. Datasets:
-TRMM 3B42RT (P), GLEAM (ET), GRACE (ds/dt), Pan et al. (2012) (ground truth data
-for all variables). Basin-averaged time series should be calculated not spatial maps.
-2. Estimation and Validation of Runoff: Use the water balance equation (see above) to
-estimate runoff and compare the estimate to the observed streamflow.
+1. Preprocessing of Data: Download and preprocess P, ET and ds/dt datasets. Datasets: TRMM 3B42RT (P), GLEAM (ET), GRACE (ds/dt), Pan et al. (2012) (ground truth data for all variables). Basin-averaged time series should be calculated not spatial maps.
+2. Estimation and Validation of Runoff: Use the water balance equation (see above) to estimate runoff and compare the estimate to the observed streamflow.
 3. Estimation of Basin Characteristics: Compare the three basins using RR, AI and EI.
 
 # LAB
 
 Remote sensing provides observations for estimating runoff in ungauged basins using a simple water balance approach. Water balance of a basin is given by `ds/dt = P - ET - Q`. Change in storage, precipitation and evapotranspiration are quantities that can be remotely sensed, allowing for the inference of runoff.
 
-The study areas in this example include the Amazon, Mississippi and Nile river basins. The time period under consideration is January 2004 to December 2006 (with Monthly time steps). Precipitation, evapotranspiration and change in storage datasets were downloaded and preprocessed then basin-averaged time series were calculated. The  datasets studied include TRMM 3B42RT (precipitation), GLEAM (evapotranspiration), GRACE (change in storage over time), and Pan et al. (2012) for ground truth data for all variables.
+The study areas in this example include the Amazon, Mississippi and Nile river basins. The time period under consideration is January 2004 to December 2006 (with Monthly time steps). Precipitation, evapotranspiration and change in storage datasets were downloaded and preprocessed then basin-averaged time series were calculated. The datasets studied include TRMM 3B42RT (precipitation), GLEAM (evapotranspiration), GRACE (change in storage over time), and Pan et al. (2012) for ground truth data for all variables.
 
-The water balance equation was used to estimate runoff and compare the estimate to the observed streamflow. The estimates and validations were made using publicly available remotely sensed precipitation, evapotranspiration and change in storage datasets. The hydrologic characteristics of the three basins were studied and compared using the runoff ratio (RR), aridity index (AI) and evaporative index (EI). This can be achieved using the following equations for basin characteristics:
+The water balance equation was used to estimate runoff and compare the estimate to the observed streamflow. The estimates and validations were made using publicly available remotely sensed precipitation, evapotranspiration and change in storage datasets.
+
+The hydrologic characteristics of the three basins were studied and compared using the runoff ratio (RR), aridity index (AI) and evaporative index (EI). This can be achieved using the following equations for basin characteristics:
 
 1. Runoff Ratio (RR) = Runoff (Q) / Precipitation (P)
 2. Aridity Index (AI) = Potential Evapotranspiration (Ep) / Precipitation (P)
@@ -56,7 +55,7 @@ The water balance equation was used to estimate runoff and compare the estimate 
 ```r
 rm(list=ls())
 # set working directory
-setwd("/Users/itaiaxelrad/Desktop/251C/HW4/Data/")
+setwd("/Users/.../Data/")
 # load required libraries
 library("raster")
 # load the GRACE data

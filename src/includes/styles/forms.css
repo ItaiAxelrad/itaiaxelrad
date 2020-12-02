@@ -12,16 +12,14 @@ textarea {
   padding: .5rem;
   color: currentColor;
   background: var(--clr-lighter);
-  border: 1px solid var(--clr-theme);
+  border: 1px solid var(--clr-opaque);
   border-radius: var(--radius);
-  line-height: var(--lh-l);
 }
 
 input:focus,
 textarea:focus {
   box-shadow: var(--shadow);
-  border: var(--border);
-  border-color: var(--clr-dark);
+  border-color: var(--clr-theme);
 }
 
 textarea {

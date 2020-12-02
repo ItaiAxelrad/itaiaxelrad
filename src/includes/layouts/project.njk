@@ -2,7 +2,35 @@
 layout: layouts/base.njk
 ---
 
-<article>
-<h1>{{ title }}</h1>
-{{ content | safe }}
+<article id="{{ title | slug }}" class="project">
+
+  <header class="article-header">
+    <h1>{{ title }}</h1>
+    <time class="dt-published">{{ date | readableDate }}</time>
+  </header>
+
+  {{ content | safe }}
+
 </article>
+
+<nav class="projectNav">
+
+  <div class="previous">
+    {%- set previousProject = collections.projects | getPreviousCollectionItem(page) -%}
+    {%- if previousProject -%}
+    <small>Previous Project:</small><br>
+    <a href="{{ previousProject.url }}">{{ previousProject.data.title }}</a>
+    {%- else -%}
+    {%- endif -%}
+  </div>
+
+  <div class="next">
+    {%- set nextProject = collections.projects | getNextCollectionItem(page) -%}
+    {%- if nextProject -%}
+    <small>Next Project:</small><br>
+    <a href="{{ nextProject.url }}">{{ nextProject.data.title }}</a>
+    {%- else -%} 
+    {%- endif -%}
+  </div>
+
+</nav>

@@ -4,7 +4,7 @@ date: 2018-04-30
 tags: ['R', 'vector']
 ---
 
-Look at [Lab 1](https://fyousef.github.io/) for an intro...
+<!-- Look at [Lab 1](https://fyousef.github.io/) for an intro... -->
 
 ## Introduction
 

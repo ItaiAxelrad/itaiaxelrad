@@ -151,6 +151,6 @@ The above results can be summarized in a table and further examined.
 | 11 | 1259 | 1247 | 76.29582 | 112.39205 |
 | 12 | 1260 | 1248 | 42.3984 | 34.48828 |
 
-![](images/image1.png)
+![outpu1](images/image1.png)
 
-![](images/image2.png)
+![output2](images/image2.png)

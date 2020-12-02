@@ -24,7 +24,7 @@ module.exports = function (eleventyConfig) {
   // add passthrough files
   eleventyConfig.addPassthroughCopy('src/images');
   eleventyConfig.addPassthroughCopy('src/scripts');
-  eleventyConfig.addPassthroughCopy('src/styles');
+  eleventyConfig.addPassthroughCopy('src/includes/styles');
   eleventyConfig.addPassthroughCopy('src/manifest.json');
   eleventyConfig.addPassthroughCopy('src/sw.js');
   eleventyConfig.addPassthroughCopy("src/projects/**/**/images/*");

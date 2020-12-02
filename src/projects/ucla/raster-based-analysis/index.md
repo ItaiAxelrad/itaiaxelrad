@@ -1,5 +1,5 @@
 ---
-title: R is for Raster
+title: Raster Based Analysis
 date: 2018-04-30
 tags: ['R', 'raster']
 ---
