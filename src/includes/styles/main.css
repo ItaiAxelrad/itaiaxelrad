@@ -10,7 +10,7 @@
 /* define vars for root elements*/
 :root {
   /* font-families */
-  --ff-sans: 'Nunito', system-ui,  Roboto, Helvetica, sans-serif;
+  --ff-sans: 'Nunito', system-ui, Roboto, Helvetica, sans-serif;
   --ff-mono: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
   /* hsl values */
   --hue: 205;
@@ -24,7 +24,7 @@
   --clr-gray: hsl(var(--hue), var(--sat), 78%);
   --clr-light: hsl(var(--hue), var(--sat), 90%);
   --clr-lighter: hsl(var(--hue), var(--sat), 95%);
-  --clr-opaque: hsla(var(--hue),30%, 50%, 0.1);
+  --clr-opaque: hsla(var(--hue), 30%, 50%, 0.1);
   /* shadows & borders */
   --radius: 3px;
   --border: 1px solid var(--clr-theme);
@@ -40,7 +40,7 @@
     --clr-gray: hsl(var(--hue), 20%, 72%);
     --clr-light: hsl(var(--hue), 30%, 15%);
     --clr-lighter: hsl(var(--hue), 30%, 18%);
-    --clr-opaque: hsla(var(--hue),30%, 50%, 0.1);
+    --clr-opaque: hsla(var(--hue), 30%, 50%, 0.1);
   }
   img {
     filter: brightness(0.9);
@@ -124,10 +124,11 @@ figcaption {
 /* main content layout*/
 header.landing-page {
   display: grid;
-  grid-template-columns: 45ch 450px;
+  grid-template-columns: min(50%, 45ch) min(50%, 450px);
   grid-template-rows: 100vh;
   justify-content: center;
   align-items: center;
+  padding: 0 1rem;
 }
 
 .thumbnail {
@@ -136,7 +137,6 @@ header.landing-page {
   justify-self: end;
   max-width: 114px;
 }
-
 
 .card {
   padding: 1rem;

@@ -1,10 +1,10 @@
 ---
 title: vEleven
 date: 2020-12-05
-tags: ['logbook', 'CMS', 'SPA', 'climbing', 'python', 'Netlify', 'scraping']
+tags: ['logbook', 'CMS', 'SPA', 'climbing', 'python', 'Netlify', 'scraping', 'javascript']
 ---
 
-Most of my project ideas arise from my desire to control my own data. This project is no different. You can see the completed project at [vEleven.netlify.app](https://veleven.netlify.app/).
+Most of my project ideas arise from my desire to control my own data. This project is no different. You can see the completed project at [vEleven.us](https://veleven.us/).
 
 ## Introduction
 
@@ -147,11 +147,12 @@ In order to generate charts similarly to 8a.nu's, we will be leveraging a javasc
 
 ```javascript
 // dynamically add data to chart
-export const addData = (chart, label, data1, data2) => {
+export const addData = (chart, label, data1, data2, data3) => {
   // clear the data
   chart.data.labels = new Array();
   chart.data.datasets[0].data = new Array();
   chart.data.datasets[1].data = new Array();
+  chart.data.datasets[2].data = new Array();
   // add labels (font grades)
   label.forEach((label) => {
     chart.data.labels.push(label);
@@ -164,12 +165,16 @@ export const addData = (chart, label, data1, data2) => {
   data2.forEach((pt) => {
     chart.data.datasets[1].data.push(pt);
   });
+  // add data (onsight)
+  data3.forEach((pt) => {
+    chart.data.datasets[2].data.push(pt);
+  });
   // update the chart
   chart.update();
 };
 ```
 
-In order to configure the default tooltip to display the added total of the two datasets in the stacked bar graph passed in the above code (redpoints and flashes), we will add a tooltip object within our chart object.
+In order to configure the default tooltip to display the added total of the two datasets in the stacked bar graph passed in the above code (redpoints, flashes, and onsights), we will add a tooltip object within our chart object.
 
 ```javascript
 tooltips: {
@@ -191,7 +196,7 @@ The table can be sorted by grade or by date, depending on the radio button input
 ```javascript
 const makeTable = (data, sorting, n=50) => {
   
-  // DOM traversal and template code omitted for clarity
+  // DOM traversal and template code omitted for clarity...
   
   // compare sends by grade
   const sortByGrade = (a, b) => {
@@ -203,7 +208,7 @@ const makeTable = (data, sorting, n=50) => {
 }  
 ```
 
-Then, when the user clicks the "Load All" button, we can pass in the length of the dataset inseatd of using the default value.
+Then, when the user clicks the "Load All" button, we can pass in the length of the dataset instead of using the default value.
 
 ```javascript
 // load all ascents for table
