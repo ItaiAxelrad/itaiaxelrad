@@ -44,3 +44,7 @@ ul {
 li {
   list-style-position: inside;
 }
+
+li.project {
+  list-style: none;
+}

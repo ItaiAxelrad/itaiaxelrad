@@ -80,12 +80,11 @@ body.grid-layout {
   display: grid;
   grid-template-columns: 1fr;
   justify-content: center;
-  gap: 1rem;
   overflow-x: hidden;
 }
 
 main {
-  margin: 0 auto;
+  margin: 2rem auto;
   min-height: 100vh;
 }
 
@@ -99,7 +98,7 @@ section {
 
 article {
   width: var(--width);
-  will-change: transform;
+  /* will-change: transform; */
 }
 
 footer {

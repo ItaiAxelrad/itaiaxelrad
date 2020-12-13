@@ -4,10 +4,6 @@ date: 2020-11-25
 tags: ['blog', 'CMS', 'SSG', 'eleventy', 'python', 'Netlify', 'climbing']
 ---
 
-## Introduction
-
-You can see the final result at [axelradclimbing.com](https://www.axelradclimbing.com).
-
 I recall beginning my web development journey sometime in 2017. At the time, I was working towards obtaining my masters in water resource engineering at UCLA. While I used Fortran 77 (yup, Fortran) VBA, R, and Matlab for engineering projects, I was always intrigued by front end web development. One of the first projects I envisioned was a personal blog. My brother and I have co-authored a climbing blog for around a decade now, and while it sees very little traffic, it is still dear to me.
 
 The blog was originally created using blogger, Google's blogging platform. Over the years, the blogger platform had fallen by the wayside despite the resurgence in blogging.
@@ -200,3 +196,7 @@ Image optimization has always been a bigger headache than it should be. Why isn'
     })
     .use(replaceLink)
 ```
+
+## Conclusion
+
+You can see the final result at [axelradclimbing.com](https://www.axelradclimbing.com).
