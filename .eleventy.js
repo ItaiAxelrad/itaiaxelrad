@@ -75,7 +75,7 @@ module.exports = function (eleventyConfig) {
   ) {
     try {
       return await postcss([autoprefixer, cssnano])
-        .process(code)
+        .process(code, {from: 'undefined'})
         .then(function (result) {
           callback(null, result.css);
         });

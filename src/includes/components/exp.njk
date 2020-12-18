@@ -27,7 +27,11 @@
           <use xlink:href="/images/defs.svg#calendar"></use>
         </svg>
         <time datetime="{{exp.data.dateFrom}}">{{exp.data.dateFrom | readableDate }}</time> -
+        {% if exp.data.dateTo %}
         <time datetime="{{exp.data.dateTo}}">{{exp.data.dateTo | readableDate }}</time>
+        {% else %}
+        <time>Present</time>
+        {% endif %}
       </h4>
     </header>
     <img

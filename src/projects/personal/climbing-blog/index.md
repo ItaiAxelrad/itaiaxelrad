@@ -77,7 +77,7 @@ def getPosts(url):
     try:
         getPosts(next_page)
     except:
-        print('✅ All done writing blogs!')
+        print('✅ All done writing posts!')
 
 getPosts(start_url)
 ```
@@ -174,11 +174,11 @@ The above python script created folders inside my post directory named with a 'Y
 
 ## Static Site Generator
 
-There is no shortage of SSGs out in the world. Finding the correct one for your project is a bit annoying at times. For this project, I decided to try out 11ty, having heard only good things about it. I have to say, it's really frictionless to use. Zero config out of the gate but it scales up nicely. The build times are a bit slow, but I suspect they would be with most SSGs seeing as the blog has roughly 1000 images and hundreds of pages to process.
+There is no shortage of static site generators (SSGs) out in the world. As a result, finding the correct one for your project is a bit overwhelming. For this project, I decided to try out [11ty](https://www.11ty.dev/), having heard only good things about it. I have to say, it's really frictionless to use. It is zero configuration by default but scales up nicely. The build times on this particular project are a bit slow, but I suspect they would be with any SSG seeing as the blog has hundreds of posts to process and roughly 1000 images.
 
 ## Image Optimization
 
-Image optimization has always been a bigger headache than it should be. Why isn't there a simple and beautiful solution? If you have one, please drop me a message. Ultimately, I went with Git LFS and Netlify's Large Media and image transforms. I use a markdown package to access the image source attribute at write and append my query. I also tacked on the native lazy loading attribute and implicit figures. Below is snippet from my `.eleventy.js` config file:
+Image optimization has always been a bigger headache than it should be. Ultimately, I went with [Git LFS](https://git-lfs.github.com/) and [Netlify's Large Media](https://docs.netlify.com/large-media/overview/) and image transforms. It took me a couple tries to get LFS working properly and I still have missing images on the site that were not properly processed. That being said, 99% are and my repo is much smaller, my build times much faster, and ultimately the images are properly sized. In order to dynamically add my transform request query parameter to the posts, I use a markdown plugin called [replace-link](https://github.com/martinheidegger/markdown-it-replace-link) to access the image source attribute at build time and append my desired parameter. I also tacked on two additional markdown-it plugins for [native lazy loading attribute](https://github.com/ruanyf/markdown-it-image-lazy-loading) and [implicit figures](https://github.com/arve0/markdown-it-implicit-figures). Below is snippet from my `.eleventy.js` config file:
 
 ```js
   let markdownLibrary = markdownIt({
@@ -186,7 +186,7 @@ Image optimization has always been a bigger headache than it should be. Why isn'
     breaks: false,
     linkify: true,
     typographer: true,
-    replaceLink: function (link, env) {
+    replaceLink: (link, env) => {
         return link + "?nf_resize=fit&w=1200";
     }
   })
@@ -199,4 +199,6 @@ Image optimization has always been a bigger headache than it should be. Why isn'
 
 ## Conclusion
 
-You can see the final result at [axelradclimbing.com](https://www.axelradclimbing.com).
+While the site is still a bit of work in progress, I am really proud of the end result. There is something so incredibly satisfying about achieving a long term goal. You can view the live site at [axelradclimbing.com](https://www.axelradclimbing.com).
+
+On to the next!

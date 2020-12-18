@@ -1,8 +1,8 @@
 ---
-title: Baseline Engineering Coorporation
+title: Baseline Engineering Corporation
 position: Project Engineer
 dateFrom: 2019-02-25
-dateTo: present
+dateTo: null
 location: Denver, CO
 image: '/images/baseline.jpg'
 tags: ['experience']

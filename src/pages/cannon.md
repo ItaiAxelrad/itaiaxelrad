@@ -1,5 +1,5 @@
 ---
-title: Cannon
+title: Cannon Corporation
 position: Design Engineer
 location: Los Angeles, CA
 dateFrom: 2015-10-15
