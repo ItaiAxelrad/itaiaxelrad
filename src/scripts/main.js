@@ -8,7 +8,6 @@ if ('serviceWorker' in navigator) {
 };
 
 // import JS modules
-import '/scripts/modules/attr.js'
 import '/scripts/modules/mobile.js'
 import '/scripts/modules/landing.js'
 import '/scripts/modules/btn.js'

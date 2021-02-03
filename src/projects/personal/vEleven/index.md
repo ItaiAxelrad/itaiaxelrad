@@ -18,36 +18,46 @@ Scraping sites is admittedly an ethical gray area at best, and 8a.nu explicitly 
 
 >“crawling” the Vertical-Life Service or otherwise using any automated means (including bots, scrapers, and spiders) to collect information from Vertical-Life is not permitted for any reason whatsoever.
 
-As such, parts of this project may be in violation the above terms and conditions and the Digital Millennium Copyright Act (DMCA). That being said, I only collected my own personal data on the site and will not use it for any monetary gains. Do with it what you will.
+As such, parts of this project may be in violation the above terms and conditions and the Digital Millennium Copyright Act (DMCA). That being said, I only collected my own personal data on the site and will not use it for any monetary gains. Do with that what you will.
 
 After the release of the update, I searched for an open source scraper with very little hope. To my surprise I found one that, Vishaal, a buddy of mine had made. I recall seeing him walking the halls of the engineering building at UCLA covered in chalk. He informed me that he kept a hangboard in his backpack to get a set in at the gym between classes. A real *climber's climber*.
 
-At first, I encountered a few issues that were resolved with a quick pull request. After that we were smooth sailing. While I'll discuss the scraper code in the post below, I do not take credit for creating it. If you'd like, please take a look at the [source code](https://github.com/vishaalagartha/8a_scraper).
+At first, I encountered a few issues that were resolved with a quick pull request or two. After that we were smooth sailing. While I'll discuss the scraper code in the post below, I do not take credit for creating it. If you'd like, please take a look at the [source code](https://github.com/vishaalagartha/8a_scraper).
 
 The code breaks down into two distinct parts, the login function and the data scraper.
 
 ## Browser Automation
 
-We'll be using WebDriver, which drives a browser natively (either locally or on a remote machine) using the Selenium server. The webdriver manager ensures the latest version and correct path are being used. After importing the required packages, we set the webdriver options and instantiate the install using the driver manager. In this case, we'll being using Chrome. The driver can navigate to the Vertical-Life user authentication page then find elements by id or class in order to login.
+We'll be using the [Selenium WebDriver](https://www.selenium.dev/documentation/en/webdriver/), which drives a browser natively (either locally or on a remote machine) using the Selenium server. The webdriver manager ensures the latest version and correct path are being used. After importing the required packages, we set the webdriver options and instantiate the install using the driver manager. In this case, we'll being using Chrome. The driver can navigate to 8a.nu then the Vertical-Life user authentication page and find elements by id or class in order to login.
 
 ```python
+# create a login function with Chrome webdriver
 def login():
+    # set webderiver options
     chrome_options = webdriver.ChromeOptions()
     chrome_options.add_argument("--headless")
-    chrome_options.add_argument("--disable-dev-shm-usage")
     chrome_options.add_argument("--no-sandbox")
+    chrome_options.add_argument("--disable-dev-shm-usage")
+    chrome_options.add_argument(
+        '--disable-blink-features=AutomationControlled')
+    chrome_options.add_argument("window-size=1280,800")
+    # install webdriver as driver
     driver = webdriver.Chrome(
         executable_path=ChromeDriverManager().install(), options=chrome_options)
-    driver.get('https://vlatka.vertical-life.info/auth/realms/Vertical-Life/protocol/openid-connect/auth?client_id=8a-nu&scope=openid%20email%20profile&response_type=code&redirect_uri=https%3A%2F%2Fwww.8a.nu%2Fcallback&resource=https%3A%2F%2Fwww.8a.nu&code_challenge=xBL05X4o7XhZ9mN1VGAjfT1HU2baawHrUqYJZT1Vrr4&code_challenge_method=S256')
-    #
+    # get login page via 8a.nu
+    driver.get('https://www.8a.nu/')
+    driver.find_element_by_link_text('Log in').click()
     driver.find_element_by_id('username').send_keys(os.getenv('_8A_USERNAME'))
     driver.find_element_by_id('password').send_keys(os.getenv('_8A_PASSWORD'))
     driver.find_element_by_id('kc-login').submit()
-    driver.find_elements_by_class_name('sign-in')[0].click()
     return driver
 ```
 
-The username/email and password are stored as environmental variables using `os.environ[]`.
+Many sites (including 8a) will attempt to detect automated browsing in order to prevent scraping. In the above code, some measures have been taken to obscure the use of a webdriver, like setting a window size. A nice article appropriately titled [10 Ways to hide your Bot Automation from Detection](https://piprogramming.org/articles/How-to-make-Selenium-undetectable-and-stealth--7-Ways-to-hide-your-Bot-Automation-from-Detection-0000000017.html) addresses this well.
+
+### Environmental Variables
+
+The username/email and password can stored as environmental variables using `os.environ[]`.
 
 ```python
 # set environmental variables for login
@@ -55,9 +65,20 @@ os.environ["_8A_USERNAME"] = "yourlogin@email.com"
 os.environ["_8A_PASSWORD"] = "12345678"
 ```
 
+However, I prefer to move any sensitive information away from my main code using the [dotnev](https://github.com/theskumar/python-dotenv) package. Create a `.env` file and store your login information like so `_8A_USERNAME="yourlogin@email.com"`. Then, load the package and .env file to access the environmental variables using the regular `os.getenv` command.
+
+```python
+from dotenv import load_dotenv
+load_dotenv()  # take environment variables from .env.
+# Code of your application, which uses environment variables (e.g. from `os.environ` or
+# `os.getenv`) as if they came from the actual environment.
+```
+
+Be sure to add your `.env` file to `.gitignore`!
+
 ## Data Mining
 
-Once the webdriver has successfully logged into the site, we can begin to scrape the data. This can be accomplished many different ways, but perhaps the most common of which is `Beautiful Soup`. `Beautiful Soup` is a Python library for pulling data out of HTML and XML files.
+Once the webdriver has successfully logged into the site, we can begin to scrape the data. This can be accomplished many different ways, but perhaps the most common of which is [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/). `Beautiful Soup` is a Python library for pulling data out of HTML and XML files.
 
 First, we will set the user whose ascents we would like, and the category of climbing (`'bouldering' | 'sportclimbing'`)
 
@@ -70,8 +91,8 @@ Next, we will slugify the username in order to format it into the base API url a
 
 ```python
 def get_user_ascents(user, category):
-    user = slugify(user)
     driver = login()
+    user = slugify(user)
     base_url = 'https://www.8a.nu/api/users/{}/ascents?category={}&pageIndex={}&pageSize=50&sortfield=grade_desc&timeFilter=0&gradeFilter=0&typeFilter=&isAscented=true'
     ascents = []
     page_index = 0
@@ -92,13 +113,13 @@ In order to retrieve and save the mined data for use in our SPA, we will save it
 
 ```python
 # run the script and print
-ascents = get_user_ascents(user, category)
-# Writing to a json file
 user_slug = slugify(user)
+ascents = get_user_ascents(user, category)
+# create user data directory
 dir_path = f"data/{user_slug}/"
 if not os.path.exists(dir_path):
     os.makedirs(dir_path)
-
+# Writing to a json file
 with open(f"{dir_path}/{category}.json", "w") as outfile:
     json.dump(ascents, outfile)
 ```
@@ -143,7 +164,13 @@ The climbs can then be displayed in card components along with their respective 
 
 ### The Charts
 
-In order to generate charts similarly to 8a.nu's, we will be leveraging a javascript library called [Chart.js](https://www.chartjs.org/). Chart.js uses the versatile `canvas` element to render an interactive charts and graphs with many possibilities. There is plenty of documentation on this popular library, so I will only share the dynamic data loading function and custom tooltip below:
+In order to generate charts similarly to 8a.nu's, we will be leveraging a javascript library called [Chart.js](https://www.chartjs.org/). Chart.js uses the versatile `canvas` element to render an interactive charts and graphs with many possibilities. There is plenty of documentation on this popular library, so I will only share the less common stuff - dynamic data loading and custom tooltips.
+
+The data loaded has three sets, all with a total count:
+
+1. Onsights
+2. Flashes
+3. Redpoints
 
 ```javascript
 // dynamically add data to chart
@@ -174,7 +201,7 @@ export const addData = (chart, label, data1, data2, data3) => {
 };
 ```
 
-In order to configure the default tooltip to display the added total of the two datasets in the stacked bar graph passed in the above code (redpoints, flashes, and onsights), we will add a tooltip object within our chart object.
+In order to configure the default tooltip to display the added total of the three datasets in the stacked bar graph passed in the above code (redpoints, flashes, and onsights), we will add a tooltip object within our chart object.
 
 ```javascript
 tooltips: {

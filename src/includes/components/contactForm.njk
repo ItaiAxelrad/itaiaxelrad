@@ -1,4 +1,10 @@
-<form name="contact" method="POST" data-netlify="true">
+<form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="form-contact">
+<div hidden aria-hidden="true">
+      <label>
+        Don’t fill this out if you're human: 
+        <input name="bot-field" />
+      </label>
+    </div>
   <label for="email">Email</label>
   <input
     id="email"
