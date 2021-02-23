@@ -34,7 +34,7 @@ permalink: index.html
 <section id="experience">
   <h2 class="section-header">Experience</h2>
 
-  {% for exp in collections.experience %}
+  {% for exp in collections.experience | sort(false, true, 'dateTo') %}
     {% include "components/exp.njk" %}
   {% endfor %}
 
@@ -44,7 +44,7 @@ permalink: index.html
 <section id="education">
   <h2 class="section-header">Education</h2>
 
-  {% for edu in collections.education %}
+  {% for edu in collections.education | sort(false, true, 'dateTo') %}
     {% include "components/edu.njk" %}
   {% endfor %}
 
