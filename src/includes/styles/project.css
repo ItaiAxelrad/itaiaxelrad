@@ -50,17 +50,22 @@ pre.language-python::before {
 
 ol.projects {
   margin: 1rem auto;
+  padding: 0;
 }
 
 li.project {
   list-style-position: outside;
   margin: 0.5rem 0;
-  padding: 0.5rem 0;
 }
 
 time.dt-published {
   color: var(--clr-gray);
   font-family: var(--ff-mono);
+  font-size: smaller;
+}
+
+h2.p-name {
+  font-size: smaller;
 }
 
 header.article-header {

@@ -9,10 +9,10 @@ eleventyExcludeFromCollections: true
 <h1>{{ title }}</h1>
 <ol class="projects" reversed >
 {% for project in collections.projectSorted %}
-  <li class="project">
+  <li class="h-entry project card">
     <time class="dt-published">{{ project.data.date | fullDate }}</time>
-    <h2><a href="{{ project.url | url }}">{{ project.data.title }}</a></h2>
-    <p class="caption">{{- project.templateContent | truncate(140, true, "...") | safe -}}</p>
+    <h2 class="p-name"><a href="{{ project.url | url }}">{{ project.data.title }}</a></h2>
+    {# <p class="caption">{{- project.templateContent | truncate(140, true, "...") | safe -}}</p> #}
   </li>
 {% endfor %}
 </ol>
