@@ -3,6 +3,13 @@
   body,
   section {
     display: block;
+    font-size: 16px;
+  }
+  section {
+    margin: 1rem 0.5rem;
+  }
+  main {
+    padding: 0.15rem 0;
   }
 
   h2 {
@@ -11,7 +18,24 @@
 
   article {
     width: 100%;
-    margin: 1rem 0.5rem;
+    margin: 1rem auto;
+  }
+
+  .grid-col2-thumb {
+    display: block;
+  }
+
+  .thumbnail {
+    max-width: 100%;
+    margin: 1rem auto 0.5rem auto;
+  }
+
+  .card {
+    padding: 1rem;
+  }
+
+  .section-header {
+    padding-left: 0.75rem;
   }
 
   .intro {

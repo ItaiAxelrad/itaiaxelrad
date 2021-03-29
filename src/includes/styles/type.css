@@ -5,11 +5,6 @@
 
 .section-header {
   color: var(--clr-darkish);
-  font-size: 2rem;
-  text-transform: lowercase;
-  text-align: center;
-  font-weight: lighter;
-  font-family: monospace;
 }
 
 h1 {
@@ -29,7 +24,7 @@ header h4 {
 }
 
 p {
-  margin: 1rem 0;
+  margin: 1rem 0 0 0;
 }
 
 /* lists and details */

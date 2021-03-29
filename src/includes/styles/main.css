@@ -10,23 +10,18 @@
 /* define vars for root elements*/
 :root {
   /* font-families */
-  --ff-sans: 'Nunito', system-ui, Roboto, Helvetica, sans-serif;
-  --ff-mono: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
-  /* hsl values */
-  --hue: 205;
-  --sat: 50%;
-  --light: 60%;
+  --ff-sans: 'Inter', system-ui, sans-serif;
+  --ff-mono: Consolas, monospace;
   /* brand & theme colors - #66aacc */
-  --clr-theme: hsl(var(--hue), var(--sat), var(--light));
-  --clr-comp: hsl(calc(var(--hue) - 180), var(--sat), var(--light));
-  --clr-dark: hsl(var(--hue), var(--sat), 23%);
-  --clr-darkish: hsl(var(--hue), var(--sat), 28%);
-  --clr-gray: hsl(var(--hue), var(--sat), 78%);
-  --clr-light: hsl(var(--hue), var(--sat), 90%);
-  --clr-lighter: hsl(var(--hue), var(--sat), 95%);
-  --clr-opaque: hsla(var(--hue), 30%, 50%, 0.1);
+  --clr-theme: hsl(210, 60%, 50%);
+  --clr-dark: #333;
+  --clr-darkish: #444;
+  --clr-gray: #555;
+  --clr-light: whitesmoke;
+  --clr-lighter: white;
+  --clr-opaque: hsla(0, 0%, 94%, 0.8);
   /* shadows & borders */
-  --radius: 3px;
+  --radius: 5px;
   --border: 1px solid var(--clr-theme);
   --shadow: 0px 0px 1rem 4px var(--clr-opaque);
   --width: 60ch;
@@ -35,36 +30,16 @@
 /* day & night mode */
 @media (prefers-color-scheme: dark) {
   :root {
-    --clr-dark: hsl(var(--hue), 20%, 90%);
-    --clr-darkish: hsl(var(--hue), 20%, 84%);
-    --clr-gray: hsl(var(--hue), 20%, 72%);
-    --clr-light: hsl(var(--hue), 30%, 15%);
-    --clr-lighter: hsl(var(--hue), 30%, 18%);
-    --clr-opaque: hsla(var(--hue), 30%, 50%, 0.1);
+    --clr-dark: white;
+    --clr-darkish: whitesmoke;
+    --clr-gray: #333;
+    --clr-light: #111;
+    --clr-lighter: hsl(0deg 0% 9%);
+    --clr-opaque: hsla(0, 0%, 11%, 0.8);
   }
   img {
     filter: brightness(0.9);
   }
-}
-
-/* day & night mode */
-.scheme-dark {
-  --clr-dark: hsl(var(--hue), 20%, 93%);
-  --clr-darkish: hsl(var(--hue), 20%, 86%);
-  --clr-gray: hsl(var(--hue), 20%, 72%);
-  --clr-light: hsl(var(--hue), 30%, 15%);
-  --clr-lighter: hsl(var(--hue), 30%, 18%);
-  --clr-opaque: hsla(0, 0%, var(--gray), 0.1);
-}
-
-.scheme-light {
-  --clr-theme: hsl(var(--hue), var(--sat), var(--light));
-  --clr-dark: hsl(var(--hue), var(--sat), 23%);
-  --clr-darkish: hsl(var(--hue), var(--sat), 28%);
-  --clr-gray: hsl(var(--hue), var(--sat), 78%);
-  --clr-light: hsl(var(--hue), var(--sat), 89%);
-  --clr-lighter: hsl(var(--hue), var(--sat), 95%);
-  --clr-opaque: hsla(0, 0%, var(--gray), 0.1);
 }
 
 body {
@@ -91,14 +66,13 @@ main {
 section {
   display: grid;
   gap: 2rem;
-  justify-content: center;
   scroll-margin-top: 3rem;
   padding: 3rem 0;
+  overflow-x: hidden;
 }
 
 article {
   width: var(--width);
-  /* will-change: transform; */
 }
 
 footer {
@@ -128,27 +102,25 @@ header.landing-page {
   justify-content: center;
   align-items: center;
   padding: 0 1rem;
+  background: var(--clr-light);
 }
 
 .thumbnail {
-  border: 1px solid var(--clr-opaque);
   border-radius: var(--radius);
   justify-self: end;
   max-width: 114px;
 }
 
 .card {
-  padding: 1rem;
-  border: 1px solid var(--clr-opaque);
+  padding: 1.5rem;
+  border: 1px solid transparent;
   background: var(--clr-lighter);
   border-radius: var(--radius);
   transition: 0.2s ease-out;
 }
 
 .card:hover {
-  cursor: pointer;
-  filter: brightness(1.01);
-  box-shadow: var(--shadow);
+  border-color: vae(--clr-theme);
 }
 
 /* grid layout with one column  */
@@ -234,6 +206,11 @@ header.landing-page {
   height: 1rem;
   margin-inline-end: 0.15rem;
 }
+
+.glass {
+  background: var(--clr-opaque);
+  backdrop-filter: saturate(180%) blur(20px);
+}
 /* Plant svg layer colors */
 .plant {
   max-width: 100%;
@@ -253,7 +230,7 @@ header.landing-page {
 /* external link style */
 button a,
 nav a {
-  color: currentColor;
+  color: var(--clr-theme);
   text-decoration: none;
 }
 
@@ -261,22 +238,15 @@ a,
 a[href^="http://"],
 a[href^="https://"],
 a[rel='noreferrer'] {
-  text-decoration: solid underline var(--clr-theme);
+  color: var(--clr-theme);
+  text-decoration: none;
 }
 
 a:hover,
 a[href^="http://"]:hover ,
 a[href^="https://"]:hover ,
 a[rel='noreferrer']:hover {
-  color: var(--clr-theme);
-}
-
-a[href^="http://"]::after,
-a[href^="https://"]::after,
-a[rel='noreferrer']::after {
-  content: '\2197';
-  font-size: small;
-  text-decoration: none;
+  text-decoration: underline var(--clr-theme);
 }
 
 /* navigation layouts */
@@ -286,7 +256,6 @@ nav {
   justify-items: end;
   padding: 1rem 3rem;
   width: 100%;
-  background: var(--clr-lighter);
 }
 
 .nav-home {
@@ -298,17 +267,25 @@ nav {
   vertical-align: bottom;
 }
 
-.nav_link {
-  letter-spacing: 2px;
+.nav-home a {
+  text-decoration: none;
+  color: var(--clr-dark);
+  opacity: 0.8;
 }
 
 .nav_link a {
+  letter-spacing: 2px;
   padding-inline-end: 1rem;
+  text-decoration: none;
+  color: var(--clr-dark);
+  opacity: 0.8;
 }
 
 .active,
+.nav-home a:hover,
 .nav_link a:hover {
-  color: var(--clr-theme);
+  /* color: var(--clr-theme); */
+  opacity: 1;
   cursor: pointer;
 }
 
@@ -322,7 +299,8 @@ nav {
 
 .btn:hover {
   cursor: pointer;
-  filter: brightness(1.01);
+  filter: brightness(1.05);
+  text-decoration: none;
 }
 
 *:focus {
