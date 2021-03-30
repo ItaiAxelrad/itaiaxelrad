@@ -63,20 +63,20 @@ export const getCenter = async(center) => {
 
 ## References
 
-<https://observablehq.com/@mourner/martin-real-time-rtin-terrain-mesh>
-<https://blog.mapbox.com/bringing-3d-terrain-to-the-browser-with-three-js-410068138357?gi=d1cc6a0c7423>
-<https://medium.com/@zubazor/visualizing-a-mountain-using-three-js-landsat-and-srtm-26275c920e34>
-<http://www.smartjava.org/content/threejs-render-real-world-terrain-heightmap-using-open-data/>
-<https://flothesof.github.io/Paris-3D-model-using-elevation-API-and-OpenSCAD.html>
-<https://www.lukaszielinski.de/blog/posts/2014/11/07/webgl-creating-a-landscape-mesh-with-three-dot-js-using-a-png-heightmap/>
-<https://developer.here.com/blog/visualizing-large-scale-terrain-with-open-source-tool-tin-terrain>
-<https://blog.mastermaps.com/2013/10/terrain-building-with-threejs-part-1.html>
-<https://blog.mastermaps.com/2013/10/terrain-building-with-threejs.html>
+- <https://observablehq.com/@mourner/martin-real-time-rtin-terrain-mesh>
+- <https://blog.mapbox.com/bringing-3d-terrain-to-the-browser-with-three-js-410068138357?gi=d1cc6a0c7423>
+- <https://medium.com/@zubazor/visualizing-a-mountain-using-three-js-landsat-and-srtm-26275c920e34>
+- <http://www.smartjava.org/content/threejs-render-real-world-terrain-heightmap-using-open-data/>
+- <https://flothesof.github.io/Paris-3D-model-using-elevation-API-and-OpenSCAD.html>
+- <https://www.lukaszielinski.de/blog/posts/2014/11/07/webgl-creating-a-landscape-mesh-with-three-dot-js-using-a-png-heightmap/>
+- <https://developer.here.com/blog/visualizing-large-scale-terrain-with-open-source-tool-tin-terrain>
+- <https://blog.mastermaps.com/2013/10/terrain-building-with-threejs-part-1.html>
+- <https://blog.mastermaps.com/2013/10/terrain-building-with-threejs.html>
 
-## Public Repos
+## Public Repositories
 
-<https://github.com/w3reality/three-geo>
-<https://github.com/urbica/martin>
-<https://github.com/mapbox/martini>
-<https://github.com/heremaps/quantized-mesh-viewer>
-<https://github.com/turban/webgl-terrain/tree/master>
+- <https://github.com/w3reality/three-geo>
+- <https://github.com/urbica/martin>
+- <https://github.com/mapbox/martini>
+- <https://github.com/heremaps/quantized-mesh-viewer>
+- <https://github.com/turban/webgl-terrain/tree/master>

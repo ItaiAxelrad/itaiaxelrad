@@ -13,3 +13,5 @@ Barbara. The project utilized Type V construction over a 14"
 thick elevated concrete deck supported by concrete columns with
 masonry walls and light gauge steel framing for the upper
 floors.
+
+!()[./uploads/paseo-render.jfif]
