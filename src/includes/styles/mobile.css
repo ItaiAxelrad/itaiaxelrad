@@ -85,6 +85,7 @@
     display: block;
     float: right;
     padding: 0 1rem;
+    max-height: 1.5rem;
   }
 
   .closed {
