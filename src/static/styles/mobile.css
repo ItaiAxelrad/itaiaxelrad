@@ -101,4 +101,20 @@
   .schemeBtn {
     display: none;
   }
+
+  .badge {
+    position: inherit;
+    margin: 0;
+    float: right;
+  }
+
+  section.timeline {
+    padding: 1rem 0;
+    gap: 2rem;
+    border-left: none;
+    overflow-x: hidden;
+  }
+  main.project {
+    padding: 1rem;
+  }
 }

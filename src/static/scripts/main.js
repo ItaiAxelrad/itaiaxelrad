@@ -12,4 +12,4 @@ import './static/scripts/modules/mobile.js'
 import './static/scripts/modules/btn.js';
 // import './static/scripts/modules/landing.js'
 // import './static/scripts/modules/links.js';
-// import './modules/mode.js';
+// import './static/scripts/modules/mode.js';

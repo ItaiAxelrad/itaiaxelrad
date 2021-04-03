@@ -98,7 +98,9 @@ header.article-header {
 }
 
 .tag {
+  display: inline-block;
   color: var(--clr-darkish);
+  margin-bottom: 0.25rem;
   padding: 0.25rem 0.5rem;
   background: var(--clr-gray);
   border-radius: var(--radius);
