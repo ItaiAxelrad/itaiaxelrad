@@ -21,12 +21,11 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(syntaxHighlight);
 
   // add passthrough files
-  eleventyConfig.addPassthroughCopy('src/images');
-  eleventyConfig.addPassthroughCopy('src/scripts');
-  eleventyConfig.addPassthroughCopy('src/includes/styles');
+  eleventyConfig.addPassthroughCopy('src/static');
   eleventyConfig.addPassthroughCopy('src/manifest.json');
   eleventyConfig.addPassthroughCopy('src/sw.js');
-  eleventyConfig.addPassthroughCopy('src/projects/**/**/images/*');
+  eleventyConfig.addPassthroughCopy('src/pages/projects/**/uploads/*');
+  eleventyConfig.addPassthroughCopy('src/pages/projects/**/images/*');
 
   eleventyConfig.setFrontMatterParsingOptions({
     excerpt: true,
@@ -34,7 +33,7 @@ module.exports = function (eleventyConfig) {
 
   // parse datetime to readable
   eleventyConfig.addFilter('readableDate', (dateObj) => {
-    return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat(
+    return DateTime.fromISO(dateObj, { zone: 'utc' }).toFormat(
       "LLLL',' yyyy"
     );
   });

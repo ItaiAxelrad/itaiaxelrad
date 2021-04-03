@@ -1,0 +1,62 @@
+[
+    {
+      "title": "California Polytechnic",
+      "subtitle": "Bachelor of Science, Civil Engineering",
+      "location": "San Luis Obispo, CA",
+      "dateFrom": "2010-09-01",
+      "dateTo": "2015-12-20",
+      "image": "/images/calpoly.jpg",
+      "website": "https://www.calpoly.edu/",
+      "type": "education",
+      "tags": ["education", "Cal Poly", "Bachelor"],
+      "description": "During my time at Cal Poly, I learned the fundamentals of engineering and applied this knowledge towards hands-on design projects in water resources, geotechnical engineering, transportation, structural and environmental engineering fields. I pushed myself academically and achieved Dean's List standing for Fall and Spring of 2013."
+    },
+    {
+      "title": "Taylor and Syfan",
+      "subtitle": "Staff Engineer",
+      "location": "San Luis Obispo, CA",
+      "dateFrom": "2014-05-01",
+      "dateTo": "2014-08-01",
+      "image": "/images/ts.jpg",
+      "website": "https://www.taylorsyfan.com/",
+      "type": "experience",
+      "tags": ["experience", "Vectorworks", "Taylor &amp; Syfan", "structural"],
+      "description": "While interning as a structural engineer for Taylor &amp; Syfan, I transformed architectural plans into structural plans, performed beam loading analysis, and beam selection. My experience there made me competent in drawing structural details using Vectorworks."
+    },
+    {
+      "title": "Cannon",
+      "subtitle": "Design Engineer",
+      "location": "Los Angeles, CA",
+      "dateFrom": "2015-10-15",
+      "dateTo": "2017-06-15",
+      "image": "/images/cannoncorp.jpg",
+      "website": "https://cannoncorp.us",
+      "type": "experience",
+      "tags": ["experience", "cannon", "autocad", "civil"],
+      "description": "During my time at Cannon, I was responsible for designing pump stations, wells, and water mains up to 2 miles in length. I became proficient in drafting civil and mechanical details in AutoCAD Civil 3D. My responsibilities also included client meetings, site visits and preparing cost estimates for projects with construction budgets up to 15 million dollars."
+    },
+    {
+      "title": "University of California",
+      "subtitle": "Master of Science, Civil Engineering",
+      "location": "Los Angeles, CA",
+      "dateFrom": "2017-09-01",
+      "dateTo": "2018-06-01",
+      "image": "/images/ucla.jpg",
+      "website": "https://www.ucla.edu/",
+      "type": "education",
+      "tags": ["education", "ucla", "master", "civil", "environmental"],
+      "description": "Throughout my academic career at UCLA, I furthered my knowledge in linear and dynamic programming, groundwater modeling, geographic information systems, remote sensing, and forecast verification."
+    },
+    {
+      "title": "Baseline",
+      "subtitle": "Project Engineer",
+      "location": "Golden, CO",
+      "dateFrom": "2019-02-25",
+      "dateTo": null,
+      "image": "/images/baseline.jpg",
+      "website": "https://baselinecorp.com/",
+      "type": "experience",
+      "tags": ["experience", "civil", "water", "wastewater", "autocad"],
+      "description": "As part of the Baseline team, I am responsible for the design and modeling of water treatment, reclamation facilities, lift stations, and master plans. As a project engineer, my responsibilities also include writing reports, client meetings, site visits and preparing both design and construction cost estimates for various projects."
+    }
+  ]

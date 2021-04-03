@@ -1,0 +1,12 @@
+---
+title: Skills
+permalink: /skills/
+layout: layouts/base.njk
+---
+<h1>Skills</h1>
+<ol>
+{% set skills = collections.skills %}
+{% for skill in skills %}
+  <li>{{skill}}<img src='./images/brands/{{skill}}-brands.svg'></li>
+{% endfor %}
+</ol>
