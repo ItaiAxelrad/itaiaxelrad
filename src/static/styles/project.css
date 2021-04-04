@@ -63,6 +63,10 @@ pre.language-python::before {
   margin-top: -0.5rem;
 }
 
+ol.projects {
+  padding: 0;
+}
+
 li.project {
   display: grid;
   grid-template-columns: auto auto;

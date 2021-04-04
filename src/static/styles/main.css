@@ -14,9 +14,9 @@
   --ff-mono: Consolas, monospace;
   /* brand & theme colors - #66aacc */
   --clr-theme: hsl(215, 70%, 60%);
-  --clr-dark: #333;
-  --clr-darkish: #444;
-  --clr-gray: #555;
+  --clr-dark: hsl(215, 5%, 20%);
+  --clr-darkish: hsl(215, 5%, 27%);
+  --clr-gray: hsl(215, 5%, 93%);
   --clr-light: whitesmoke;
   --clr-lighter: white;
   --clr-opaque: hsla(0, 0%, 94%, 0.9);
@@ -33,8 +33,8 @@
     --clr-dark: white;
     --clr-darkish: whitesmoke;
     --clr-gray: hsl(215, 3%, 20%);
-    --clr-light: hsl(215deg 9% 9%);
-    --clr-lighter: hsl(215deg 5% 13%);
+    --clr-light: hsl(215, 9%, 9%);
+    --clr-lighter: hsl(215, 5%, 13%);
     --clr-opaque: hsla(215, 5%, 13%, 0.9);
   }
   img {
@@ -397,6 +397,7 @@ nav {
   padding: 0.5rem;
   border: 1px solid var(--clr-theme);
   border-radius: 2rem;
+  fill: var(--clr-lighter);
 }
 
 *:focus {
