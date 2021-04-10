@@ -2,7 +2,7 @@
 title: Johnson Avenue Housing Project
 date: 2014-06-06
 image: 'images/Garage.jpg'
-tags: ['calpoly', 'site', 'development']
+tags: ['CalPoly', 'site', 'development', 'residential']
 ---
 
 ## Introduction
@@ -77,23 +77,23 @@ The City of San Luis Obispo’s transportation planning and engineering program 
 
 The SLO Design Consultants team’s approach to the tasks enumerated in the scope of work is presented below. Recommendations pertaining to these tasks have been made following thorough analysis and calculations.
 
-## Subterranean Parking Garage Design
+### Subterranean Parking Garage Design
 
 The parking structure is designed for an occupancy of 70 passenger vehicles underground and temporary and handicap parking on the surface level. The road and roundabout to the housing units lie on top of the subterranean parking structure and are expected to service heavy vehicles, such as fire trucks and delivery trucks. The top of the parking structure will serve as a parking lot, which may need to provide access to delivery and fire trucks.
 
-## Foundation Design
+### Foundation Design
 
 The parking structure will be supported by a combination of 44 shallow and deep foundations along with a strip footing running along the back wall. The shallow foundations will support column loads on the above grade side of the structure. The deep foundations will support loads on the below grade side of the structure. The strip footing will support both the perimeter loads and the loads from the retaining wall. All foundations are designed to support a load of 466,570 pounds, the maximum load expected to be carried by any single column.
 
 It is important to note that the following foundation design is based on a limited number of borings that were conducted at the project site. Subsurface conditions are assumed to be consistent with the findings in these borings. In the case that subsurface conditions vary from what is expected, the foundation design may need to be altered. For this reason, a soils engineer should continually check the site during the excavation process to observe unexpected changes in underlying soil conditions.
 
-## Site Preparation
+### Site Preparation
 
 Prior to foundation construction, intensive excavation and grading procedures will be performed at the building site. The topsoil on site contains a large percentage of clay and ranges in depth from 3 to 6 feet. All this topsoil will be excavated and hauled off site due to its expansive nature. Once the topsoil is removed, cut and fill procedures on the underlying sandstone will be conducted to flatten the building pad. The ground will be excavated and graded to an elevation of 313 feet. Native sandstone meeting this elevation does not need to be compacted. As recommended in the 2009 Soils Engineering Report produced by Earth Systems Pacific,'crushed sandstone that is filled to meet this grade will be scarified, moisture conditioned, and re\-compacted to a relative density of at least 90% for a depth of 1 foot below grade. The soil will remain continually moisture conditioned throughout construction.
 
 Shallow foundations will be placed directly on native sandstone. A friction angle of 54 degrees was calculated for the sandstone based on an index correlation for corrected blow counts (see Appendix for calculations). Blow counts were taken from the weakest sandstone encountered in the area. A friction angle of 45 degrees was assumed in design calculations as a more conservative measurement for soil strength. The existing water table depth is shown to vary from 6 to 20 ft. For design purposes, the water table depth was assumed to be located at ground surface to consider for the worst\-case scenario. Following the recommendations stated in the Soils Engineering Report produced by Earth Systems Pacific, shallow foundations will be embedded into the sandstone to a depth of 2 feet. Considering the load and the factors just discussed, a square 6 by 6 foot foundation was determined to be sufficient for supporting the garage structure. It is assumed that the strip footing will assume the same width. We have noted that a layer of shale exists several feet below multiple shallow footings. Blow counts in this layer demonstrate that the soil has sufficient strength to support the foundations. Therefore we do not recommend that it be excavated from the site. No shallow footings will penetrate this layer.
 
-## Deep Footing Design
+### Deep Footing Design
 
 Deep foundations will be used to support loads on the below grade side of the parking structure. In this area, crushed sandstone will be filled and compacted to meet grade. Although compacted sandstone may provide sufficient bearing capacity to support shallow foundations, there is a concern for differential settlement between foundations on compacted soil and foundations on native soil. To utilize shallow foundations, a large volume of earth would need to be excavated so that the entire building pad lies on native sandstone. This excessive excavation will significantly drive up construction prices. Alternatively, deep foundations will be placed directly on bedrock to eliminate the need for large\-scale excavation. Drilled shafts rather than driven piles will be used because noise pollution from construction in the surrounding area is a concern.
 
@@ -101,45 +101,45 @@ In accordance with the Table 4.4.8.1.2B of the Caltrans Bridge Design Specificat
 
 As recommended by the Soils Engineering Report, a 24\-inch layer of free draining non\-expansive material will be placed underneath the entire garage pad. The fill material will be imported from an outside source and will meet the criteria of ASTM 2488\-06. The top 12 inches of the fill will be compacted to a minimum of 95% of the maximum dry density. The will sit on top of the fill at a final elevation of 315 feet.
 
-## Transportation
+### Transportation
 
 The number of required spaces was determined using the City’s standards in community development. Based on one bedroom and two bedroom units, the total number of spaces required for all 40 housing units is 72. The subterranean parking garage will have 73 spaces total, 15 compact spaces and 9 motorcycle spaces. The surface parking lot will have 4 handicap spaces, 1 van accessible space and 4 additional spaces. The parking spaces will exceed the minimum requirements. An elevator and stairs will be installed in the parking garage to the surface parking lot above it.
 
-## Retaining Walls Design
+### Retaining Walls Design
 
 All retaining walls have been designed to resist multiple failure modes. It is assumed that all retaining walls will rotate enough to mobilize the internal friction of the soil resulting in active resistance. For sliding resistance, base force was calculated using the coefficient of friction given in the Soils Engineering Report. Wet conditions were
 
 determined using the active equivalent fluid pressure for crushed sandstone. For seismic considerations, peak ground acceleration was determined from the USGS Designs Map Detailed Report. Bearing capacity was calculated through Vesic’s analysis instead of Terzaghi’s analysis because the factor of safety determined was extremely large. See Appendix A for full retaining wall calculations and dimensions.
 
-## Slope Stability
+### Slope Stability
 
 A total of five retaining walls will be constructed to stabilize slopes where slope failure is a concern. We have chosen to implement concrete gravity walls for their ease of construction. Retaining walls have been designed to resist bearing, sliding and overturning failure for dry, wet, and seismic loads. Global stability was not considered in our design because the shear strength in the native sandstone is high enough that a global slope failure is highly unlikely.
 
-## Site Preparation
+### Site Preparation
 
 To prepare the site for retaining wall construction, all clay topsoil will be removed. Based on boring logs received, it is estimated that topsoil depth ranges from two to three feet. The retaining walls will bear 12 inches into native sandstone, which is below the 6\-inch frost penetration zone of the region. For the parking structure ramp walls, soil will be excavated a distance of 3 feet behind the location of where the toe will be located. Temporary timber shoring will be used to stabilize cut slopes during construction.
 
-Without proper drainage, hydrostatic forces can increase horizontal loads by 285%. This is the most common cause of retaining wall failure. To prevent these excess loads, a 4 inch perforated pipe will be installed along the backside of all retaining walls to divert water away from the structure. A 1\-foot by 1\-foot free draining gravel blanket will encompass the pipe to allow water to drain freely. Imported free draining gravel will comply with ATSM 2488\-06. A permeable filter fabric will be installed along the backfill\-gravel boundary to prevent mixing of the two materials. Filter fabric will be chosen to comply with Caltrans Standard Specification, Section 88\-1.03 for underdrains and will not be exposed to daylight for more than 72 hours without UV protection.
+Without proper drainage, hydrostatic forces can increase horizontal loads by 285%. This is the most common cause of retaining wall failure. To prevent these excess loads, a 4 inch perforated pipe will be installed along the backside of all retaining walls to divert water away from the structure. A 1\-foot by 1\-foot free draining gravel blanket will encompass the pipe to allow water to drain freely. Imported free draining gravel will comply with ASTM 2488\-06. A permeable filter fabric will be installed along the backfill\-gravel boundary to prevent mixing of the two materials. Filter fabric will be chosen to comply with Caltrans Standard Specification, Section 88\-1.03 for underdrains and will not be exposed to daylight for more than 72 hours without UV protection.
 
 After the walls are constructed, crushed sandstone from previous on\-site excavations will be used as backfill soil in order to minimize the quantity of material off\-hauled. Strength properties of crushed sandstone were estimated from USCS typical values and the equivalent fluid pressure was taken to be 55 psf based on recommendations from the Soils Engineering Report. Crushed sandstone will be compacted to a relative density of 95%. See Appendix A for calculations.
 
-## Parking Structure and Walls
+### Parking Structure and Walls
 
 Two retaining walls will line either side of the ramp descending down to the entrance of the parking structure. The outer wall will contain concave segments. The geometry of these segments will naturally give the extra support against overturning, since a rotational failure would involve concrete cracking. The inner wall contains convex segments and will need additional reinforcement. To provide additional support, the amount of reinforcement will be increased by 10%.
 
 Since the two ramp walls will be highly exposed to public view, the following strategies will be used to protect the aesthetics of the walls. First, these walls will be finished with a material that does not crack under the flexure of the retaining walls. Second, the retaining walls will be thoroughly waterproofed to prevent any seepage through the wall, resulting in undesirable streak marks.
 
-## Roadway Design
+### Roadway Design
 
 The design speed of the entrance and main road is 15 mph due to the geometric constraints and residential area. The design speed of the ramp is 5 mph because of the steep slope and sharp curves. Using Highway Design Manual, the sight distances and minimum radii were determined. All of the curves met the requirements. Due to the hilly slope and high elevation of the existing road existing from the adult school, a 12.6% slope is necessary in order to minimize cut/fill costs and improve drainage. The ramps, curves and roundabout were designed using Caltrans turning templates of various vehicles. AASHTO standards were used in AutoCAD in order to meet the minimum requirements for the vertical and horizontal alignments.
 
 The Caltrans method for the pavement design was used for this project. A design life of 20 years is used because of the roads’ size and location. The conservative design and relatively low usage of the roads will produce a much greater lifetime. The number of trips generated from 40 housing units was determined using ITE trip generation manual. The projected traffic, in addition to the existing traffic, will not lower any of the levels of service of the adjacent streets. The layers used to design the roads included Hot Mix Asphalt (HMA) and Class 2 Aggregate Base above the subgrade. The subgrade was assumed to have an R-value of 10. Sidewalks, curbs and gutters are designed as per City of SLO standards. These three require a 0.5 ft. layer of class 3 Aggregate Sub\-base under the concrete. The main road will have 0.25 ft. of HMA above 1.4 ft. of Class 2 AB. The entrance road will have 0.15 ft. of HMA above the 0.5 ft. concrete slab above the subterranean parking garage. The concrete slab is capable of handling the traffic loads, but for consistency and a crowned cross slope we added a small layer of HMA. The roundabout will have a similar pavement design as the entrance road because it is above the parking garage as well. Due to the steep slope of 8.81% of the ramp leading into the subterranean parking garage, a 0.1 ft. layer of Open Grade Friction Course (OGFC) will be paved over the Hot Mix Asphalt layer. The fire access road has a steep slope of 15.5%, therefore, the OGFC will be paved for the entire section. Cal Fire requires a slip resistant layer if the slope is between 12\-16%, or if it is in a hilly area. Refer to Appendix D for supporting calculations for roadway and pavement design.
 
-## Parking Lot Reconfiguration
+### Parking Lot Reconfiguration
 
 A portion of the existing San Luis Adult School parking lot will be demolished during the construction of the JAHP, and requires reconfiguration. First, a slurry seal will be paved over the remaining parking lot. Next, the parking lot will be restriped using City of SLO standards. The proposed striping will be single\-line in order to be consistent with the existing striping. The existing number of spaces is 93, and the proposed parking lot will have 74 spaces. Although there is a 25% reduction in number of the spaces, this parking lot is extremely underutilized and it will be able to accommodate future parking. The current handicap spaces do not meet the standards. The proposed design has 2 handicap spaces and 1 van accessible space. Instead of converting the school entrance into a 2\-way street for an exit, the traffic will go in a similar route as existing. Traffic will continue through the parking lot to the roundabout and then exit similar to the housing residents.
 
-## Drainage Plan
+### Drainage Plan
 
 The city of San Luis Obispo requires the development of a Master Drainage Plan (MDP) for all new construction. This plan was developed in accordance with the SLO Drainage Design Manual. The MDP considers drainage and flooding impacts of the proposed development. The intent of the plan is to ensure post\-development runoff is equal to or better than existing conditions. This assessment meets the requirements of the California Environmental Quality Act (CEQA).
 

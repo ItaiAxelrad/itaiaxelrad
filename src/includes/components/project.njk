@@ -1,0 +1,15 @@
+<li class="h-entry project">
+    <div>
+      <time class="dt-published">{{ project.data.date | fullDate }}</time>
+      <h2 class="p-name"><a href="{{ project.url | url }}">{{ project.data.title }}</a></h2>
+      {# <p class="caption">{{- project.templateContent | truncate(70, true, "...") | safe -}}</p> #}
+      <div class="tags">
+      {% for tag in project.data.tags | excludeTags %}
+        <a href="./tags/{{tag}}" class="tag">{{ tag }}</a>
+      {% endfor %}
+      </div>
+    </div>
+    {# {% if project.data.image %}
+      <img class="thumb" src="{{project.url}}{{project.data.image}}" alt="{{ project.data.title }}">
+    {% endif %} #}
+</li>

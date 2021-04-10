@@ -1,4 +1,4 @@
-<article class="card">
+<div class="card">
 <span class="badge">
   <svg
       viewBox="0 0 {% if event.type == "education" %} 640 {% else %} 512 {% endif %} 512"
@@ -54,6 +54,6 @@
     />
   </div>
 
-  {{- event.description | safe -}}
+  <p>{{- event.description | safe -}}</p>
   
-</article>
+</div>

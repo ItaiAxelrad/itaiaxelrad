@@ -2,7 +2,7 @@
 title: Green Roof Energy Budget
 date: 2018-04-04
 image: 'images/image.png'
-tags: ["ucla",'energy', 'green']
+tags: ["UCLA",'energy', 'green']
 ---
 
 ## Introduction
@@ -89,7 +89,7 @@ The latent heat is transferred by diffusion of vapor in pores in the soil layer 
 
 The vapor pressure at the leaf surface and canopy (and the internal resistance to the vapor transfer) control the energy flux related to evaporation. The leaf area index (LAI) is another key parameter defining evaporation losses (see figure below). For example, evapotranspiration losses (during peak periods) range from 250, 370 and 550 W/m2 for leaf area indexes of 2, 4, and 7, respectively.
 
-## ![Leaf Area Index (Hayabranko, 2013)](images/image2.jpg)
+![Leaf Area Index (Hayabranko, 2013)](images/image2.jpg)
 
 ## Modeling
 

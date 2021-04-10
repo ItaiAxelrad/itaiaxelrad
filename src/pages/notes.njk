@@ -1,16 +1,16 @@
 ---
-title: Projects
+title: Notes
 layout: layouts/base.njk
-permalink: /projects/index.html
+permalink: /notes/index.html
 stylesheet: project
 eleventyExcludeFromCollections: true
 ---
 <main id="main">
 <section>
 <h1>{{ title }}</h1>
-<p>Explore my recent projects below, or read through my <a href="/notes">notes &rarr;</a></p>
+<a href="/projects">&larr; Back to projects</a>
 <ol class="projects" reversed >
-{% for project in collections.projectSorted %}
+{% for project in collections.notes %}
   {% include "components/project.njk"%}
 {% endfor %}
 </ol>

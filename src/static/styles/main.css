@@ -17,9 +17,9 @@
   --clr-dark: hsl(215, 5%, 20%);
   --clr-darkish: hsl(215, 5%, 27%);
   --clr-gray: hsl(215, 5%, 93%);
-  --clr-light: whitesmoke;
-  --clr-lighter: white;
-  --clr-opaque: hsla(0, 0%, 94%, 0.9);
+  --clr-light: hsl(215, 5%, 96%);
+  --clr-lighter: hsl(215, 5%, 99%);
+  --clr-opaque: hsla(215, 5%, 94%, 0.9);
   /* shadows & borders */
   --radius: 5px;
   --border: 1px solid var(--clr-theme);
@@ -30,8 +30,8 @@
 /* day & night mode */
 @media (prefers-color-scheme: dark) {
   :root {
-    --clr-dark: white;
-    --clr-darkish: whitesmoke;
+    --clr-dark: whitesmoke;
+    --clr-darkish: hsl(215, 3%, 76%);
     --clr-gray: hsl(215, 3%, 20%);
     --clr-light: hsl(215, 9%, 9%);
     --clr-lighter: hsl(215, 5%, 13%);
@@ -61,7 +61,7 @@ body.grid-layout {
 main {
   margin: 5rem auto 2rem auto;
   min-height: 100vh;
-  background: var(--clr-light);
+  width: var(--width);
 }
 
 section {
@@ -77,10 +77,6 @@ section.timeline {
   gap: 2.5rem;
   border-left: 2px solid var(--clr-theme);
   overflow-x: visible;
-}
-
-article {
-  width: var(--width);
 }
 
 footer {
@@ -110,7 +106,6 @@ header.landing-page {
   justify-content: center;
   align-items: center;
   padding: 0 1rem;
-  background: var(--clr-light);
 }
 
 /* heading font properties */
@@ -139,6 +134,10 @@ header h4 {
 }
 
 p {
+  margin: 1rem 0;
+}
+
+p:last-of-type {
   margin: 1rem 0 0 0;
 }
 
@@ -163,8 +162,9 @@ li {
 
 .card {
   padding: 1.5rem;
+  margin-left: 0.5rem;
+  background: var(--clr-opaque);
   border: 1px solid transparent;
-  background: var(--clr-lighter);
   border-radius: var(--radius);
   transition: 0.2s ease-out;
 }
@@ -178,14 +178,14 @@ li {
   padding: 0.5rem;
   background: var(--clr-light);
   border-radius: 100%;
-  margin: calc(-3rem + 4px);
+  margin: calc(-3.5rem + 2px);
   display: flex;
   align-items: center;
   justify-content: center;
   height: 2.5rem;
   width: 2.5rem;
   border: 2px solid var(--clr-theme);
-  /* box-shadow: 0px 0px 0px 0.25rem var(--clr-light); */
+  box-shadow: 0px 0px 0px 0.25rem var(--clr-light);
 }
 
 .badge svg {
@@ -231,7 +231,7 @@ li {
 
 .fixed {
   position: fixed;
-  will-change: transform;
+  will-change: transform opacity;
   top: 0;
   z-index: 1000;
 }
@@ -344,9 +344,10 @@ nav {
 }
 
 .nav_link a {
+  font-size: smaller;
   letter-spacing: 2px;
-  padding-inline-end: 1rem;
   text-decoration: none;
+  padding-inline-end: 1rem;
   color: var(--clr-dark);
   opacity: 0.8;
 }
@@ -354,7 +355,6 @@ nav {
 .active,
 .nav-home a:hover,
 .nav_link a:hover {
-  /* color: var(--clr-theme); */
   opacity: 1;
   cursor: pointer;
 }
@@ -372,6 +372,10 @@ nav {
   cursor: pointer;
   filter: brightness(1.05);
   text-decoration: none;
+}
+
+.btn:active {
+  color: currentColor;
 }
 
 .btn_menu {
@@ -449,10 +453,12 @@ form button {
 /* Keyframe Animations */
 @keyframes comeIn {
   from {
+    opacity: 0;
     transform: translateY(25px);
   }
 
   to {
+    opacity: 1;
     transform: translateY(0px);
   }
 }

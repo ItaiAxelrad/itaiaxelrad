@@ -10,6 +10,6 @@ if ('serviceWorker' in navigator) {
 // import JS modules
 import './static/scripts/modules/mobile.js'
 import './static/scripts/modules/btn.js';
-// import './static/scripts/modules/landing.js'
+import './static/scripts/modules/landing.js'
 // import './static/scripts/modules/links.js';
 // import './static/scripts/modules/mode.js';

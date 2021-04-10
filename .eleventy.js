@@ -26,6 +26,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy('src/sw.js');
   eleventyConfig.addPassthroughCopy('src/pages/projects/**/uploads/*');
   eleventyConfig.addPassthroughCopy('src/pages/projects/**/images/*');
+  eleventyConfig.addPassthroughCopy('src/pages/notes/**/uploads/*');
+  eleventyConfig.addPassthroughCopy('src/pages/notes/**/images/*');
 
   eleventyConfig.setFrontMatterParsingOptions({
     excerpt: true,
@@ -33,9 +35,7 @@ module.exports = function (eleventyConfig) {
 
   // parse datetime to readable
   eleventyConfig.addFilter('readableDate', (dateObj) => {
-    return DateTime.fromISO(dateObj, { zone: 'utc' }).toFormat(
-      "LLLL',' yyyy"
-    );
+    return DateTime.fromISO(dateObj, { zone: 'utc' }).toFormat("LLLL',' yyyy");
   });
 
   // parse datetime to readable
@@ -74,7 +74,9 @@ module.exports = function (eleventyConfig) {
   ) {
     try {
       return await postcss([autoprefixer, cssnano])
-        .process(code, {from: 'undefined'})
+        .process(code, {
+          from: 'undefined',
+        })
         .then(function (result) {
           callback(null, result.css);
         });
@@ -97,6 +99,14 @@ module.exports = function (eleventyConfig) {
       console.error('Terser error: ', err);
       // Fail gracefully.
       callback(null, code);
+    }
+  });
+
+  // remove tags
+  eleventyConfig.addFilter('excludeTags', (tags) => {
+    const toRemove = ['all', 'projects', 'notes'];
+    if (tags) {
+      return tags.filter((tag) => !toRemove.includes(tag));
     }
   });
 

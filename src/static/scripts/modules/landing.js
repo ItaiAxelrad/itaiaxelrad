@@ -8,7 +8,7 @@ const landingObserver = new IntersectionObserver((entries, landingObserver) => {
 });
 
 // create forEach loop to observe all array items
-const items = document.querySelectorAll("article"); // declare a target(s) to be observed
+const items = document.querySelectorAll("div.card"); // declare a target(s) to be observed
 items.forEach(item => {
   landingObserver.observe(item);
 });

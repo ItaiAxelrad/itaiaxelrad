@@ -3,6 +3,10 @@ nav.projectNav {
   grid-template-columns: auto auto;
 }
 
+section {
+  display: block;
+}
+
 article code {
   background: var(--clr-opaque);
   padding: 0.15rem 0.25rem;
@@ -71,7 +75,7 @@ li.project {
   display: grid;
   grid-template-columns: auto auto;
   justify-content: space-between;
-  margin: 0.5rem 0;
+  margin: 1.5rem 0;
   max-width: var(--width);
   list-style-position: outside;
   list-style: none;
@@ -106,7 +110,7 @@ header.article-header {
   color: var(--clr-darkish);
   margin-bottom: 0.25rem;
   padding: 0.25rem 0.5rem;
-  background: var(--clr-gray);
+  background: var(--clr-opaque);
   border-radius: var(--radius);
   box-decoration-break: clone;
   font-size: small;

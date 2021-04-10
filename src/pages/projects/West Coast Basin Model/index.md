@@ -2,7 +2,7 @@
 title: West Coast Basin Model
 date: 2017-12-15
 image: '/images/image1.jpg'
-tags: ["ucla",'MODFLOW ', 'Seawater', 'Basin', 'groundwater', 'hydrology']
+tags: ["UCLA", 'MODFLOW ', 'seawater', 'basin', 'groundwater', 'hydrology']
 ---
 
 ## Abstract

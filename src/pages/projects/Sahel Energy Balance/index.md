@@ -2,7 +2,7 @@
 title: Effects of Land Surface Degradation on Surface Water and Energy Balances
 date: 2018-06-15
 image: 'images/image1.png'
-tags: ["ucla",'Land', 'Surface', 'climate']
+tags: ["UCLA",'land', 'surface', 'climate']
 ---
 
 ## Abstract

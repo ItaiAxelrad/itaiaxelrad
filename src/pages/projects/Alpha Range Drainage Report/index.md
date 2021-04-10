@@ -2,22 +2,15 @@
 title: Alpha Range Erosion Control Plan
 date: 2014-06-12
 image: '/images/range.jpg'
-tags: ['calpoly', 'Drainage','LID','Erosion', 'control', 'sediment']
+tags: ['CalPoly', 'drainage','LID','erosion', 'control', 'sediment']
 ---
-As a water resources specialist for Camp San Luis Obispo, I
-performed hydrology analysis for the 5 acre Alpha Range and
-subsequently developed a feasibility report for implementing
-best management practices. The study involved determining the
-appropriate detention basin size, designing a site plan, and
-performing a rough order of magnitude cost estimate. I advised
-on design practices to minimize mud build-up, erosion, and
-sedimentation.
+As a water resources specialist for Camp San Luis Obispo, I performed hydrology analysis for the 5 acre Alpha Range and subsequently developed a feasibility report for implementing best management practices. The study involved determining the appropriate detention basin size, designing a site plan, and performing a rough order of magnitude cost estimate. I advised on design practices to minimize mud build-up, erosion, and sedimentation.
 
 ![Alpha Range Grading Plan](images/range.jpg)
 
 ## Introduction
 
-Camp San Luis Obispo is located just three miles north of the city limit and covers roughly 6,000 acres. The portion of the land examined in this report is the upper most shooting range (35.343704, -120.695366) nestled in the hills on the east side of highway 1. The Alpha Range site sits on a 5-acre piece of bare land with little to no vegetation.
+Camp San Luis Obispo is located just three miles north of the city limit and covers roughly 6,000 acres. The portion of the land examined in this report is the upper most shooting range (35.343704, -120.695366) nestled in the hills on the east side of Highway 1. The Alpha Range site sits on a 5-acre piece of bare land with little to no vegetation.
 
 The purpose of this report is to prepare a plan and recommendations for reducing the erosion on this range. The current site is considered a hazard during storm events due to excess mud build up and sedimentation. The project constraints carefully considered include: poor soil properties, steep slopes of the adjacent land, existing buildings and parking lot.
 
@@ -33,19 +26,19 @@ The main elements considered in the erosion control plan are presented below. Al
 
 The soil properties of the area surrounding the shooting range were examined using an online soil survey provided by the National Resources Conservation Services (NRCS). The table below lists the soil type and percent slope of the examined area. Please refer to the Appendix B for a map of the areas examined.
 
-![Table 1. Soil and Slope per Map Unit Area](/images/image6.png)
+![Table 1. Soil and Slope per Map Unit Area](images/image6.png)
 
 The results included a large percentage of poor draining soils. The Zaca Clay, which occupies roughly 20% of the tributary area, is classified under Hydrologic Soil Group D. The characteristics of Soil Group D include very low infiltration rates. The Diablo Clay, Los Osos Loam and Nacimiento Silt are all considered Soil Group C, which also exhibit low infiltration rates. The rock outcrop, poor soil properties and steep slopes create an extremely high runoff potential in the areas surrounding the site.
 
 Although the tributary area will not be changed, the bare soil surface of the range can be greatly improved. The roughly 2.75 acres of the range that are frequently used include the parking lot and areas surrounding the existing structures. In order to reduce the mud hazard, the soil should be compacted to 85% relative compaction and layered with 3 inches of class II base aggregate (Reference Figure 2).
 
-![Figure 2. Proposed area of base aggregate. Courtesy of Camp San Luis](images/Base.jpg).
+![Figure 2. Proposed area of base aggregate. Courtesy of Camp San Luis](images/Base.jpg)
 
-Placing base course on over half the site will greatly reduce sedimentation. When rain hits bare soil, it displaces and carries it with. The remaining bare soil surface area of the site should be covered with mulch or hydroseed to eliminate bare soil surface area entirely. By mulching (applying plant residue to) the remainder of the disturbed bare soil, the overland flow velocities will be reduced. Mulching also “fosters plant growth by increasing the available moisture and providing insulation against extreme heat or cold” (FHWA Drainage Design Manual). Mulching provides a cheaper alternative to seeding and requires much less maintenance.
+Placing base course on over half the site will greatly reduce sedimentation. When rain hits bare soil, it displaces and carries the sediment with it. The remaining bare soil surface area of the site should be covered with mulch or hydroseed to eliminate bare soil surface area entirely. By mulching (applying plant residue to) the remainder of the disturbed bare soil, the overland flow velocities will be reduced. Mulching also “fosters plant growth by increasing the available moisture and providing insulation against extreme heat or cold” (FHWA Drainage Design Manual). Mulching provides a cheaper alternative to seeding and requires much less maintenance.
 
 ## Conveyance
 
-A bioswale is a shallow, vegetated channel constructed strategically to convey water to a detention basin. Bioswales allow for an aesthetic yet effective method for conveying runoff to the detention basin. Bioswales utilize low impact design to reduce runoff velocity and consequently increase infiltration. The existing site is longitudinally sloped at around 2-3% and will allow sufficient flow with a proper cross section. Native vegetation should be planted in the swale to reduce maintenance and create a consistent visual aesthetics in the area. A sampling of native species that may be included in bioswale is provided in Appendix C.
+A bioswale is a shallow, vegetated channel constructed strategically to convey water to a detention basin. Bioswales allow for an aesthetic yet effective method for conveying runoff to the detention basin. Bioswales utilize low impact design to reduce runoff velocity and consequently increase infiltration. The existing site is longitudinally sloped at around 2-3% and will allow sufficient flow with a proper cross section. Native vegetation should be planted in the swale to reduce maintenance and create a consistent visual aesthetic in the area. A sampling of native species that may be included in bioswale is provided in Appendix C.
 
 The channel dimensions and specifications were designed to accommodate a 25-year storm event. The occurrence of a 100-year storm, however, will not cause property damage because a 6” freeboard (additional height above design flow) was designed as a factor of safety against the increased flow. The cross section has been sized to facilitate flow velocity less than 5 ft./sec in order to control erosion. A flow velocity of 1.5 ft./sec would increase the water quality but is unnecessary and would require a larger cross section. Stone check dams should be constructed at 50-foot intervals to increase residence time.
 

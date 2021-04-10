@@ -10,15 +10,17 @@
   }
   main {
     padding: 0.15rem 0;
+    width: 100%;
+    min-width: 100%;
+    margin: 1rem auto;
+  }
+
+  main a[href] {
+    text-decoration: underline var(--theme);
   }
 
   h2 {
     padding-block-end: 1rem;
-  }
-
-  article {
-    width: 100%;
-    margin: 1rem auto;
   }
 
   .grid-col2-thumb {
@@ -32,6 +34,7 @@
 
   .card {
     padding: 1rem;
+    margin: 0;
   }
 
   .section-header {
@@ -53,10 +56,6 @@
     margin-block-start: 6rem;
     display: block;
     padding: 1rem;
-  }
-
-  main a[href] {
-    text-decoration: underline var(--theme);
   }
 
   nav {
@@ -105,6 +104,7 @@
   .badge {
     position: inherit;
     margin: 0;
+    box-shadow: none;
     float: right;
   }
 

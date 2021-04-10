@@ -2,7 +2,7 @@
 title: 'Precipitation Dataset Comparison and Validity'
 date: 2018-05-16
 image: 'images/image1.png'
-tags: ["ucla",'R', 'validation', 'precipitation', 'remote sensing']
+tags: ["UCLA", 'R', 'validation', 'precipitation', 'remote sensing']
 ---
 
 Remote sensing offers spatially and temporally continuous measurements of hydrological fluxes like rainfall, evapotranspiration and soil moisture. These measurements provide valuable information in data-scarce catchments around the world. Nevertheless, owing to a variety of sensor and retrieval algorithms, remote sensing data is subject to large uncertainties and errors. Therefore, it is imperative that remote sensing datasets are rigorously validated using ground truth before such datasets are used for applications such as calibration of climate forecasts, hydrologic modeling and streamflow forecasting.
@@ -56,8 +56,7 @@ gpcc_gibe = crop(GPCC,gibe_shp)
 trmm_gibe = crop(TRMM,gibe_shp)
 ```
 
-The datasets include TRMM 3B42RT, CMORPH, PERSIANN, and CenTrends (Ground truth data).
-Ground truth data (Centrends long-term rainfall record) should be used to quantify the climatology of the study area. Seasonality, inter annual variability and long-term change in rainfall of the study area should be adequately described.
+The datasets include TRMM 3B42RT, CMORPH, PERSIANN, and CenTrends (Ground truth data). Ground truth data (Centrends long-term rainfall record) should be used to quantify the climatology of the study area. Seasonality, inter annual variability and long-term change in rainfall of the study area should be adequately described.
 
 ## Comparison of Remote Sensing Datasets
 

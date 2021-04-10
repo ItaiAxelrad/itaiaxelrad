@@ -3,19 +3,19 @@ pagination:
   data: collections
   size: 1
   alias: tag
-  filter:
-    - personal
-    - ucla
-    - calpoly
-    - project
 permalink: /projects/tags/{{ tag }}/
 layout: layouts/base.njk
+stylesheet: project
 ---
-<h1>Tagged “{{ tag }}”</h1>
-
-<ol>
-{% set taglist = collections[ tag ] %}
-{% for post in taglist | reverse %}
-  <li><a href="{{ post.url | url }}">{{ post.data.title }}</a></li>
-{% endfor %}
-</ol>
+<main id="main">
+  <section>
+    <h1>Tagged “{{ tag }}”</h1>
+    <a href="/projects">&larr; Back to projects</a>
+    <ol>
+    {% set taglist = collections[ tag ] %}
+    {% for project in taglist | reverse %}
+      {% include "components/project.njk"%}
+    {% endfor %}
+    </ol>
+  </section>
+</main>
