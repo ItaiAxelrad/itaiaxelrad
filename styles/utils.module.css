@@ -1,0 +1,212 @@
+.container {
+  width: clamp(45ch, 50%, 75ch);
+  padding: 1rem;
+  margin: 1rem auto;
+}
+
+.flexContainer {
+  display: flex;
+  align-items: center;
+}
+
+.header {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 2;
+}
+
+.heading2Xl {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  font-weight: 800;
+  letter-spacing: -0.05rem;
+  margin: 1rem 0;
+}
+
+.headingXl {
+  font-size: 2rem;
+  line-height: 1.3;
+  font-weight: 800;
+  letter-spacing: -0.05rem;
+  margin: 1rem 0;
+}
+
+.headingLg {
+  font-size: 1.5rem;
+  line-height: 1.4;
+  margin: 1rem 0;
+}
+
+.headingMd {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.borderCircle {
+  border-radius: 9999px;
+}
+
+.colorInherit {
+  color: inherit;
+}
+
+.padding1px {
+  padding-top: 1px;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.listItem {
+  margin: 0 0 1.25rem;
+}
+
+.lightText {
+  color: var(--gray);
+}
+
+.home {
+  padding: 0;
+  text-transform: lowercase;
+}
+
+.home:hover {
+  text-decoration: none;
+}
+
+.icon {
+  display: inline-block;
+  height: 1rem;
+  color: var(--brand);
+  fill: var(--brand);
+}
+
+.logo {
+  color: var(--brand);
+  fill: var(--brand);
+  display: inline-block;
+  height: 1.25rem;
+  margin-inline-end: 1rem;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.card {
+  padding: 1rem;
+  background: var(--opaque);
+  border: 1px solid transparent;
+  border-radius: 6px;
+  transition: 0.2s ease-out;
+}
+
+.timeline {
+  padding: 0 1.5rem;
+  display: grid;
+  gap: 2.5rem;
+  border-left: 2px solid var(--clr-theme);
+  overflow-x: visible;
+}
+
+.info {
+  display: grid;
+  gap: 0 0.5rem;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+}
+
+img.thumbnail {
+  border-radius: 6px;
+  justify-self: end;
+  max-width: 114px;
+}
+
+img.thumbnailLarge {
+  object-fit: cover;
+  height: 150px;
+  width: 100%;
+  border-radius: 6px;
+  margin-block-end: 0.5rem;
+}
+
+.badge {
+  position: absolute;
+  padding: 0.5rem;
+  background: var(--light);
+  border-radius: 100%;
+  margin: calc(-3rem + 2px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.5rem;
+  width: 2.5rem;
+  border: 2px solid var(--brand);
+  box-shadow: 0px 0px 0px 0.25rem var(--light);
+}
+
+.badge svg {
+  margin: 0;
+}
+
+/* grid layout with two uneven columns  */
+.gridCol2Thumb {
+  display: grid;
+  gap: 2rem 1rem;
+  grid-template-columns: 1fr auto;
+  margin-block-end: 1rem;
+}
+
+.brand {
+  color: var(--brand);
+  fill: var(--brand);
+  height: 2rem;
+  width: 2rem;
+}
+
+.skills {
+  margin-block-start: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  align-items: stretch;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.skill {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--opaque);
+  border-radius: 6px;
+  text-align: center;
+}
+
+.skill > * {
+  margin: 0;
+}
+
+.animateIn {
+  animation-name: animateIn;
+  animation-duration: 350ms;
+  animation-fill-mode: both;
+  animation-timing-function: ease-in-out;
+}
+
+@media screen and (max-width: 750px) {
+  .timeline {
+    padding: 0;
+  }
+  .badge {
+    margin: calc(-3rem + 2px) -1.5rem;
+  }
+}
