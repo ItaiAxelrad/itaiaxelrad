@@ -5,7 +5,6 @@ import { ElCapitan } from '@/components/Models';
 import { skills } from '@/data/skills.js';
 import { name } from '@/components/Layout';
 import utilStyles from '@/styles/utils.module.css';
-import { motion } from 'framer-motion';
 
 export const getStaticProps = async () => {
   return {
@@ -20,21 +19,8 @@ export default function Home({ skills }) {
         <title>{name}</title>
       </Head>
 
-      <motion.div
-        initial='hidden'
-        animate='visible'
-        variant={{
-          hidden: {
-            opacity: 0,
-          },
-          visible: {
-            opacity: 1,
-            transition: {
-              delay: 4,
-            },
-          },
-        }}
-        // className='fadeIn'
+      <div
+        className='fadeIn'
         style={{
           position: 'absolute',
           width: '100vw',
@@ -51,10 +37,13 @@ export default function Home({ skills }) {
             <ElCapitan />
           </Suspense>
         </Canvas>
-      </motion.div>
+      </div>
 
       <div style={{ display: 'grid', gap: '1rem', pointerEvents: 'none' }}>
-        <section className={utilStyles.headingMd}>
+        <section
+          className={utilStyles.headingMd}
+          style={{ pointerEvents: 'none' }}
+        >
           <h2 className={utilStyles.heading2Xl}>
             engineering <span className={utilStyles.lightText}>&amp;</span>{' '}
             <br />
@@ -67,7 +56,10 @@ export default function Home({ skills }) {
             surrounding mountains
           </p>
         </section>
-        <section className={utilStyles.skills}>
+        <section
+          className={utilStyles.skills}
+          style={{ pointerEvents: 'none' }}
+        >
           {skills.map((skill, i) => (
             <div
               className={`${utilStyles.skill} animateIn`}

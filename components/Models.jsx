@@ -5,7 +5,7 @@ import {
   Environment,
   OrbitControls,
 } from '@react-three/drei';
-import { useLoader, useThree, Canvas, useFrame } from '@react-three/fiber';
+import { useThree, Canvas, useFrame } from '@react-three/fiber';
 
 export const ElCapitan = (props) => {
   const mediaQuery = window.matchMedia('(prefers-reduced-motion: reduce)');

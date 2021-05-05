@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import Date from '@/components/Date';
 import utilStyles from '@/styles/utils.module.css';
-import { motion } from 'framer-motion';
 
 const ProjectCard = ({ project, index }) => {
   return (
@@ -25,15 +24,7 @@ const ProjectCard = ({ project, index }) => {
           }
         `}
       </style>
-      <motion.div
-        style={{ display: 'flex' }}
-        whileHover={{
-          scale: 1.02,
-          transition: {
-            duration: 0.2,
-          },
-        }}
-      >
+      <div style={{ display: 'flex' }}>
         <Link href={`/projects/${project.id}`}>
           <a
             className={`${utilStyles.card} project animateIn`}
@@ -55,7 +46,7 @@ const ProjectCard = ({ project, index }) => {
             </li>
           </a>
         </Link>
-      </motion.div>
+      </div>
     </>
   );
 };

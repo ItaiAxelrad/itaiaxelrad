@@ -61,7 +61,6 @@ a:hover {
 section,
 header {
   position: relative;
-  pointer-events: none;
 }
 
 nav {
@@ -111,6 +110,7 @@ textarea {
   border: 1px solid var(--gray);
   border-radius: 6px;
   caret-color: var(--brand);
+  pointer-events: initial;
 }
 
 input:focus,
