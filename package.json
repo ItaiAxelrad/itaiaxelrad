@@ -9,7 +9,7 @@
     "export": "next build && next export",
     "update": "npm i -g npm-check-updates && ncu -u && npm install"
   },
-    "repository": {
+  "repository": {
     "type": "git",
     "url": "git+https://github.com/ItaiAxelrad/itaiaxelrad.git"
   },
@@ -21,6 +21,7 @@
     "@react-three/fiber": "^6.0.19",
     "date-fns": "^2.21.2",
     "dotenv": "^8.6.0",
+    "framer-motion": "^4.1.11",
     "gray-matter": "^4.0.3",
     "next": "^10.2.0",
     "react": "^17.0.2",
