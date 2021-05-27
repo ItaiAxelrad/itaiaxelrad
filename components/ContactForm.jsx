@@ -14,7 +14,7 @@ const ContactForm = () => {
             <input name='bot-field' />
           </label>
         </div>
-        <label for='email'>Email</label>
+        <label htmlFor='email'>Email</label>
         <input
           id='email'
           type='email'
@@ -22,7 +22,7 @@ const ContactForm = () => {
           placeholder='your@email.com'
           required
         />
-        <label for='message'>Message</label>
+        <label htmlFor='message'>Message</label>
         <textarea
           id='message'
           name='message'

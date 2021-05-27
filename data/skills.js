@@ -3,7 +3,6 @@ export const skills = [
     title: 'Engineering',
     description:
       'Water infrastructure and civil site design using AutoCAD Civil 3D, Plant and Water/SewerCAD',
-    icon: [],
     icon: '/icons/autodesk.svg',
   },
   {

@@ -1,50 +1,46 @@
-# Itai Axelrad
+# Hi 👋
 
-## About
+I'm Itai Axelrad, an engineering consultant with a programming problem. My focus is in water and wastewater infrastructure. You can find me working in Golden or [climbing](https://www.axelradclimbing.com/) in the surrounding mountains. Check out my [portfolio site](https://www.itaiaxelrad.com) to learn more or get in touch!
 
-Hello, I'm Itai Axelrad, an in-house consultant with a focus in water and wastewater infrastructure. You can find me working in Denver or [climbing](https://www.axelradclimbing.com/) in the surrounding mountains.
+<h3>Things I code with</h3>
+<p>
+  <a href="https://github.com/itaiaxelrad?tab=repositories&language=html">
+    <img alt="html5" src="https://img.shields.io/badge/-HTML5-45b8d8?style=flat-square&logo=html5&logoColor=white" />
+  </a>
+  <a href="https://github.com/itaiaxelrad?tab=repositories&language=css">
+    <img alt="CSS3" src="https://img.shields.io/badge/-CSS3-45b8d8?style=flat-square&logo=css3&logoColor=white" />
+  </a>
+  <a href="https://github.com/itaiaxelrad?tab=repositories&language=nunjucks">
+    <img alt="nunjucks" src="https://img.shields.io/badge/-nunjucks-45b8d8?style=flat-square&logo=nunjucks&logoColor=white" />
+  </a>
+  <a href="https://github.com/itaiaxelrad?tab=repositories&language=javascript">
+    <img alt="javascript" src="https://img.shields.io/badge/-javascript-45b8d8?style=flat-square&logo=javascript&logoColor=white" />
+  </a>
+  <a href="https://github.com/itaiaxelrad?tab=repositories&language=react">
+    <img alt="React" src="https://img.shields.io/badge/-React-45b8d8?style=flat-square&logo=react&logoColor=white" />
+  </a>
+  <a href="https://github.com/itaiaxelrad?tab=repositories&language=r">
+    <img alt="r" src="https://img.shields.io/badge/-r-45b8d8?style=flat-square&logo=r&logoColor=white" />
+  </a>
+  <a href="https://github.com/itaiaxelrad?tab=repositories&language=python">
+    <img alt="python" src="https://img.shields.io/badge/-python-45b8d8?style=flat-square&logo=python&logoColor=white" />
+  </a>
+  <a href="https://github.com/itaiaxelrad?tab=repositories&language=matlab">
+    <img alt="MATLAB" src="https://img.shields.io/badge/-MATLAB-45b8d8?style=flat-square&logo=mathworks&logoColor=white" />
+  </a>
+</p>
 
 ## Experience
 
-### Project Engineer
-
-- Baseline Engineering Consultants
-- Denver, CO
-- February 2019 to Present
-
-As part of the [Baseline](https://baselinecorp.com/) team, I am responsible for the design and modeling of water treatment, reclamation facilities, lift stations, and master plans. As a project engineer, my responsibilities also include writing reports, client meetings, site visits and preparing both design and construction cost estimates for various projects.
-
-### Design Engineer
-
-- Cannon Engineering Consultants
-- Los Angeles, CA
-- October 2015 to June 2017
-
-During my time at [Cannon](https://cannoncorp.us/), I was responsible for designing pump stations, wells, and water mains up to 2 miles in length. I became proficient in drafting civil and mechanical details in AutoCAD Civil 3D. My responsibilities also included client meetings, site visits and preparing cost estimates for projects with construction budgets up to 15 million dollars.
-
-### Staff Engineer
-
-- Taylor & Syfan Consulting Engineers
-- San Luis Obispo, CA
-- May 2014 to August 2014
-
-While interning as a structural engineer for [Taylor & Syfan](https://www.taylorsyfan.com/), I transformed architectural plans into structural plans, performed beam loading analysis, and beam selection. My experience there made me competent in drawing structural details using Vectorworks.
-curbs, and lights.
+| Position         | Company                                        | Location            | Date From     | Date To     |
+| ---------------- | ---------------------------------------------- | ------------------- | ------------- | ----------- |
+| Project Engineer | [Baseline](https://baselinecorp.com/)          | Golden, CO          | February 2019 | May 2021    |
+| Design Engineer  | [Cannon](https://cannoncorp.us/)               | Los Angeles, CA     | October 2015  | June 2017   |
+| Staff Engineer   | [Taylor & Syfan](https://www.taylorsyfan.com/) | San Luis Obispo, CA | May 2014      | August 2014 |
 
 ## Education
 
-### Master of Science, Civil Engineering
-
-- University of California
-- Los Angeles, CA
-- Class of 2018
-
-Throughout my academic career at UCLA, I furthered my knowledge in linear and dynamic programming, groundwater modeling, geographic information systems, remote sensing, and forecast verification. Some of my notable projects include:
-
-### Bachelor of Science, Civil Engineering
-
-- California Polytechnic State University
-- San Luis Obispo, CA
-- Class of 2015
-
-During my time at Cal Poly, I learned the fundamentals of engineering and applied this knowledge towards hands-on design projects in water resources, geotechnical engineering, transportation, structural and environmental engineering fields. I pushed myself academically and achieved Dean's List standing for Fall and Spring of 2013.
+| Degree              | Field                             | Institution                             | Location            | Date Graduated |
+| ------------------- | --------------------------------- | --------------------------------------- | ------------------- | -------------- |
+| Master of Science   | Water & Environmental Engineering | University of California                | Los Angeles, CA     | 2018           |
+| Bachelor of Science | Civil Engineering                 | California Polytechnic State University | San Luis Obispo, CA | 2015           |

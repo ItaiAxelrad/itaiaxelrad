@@ -21,7 +21,7 @@ export default function Resume({ resume }) {
       <section className={utilStyles.timeline}>
         <h2>Resume</h2>
         {resume.map((event, i) => (
-          <ResumeCard event={event} key={event.id} index={i} />
+          <ResumeCard event={event} key={i} index={i} />
         ))}
       </section>
     </>

@@ -21,7 +21,6 @@
   grid-template-columns: auto clamp(55ch, 50%, 75ch) auto;
   grid-template-rows: auto 1fr auto;
   justify-content: center;
-  align-items: center;
   min-height: 100vh;
 }
 
@@ -162,6 +161,17 @@ canvas.webgl {
 
 canvas.webgl:active {
   cursor: grabbing;
+}
+
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+::-webkit-scrollbar-track {
+  background: var(--opaque);
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background: var(--gray);
 }
 
 /* Responsive Layout */

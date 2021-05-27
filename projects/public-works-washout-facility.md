@@ -2,7 +2,7 @@
 title: Public Works Washout Facility
 company: Baseline
 date: '2019-07-21'
-image: 'images/isometricBase.png'
+image: '/images/isometricBase.png'
 tags: ['baseline', 'WTP', 'water']
 ---
 
