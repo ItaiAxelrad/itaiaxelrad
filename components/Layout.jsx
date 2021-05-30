@@ -8,19 +8,19 @@ export default function Layout({ children }) {
   return (
     <>
       <Head>
-        <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
-        <meta name='description' content='Itai Axelrads portfolio site' />
-        <meta property='og:image' content='/favicon.svg' />
-        <meta name='og:title' content={name} />
-        <meta name='twitter:card' content='summary_large_image' />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <meta name="description" content="Itai Axelrads portfolio site" />
+        <meta property="og:image" content="/favicon.svg" />
+        <meta name="og:title" content={name} />
+        <meta name="twitter:card" content="summary_large_image" />
         <link
-          href='https://fonts.gstatic.com/'
-          rel='preconnect'
-          crossOrigin='true'
+          href="https://fonts.gstatic.com/"
+          rel="preconnect"
+          crossOrigin="true"
         />
         <link
-          href='https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap'
-          rel='stylesheet'
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+          rel="stylesheet"
         />
       </Head>
       <header className={utilStyles.header}>
@@ -28,7 +28,9 @@ export default function Layout({ children }) {
       </header>
       <main>{children}</main>
       <footer>
-        &copy; {name} {new Date().getFullYear()}
+        <small className={utilStyles.lightText}>
+          &copy; {name} {new Date().getFullYear()}
+        </small>
       </footer>
     </>
   );

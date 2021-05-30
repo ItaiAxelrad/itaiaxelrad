@@ -47,6 +47,11 @@ body {
   overflow-x: hidden;
 }
 
+main {
+  display: grid;
+  align-items: center;
+}
+
 a {
   color: var(--brand);
   text-decoration: none;
@@ -73,7 +78,13 @@ nav {
 }
 
 nav a {
+  color: var(--dark);
   padding: 0 0.75rem;
+}
+
+nav a:hover {
+  color: var(--brand);
+  text-decoration: none;
 }
 
 footer {
@@ -179,20 +190,18 @@ canvas.webgl:active {
   #__next {
     grid-template-columns: auto 1fr auto;
   }
-  nav {
-    position: relative;
-    display: block;
-    /* justify-content: space-between;
-    align-items: start; */
-    padding: 0.75rem;
-    width: auto;
-  }
-  nav a:first-of-type {
-    padding-left: 0;
-  }
   main {
     padding: 1rem;
   }
+  /* nav {
+    position: relative;
+    display: block;
+    padding: 0.75rem;
+    width: auto;
+  } */
+  /* nav a:first-of-type {
+    padding-left: 0;
+  } */
 }
 
 .fadeIn {
