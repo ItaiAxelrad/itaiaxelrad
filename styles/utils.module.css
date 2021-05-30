@@ -45,6 +45,16 @@
   line-height: 1.5;
 }
 
+.visuallyHidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
 .gradientText {
    background: linear-gradient(45deg, hsl(215, 75%, 60%), hsl(185, 75%, 60%));
   background-clip: text;

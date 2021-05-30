@@ -37,10 +37,8 @@ export const Model = (props) => {
         geometry={nodes.mesh_0.geometry}
       >
         <meshPhongMaterial
-          wireframe={true}
-          vertexColor={true}
-          flatShading={true}
           color="dodgerblue"
+          wireframe={true}
           transparent={true}
           opacity={0.1}
         />

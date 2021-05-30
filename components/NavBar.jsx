@@ -5,21 +5,19 @@ import utilStyles from '@/styles/utils.module.css';
 const NavBar = ({ name }) => {
   const [isOpen, setOpen] = useState(true);
   useEffect(function mount() {
-    function onResize() {
-      console.log(window.innerWidth);
+    const setNav = () => {
       if (window.innerWidth > 750) {
         setOpen(true);
       } else {
         setOpen(false);
       }
-    }
-
-    window.addEventListener('resize', onResize);
-
-    return function unMount() {
-      window.removeEventListener('resize', onResize);
     };
-  });
+    setNav();
+    window.addEventListener('resize', setNav);
+    return function unMount() {
+      window.removeEventListener('resize', setNav);
+    };
+  }, []);
 
   return (
     <>
@@ -52,7 +50,10 @@ const NavBar = ({ name }) => {
         `}
       </style>
       <nav>
-        <div className={utilStyles.flexContainer}>
+        <div
+          className={utilStyles.flexContainer}
+          onClick={() => setOpen(false)}
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 45 36"
@@ -95,6 +96,7 @@ const NavBar = ({ name }) => {
               }}
               onClick={() => setOpen(!isOpen)}
             >
+              <span className={utilStyles.visuallyHidden}>Close Menu</span>
               <svg
                 aria-hidden="true"
                 focusable="false"
@@ -126,6 +128,9 @@ const NavBar = ({ name }) => {
                   justifyContent: 'center',
                 }}
               >
+                <span className={utilStyles.visuallyHidden}>
+                  GitHub profile
+                </span>
                 <svg
                   aria-hidden="true"
                   focusable="false"
@@ -155,6 +160,7 @@ const NavBar = ({ name }) => {
             }}
             onClick={() => setOpen(!isOpen)}
           >
+            <span className={utilStyles.visuallyHidden}>Open Menu</span>
             <svg
               aria-hidden="true"
               focusable="false"
