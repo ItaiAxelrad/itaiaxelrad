@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import { Suspense } from 'react';
 import { Canvas } from '@react-three/fiber';
-import { ElCapitan } from '@/components/Models';
+import { Model } from '@/components/Models';
 import { skills } from '@/data/skills.js';
 import { name } from '@/components/Layout';
 import utilStyles from '@/styles/utils.module.css';
@@ -20,11 +20,11 @@ export default function Home({ skills }) {
       </Head>
 
       <div
-        className='fadeIn'
+        className="fadeIn"
         style={{
           position: 'absolute',
-          width: '100vw',
-          height: '100vh',
+          width: '100%',
+          height: '100%',
           overflow: 'hidden',
           top: '0',
           left: '0',
@@ -32,9 +32,9 @@ export default function Home({ skills }) {
           background: 'var(--light)',
         }}
       >
-        <Canvas camera={{ position: [17, 17, -17] }}>
+        <Canvas camera={{ position: [100, 8, -100] }}>
           <Suspense fallback={null}>
-            <ElCapitan />
+            <Model />
           </Suspense>
         </Canvas>
       </div>
@@ -44,15 +44,16 @@ export default function Home({ skills }) {
           className={utilStyles.headingMd}
           style={{ pointerEvents: 'none' }}
         >
-          <h2 className={utilStyles.heading2Xl}>
-            engineering <span className={utilStyles.lightText}>&amp;</span>{' '}
+          <h2 className={`${utilStyles.heading2Xl}`}>
+            <span className={utilStyles.gradientText}>engineering</span>
+            <span className={utilStyles.lightText}> &amp;</span>
             <br />
-            design consultant
+            <span className={utilStyles.gradientText}>design consultant</span>
           </h2>
           <p className={utilStyles.lightText} style={{ maxWidth: '40ch' }}>
             I specialize in water and wastewater infrastructure. You can find me
             working in the Denver area or{' '}
-            <a href='https://www.axelradclimbing.com/'>climbing</a> in the
+            <a href="https://www.axelradclimbing.com/">climbing</a> in the
             surrounding mountains
           </p>
         </section>
@@ -80,7 +81,7 @@ export default function Home({ skills }) {
                   width={32}
                   height={32}
                   className={utilStyles.brand}
-                  loading='lazy'
+                  loading="lazy"
                 />
               </div>
               <h3>{skill.title}</h3>
