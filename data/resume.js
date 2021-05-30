@@ -4,7 +4,7 @@ export const resume = [
     at: 'Baseline',
     location: 'Golden, CO',
     dateFrom: '2019-02-25',
-    dateTo: 'Present',
+    dateTo: '2021-05-14',
     image: '/images/baseline.jpg',
     website: 'https://baselinecorp.com/',
     type: 'experience',
@@ -40,16 +40,16 @@ export const resume = [
   },
   {
     title: 'Staff Engineer',
-    at: 'Taylor and Syfan',
+    at: 'Taylor & Syfan',
     location: 'San Luis Obispo, CA',
     dateFrom: '2014-05-01',
     dateTo: '2014-08-01',
     image: '/images/ts.jpg',
     website: 'https://www.taylorsyfan.com/',
     type: 'experience',
-    tags: ['experience', 'Vectorworks', 'Taylor &amp; Syfan', 'structural'],
+    tags: ['experience', 'Vectorworks', 'Taylor & Syfan', 'structural'],
     description:
-      'While interning as a structural engineer for Taylor &amp; Syfan, I transformed architectural plans into structural plans, performed beam loading analysis, and beam selection. My experience there made me competent in drawing structural details using Vectorworks.',
+      'While interning as a structural engineer for Taylor & Syfan, I transformed architectural plans into structural plans, performed beam loading analysis, and beam selection. My experience there made me competent in drawing structural details using Vectorworks.',
   },
   {
     title: 'Bachelor of Science, Civil Engineering',
