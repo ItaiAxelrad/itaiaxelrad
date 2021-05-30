@@ -56,7 +56,7 @@
 }
 
 .gradientText {
-   background: linear-gradient(45deg, hsl(215, 75%, 60%), hsl(185, 75%, 60%));
+  background: linear-gradient(45deg, hsl(215, 75%, 60%), hsl(185, 75%, 60%));
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -227,5 +227,15 @@ img.thumbnailLarge {
   }
   .logo {
     margin-inline: 1rem;
+  }
+  .gridCol2Thumb {
+    display: block;
+  }
+  img.thumbnailLarge,
+  img.thumbnail {
+    margin: 1rem auto;
+    max-width: none;
+    width: 100%;
+    height: auto;
   }
 }

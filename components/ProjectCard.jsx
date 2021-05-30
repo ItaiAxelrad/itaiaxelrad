@@ -37,11 +37,11 @@ const ProjectCard = ({ project, index }) => {
                 width={100}
                 height={150}
                 className={utilStyles.thumbnailLarge}
-                loading='lazy'
+                loading="lazy"
               />
               <h3 style={{ margin: '0', padding: '0' }}>{project.title}</h3>
               <small className={utilStyles.lightText}>
-                <Date dateString={project.date} />
+                <Date dateString={project.date} dateFormat="LLLL d, yyyy" />
               </small>
             </li>
           </a>

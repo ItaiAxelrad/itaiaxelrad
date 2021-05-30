@@ -81,7 +81,10 @@ const NavBar = ({ name }) => {
               className={utilStyles.flexContainer}
               id="mobile-links"
               role="navigation"
-              aria-expanded="false"
+              aria-expanded="true"
+              onClick={() => {
+                window.innerWidth > 750 ? setOpen(isOpen) : setOpen(!isOpen);
+              }}
             >
               <Link href="/resume/">
                 <a>Resume</a>

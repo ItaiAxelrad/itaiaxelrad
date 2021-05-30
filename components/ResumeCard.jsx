@@ -49,8 +49,8 @@ const ResumeCard = ({ event, index }) => {
               <h4>{event.location}</h4>
               <FaRegCalendarAlt className={utilStyles.icon} />
               <h4>
-                <Date dateString={event.dateFrom} /> to{' '}
-                <Date dateString={event.dateTo} />
+                <Date dateString={event.dateFrom} dateFormat="MMM ''yy" /> to{' '}
+                <Date dateString={event.dateTo} dateFormat="MMM ''yy" />
               </h4>
             </div>
           </header>

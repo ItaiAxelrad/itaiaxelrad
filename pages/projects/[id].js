@@ -10,20 +10,20 @@ export default function Project({ projectData }) {
       <Head>
         <title>{projectData.title}</title>
       </Head>
-        <article>
-          <h1 className={utilStyles.headingXl}>{projectData.title}</h1>
-          <div className={utilStyles.lightText}>
-            <Date dateString={projectData.date} />
-          </div>
-          <div dangerouslySetInnerHTML={{ __html: projectData.contentHtml }} />
-        </article>
-        <nav style={{ padding: '1rem 0' }}>
-          <div className={utilStyles.backToHome}>
-            <Link href='/projects'>
-              <a style={{ padding: '1rem 0' }}>← Back to Portfolio</a>
-            </Link>
-          </div>
-        </nav>
+      <article>
+        <h1 className={utilStyles.headingXl}>{projectData.title}</h1>
+        <div className={utilStyles.lightText}>
+          <Date dateString={projectData.date} dateFormat="LLLL d, yyyy" />
+        </div>
+        <div dangerouslySetInnerHTML={{ __html: projectData.contentHtml }} />
+      </article>
+      <nav style={{ padding: '1rem 0' }}>
+        <div className={utilStyles.backToHome}>
+          <Link href="/projects">
+            <a style={{ padding: '1rem 0' }}>← Back to Portfolio</a>
+          </Link>
+        </div>
+      </nav>
     </>
   );
 }

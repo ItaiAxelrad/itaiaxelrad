@@ -39,7 +39,14 @@ export default function Home({ skills }) {
         </Canvas>
       </div>
 
-      <div style={{ display: 'grid', gap: '1rem', pointerEvents: 'none' }}>
+      <div
+        style={{
+          display: 'grid',
+          gap: '1rem',
+          alignSelf: 'center',
+          pointerEvents: 'none',
+        }}
+      >
         <section
           className={utilStyles.headingMd}
           style={{ pointerEvents: 'none' }}
