@@ -103,14 +103,6 @@
   fill: var(--brand);
 }
 
-.logo {
-  color: var(--brand);
-  fill: var(--brand);
-  display: inline-block;
-  height: 1.25rem;
-  margin-inline-end: 1rem;
-}
-
 .sticky {
   position: sticky;
   top: 0;
@@ -126,9 +118,9 @@
 }
 
 .timeline {
-  padding: 0 1.5rem;
+  /* padding: 0 1.5rem; */
   display: grid;
-  gap: 2.5rem;
+  gap: 3rem;
   border-left: 2px solid var(--clr-theme);
   overflow-x: visible;
 }
@@ -143,7 +135,7 @@
 img.thumbnail {
   border-radius: 6px;
   justify-self: end;
-  max-width: 114px;
+  max-width: 100px;
 }
 
 img.thumbnailLarge {
@@ -173,6 +165,17 @@ img.thumbnailLarge {
   margin: 0;
 }
 
+.close,
+.hamburger {
+  display: none;
+  pointer-events: all;
+  font-size: larger;
+  color: currentColor;
+  background: transparent;
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+}
 /* grid layout with two uneven columns  */
 .gridCol2Thumb {
   display: grid;
@@ -218,20 +221,18 @@ img.thumbnailLarge {
   animation-timing-function: ease-in-out;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 700px) {
   .timeline {
     padding: 0;
   }
   .badge {
-    margin: calc(-3rem + 2px) -1.5rem;
-  }
-  .logo {
-    margin-inline: 1rem;
+    margin: 0;
+    right: 1rem;
+    box-shadow: none;
   }
   .gridCol2Thumb {
     display: block;
   }
-  img.thumbnailLarge,
   img.thumbnail {
     margin: 1rem auto;
     max-width: none;

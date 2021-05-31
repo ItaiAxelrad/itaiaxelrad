@@ -21,7 +21,9 @@ export default function Projects({ allProjectsData }) {
         <title>{name} | Portfolio</title>
       </Head>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2>Portfolio</h2>
+        <h1 style={{ marginTop: '0' }} className={utilStyles.headingXl}>
+          Portfolio
+        </h1>
         <ul className={utilStyles.list}>
           {allProjectsData.map((project, i) => (
             <ProjectCard project={project} key={project.id} index={i} />

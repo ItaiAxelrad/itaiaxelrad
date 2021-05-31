@@ -8,7 +8,7 @@ const NavBar = ({ name }) => {
   const [isOpen, setOpen] = useState(true);
   useEffect(function mount() {
     const setNav = () => {
-      if (window.innerWidth > 750) {
+      if (window.innerWidth > 700) {
         setOpen(true);
       } else {
         setOpen(false);
@@ -28,22 +28,29 @@ const NavBar = ({ name }) => {
           button {
             display: none;
           }
-          @media screen and (max-width: 750px) {
+          @media screen and (max-width: 700px) {
             nav {
               display: block;
               background: var(--light);
+              padding: 0.5rem 0;
             }
             div#mobile-links {
               display: block;
               position: absolute;
-              background: var(--light);
               width: 100%;
+              background: var(--light);
+              box-shadow: 0 1rem 2rem var(--light);
             }
             div > a {
               display: block;
+              font-size: larger;
               text-align: center;
               width: 100%;
-              padding: 0.75rem;
+              padding: 1rem;
+              border-top: 1px solid var(--opaque);
+            }
+            div > a:last-of-type {
+              border-bottom: 1px solid var(--opaque);
             }
             button {
               display: inline-block;
@@ -65,13 +72,7 @@ const NavBar = ({ name }) => {
         {isOpen ? (
           <>
             <button
-              style={{
-                pointerEvents: 'all',
-                background: 'transparent',
-                position: 'absolute',
-                top: '1.5rem',
-                right: '1.5rem',
-              }}
+              className={utilStyles.close}
               onClick={() => setOpen(!isOpen)}
             >
               <span className={utilStyles.visuallyHidden}>Close Menu</span>
@@ -83,7 +84,7 @@ const NavBar = ({ name }) => {
               role="navigation"
               aria-expanded="true"
               onClick={() => {
-                window.innerWidth > 750 ? setOpen(isOpen) : setOpen(!isOpen);
+                window.innerWidth > 700 ? setOpen(isOpen) : setOpen(!isOpen);
               }}
             >
               <Link href="/resume/">
@@ -111,13 +112,7 @@ const NavBar = ({ name }) => {
           </>
         ) : (
           <button
-            style={{
-              pointerEvents: 'all',
-              background: 'transparent',
-              position: 'absolute',
-              top: '1.5rem',
-              right: '1.5rem',
-            }}
+            className={utilStyles.hamburger}
             onClick={() => setOpen(!isOpen)}
           >
             <span className={utilStyles.visuallyHidden}>Open Menu</span>

@@ -57,8 +57,8 @@ const ResumeCard = ({ event, index }) => {
           <img
             src={event.image}
             alt={event.title}
-            loading="lazy"
             className={utilStyles.thumbnail}
+            loading="lazy"
             width="100"
             height="100"
           />

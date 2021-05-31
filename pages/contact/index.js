@@ -9,8 +9,10 @@ export default function Home({ allPostsData }) {
       <Head>
         <title>{name} | Contact</title>
       </Head>
-      <section className={utilStyles.headingMd}>
-        <h2>Contact</h2>
+      <section>
+        <h1 style={{ margin: '0' }} className={utilStyles.headingXl}>
+          Contact
+        </h1>
         <p>
           Please feel free to reach out to me with any questions or inquiries.
         </p>

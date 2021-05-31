@@ -19,7 +19,9 @@ export default function Resume({ resume }) {
         <title>{name} | Resume</title>
       </Head>
       <section className={utilStyles.timeline}>
-        <h2>Resume</h2>
+        <h1 style={{ margin: '0' }} className={utilStyles.headingXl}>
+          Resume
+        </h1>
         {resume.map((event, i) => (
           <ResumeCard event={event} key={i} index={i} />
         ))}
