@@ -29,7 +29,7 @@ export default function Project({ projectData }) {
 }
 
 export async function getStaticPaths() {
-  const paths = getAllProjectIds();
+  const paths = getAllProjectIds('projects');
   return {
     paths,
     fallback: false,
@@ -37,7 +37,7 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  const projectData = await getProjectData(params.id);
+  const projectData = await getProjectData(params.id, 'projects');
   return {
     props: {
       projectData,

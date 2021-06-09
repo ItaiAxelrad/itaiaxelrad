@@ -2,6 +2,7 @@
 title: Miners Mesa Sewer Main
 date: "2021-04-14"
 image: '/images/hydraulicProf.png'
+category: 'Engineering'
 tags: ['baseline', 'sewer', 'hydraulic']
 description: "I completed the hydraulic calculations, design drawings, and construction cost estimates on the City of Black Hawk’s Miners Mesa sewer main design."
 ---

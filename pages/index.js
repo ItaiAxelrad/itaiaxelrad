@@ -4,6 +4,7 @@ import { Canvas } from '@react-three/fiber';
 import { Model } from '@/components/Models';
 import { skills } from '@/data/skills.js';
 import { name } from '@/components/Layout';
+import SkillCard from '@/components/SkillCard';
 import utilStyles from '@/styles/utils.module.css';
 
 export const getStaticProps = async () => {
@@ -69,36 +70,7 @@ export default function Home({ skills }) {
           style={{ pointerEvents: 'none' }}
         >
           {skills.map((skill, i) => (
-            <div
-              className={`${utilStyles.skill} animateIn`}
-              style={{ animationDelay: i * 100 + 'ms' }}
-              key={i}
-            >
-              <div
-                style={{
-                  display: 'flex',
-                  justifyContent: 'space-evenly',
-                  width: '100%',
-                  paddingBottom: '0.5rem',
-                }}
-              >
-                <img
-                  alt={skill.title}
-                  src={skill.icon}
-                  width={32}
-                  height={32}
-                  className={utilStyles.brand}
-                  loading="lazy"
-                />
-              </div>
-              <h3>{skill.title}</h3>
-              <p
-                className={utilStyles.lightText}
-                style={{ fontSize: '0.9rem' }}
-              >
-                {skill.description}
-              </p>
-            </div>
+            <SkillCard skill={skill} key={i} />
           ))}
         </section>
       </div>
