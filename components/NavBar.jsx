@@ -1,5 +1,5 @@
-import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import { useState, useEffect } from 'react';
 import { FaBars, FaTimes, FaGithub } from 'react-icons/fa';
 import Logo from '@/components/Logo';
 import utilStyles from '@/styles/utils.module.css';
