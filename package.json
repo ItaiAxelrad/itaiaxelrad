@@ -1,9 +1,9 @@
 {
-  "name": "next-mui",
+  "name": "itaiaxelrad",
   "version": "1.0.0",
-  "private": true,
-  "description": "",
-  "author": "",
+  "private": false,
+  "description": "My portfolio site",
+  "author": "Itai Axelrad",
   "license": "MIT",
   "main": "index.js",
   "scripts": {
@@ -22,10 +22,13 @@
     "@mui/lab": "^5.0.0-alpha.63",
     "@mui/material": "^5.2.7",
     "@mui/system": "^5.2.6",
+    "@react-three/drei": "^8.2.0",
+    "@react-three/fiber": "^7.0.24",
     "next": "^12.0.7",
     "prop-types": "^15.8.1",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "three": "^0.135.0"
   },
   "devDependencies": {
     "@next/eslint-plugin-next": "^12.0.7",

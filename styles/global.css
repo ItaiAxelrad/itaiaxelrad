@@ -1,3 +1,14 @@
-a {
-  cursor: pointer;
+html {
+  scroll-behavior: smooth;
+}
+
+canvas {
+  z-index: -1;
+  display: block;
+  cursor: grab;
+  outline: none;
+}
+
+canvas:active {
+  cursor: grabbing;
 }

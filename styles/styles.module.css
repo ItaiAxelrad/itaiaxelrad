@@ -1,0 +1,36 @@
+.dots {
+  background-image: radial-gradient(hsla(215, 75%, 60%, 15%) 1px, transparent 0),
+    radial-gradient(hsla(215, 75%, 60%, 15%) 1px, transparent 0);
+  background-position: 0 0, 25px 25px;
+  background-size: 50px 50px;
+}
+
+.wave:hover {
+  display: inline-block;
+  cursor: pointer;
+  animation: 0.5s wave linear;
+}
+
+@keyframes wave {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(10deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-12deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@media (prefers-reduced-motion) {
+  .wave:hover {
+    animation: none;
+  }
+}

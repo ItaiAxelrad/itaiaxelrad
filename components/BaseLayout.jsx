@@ -1,13 +1,15 @@
 import Head from 'next/head';
 import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
+import ResponsiveAppBar from '@components/ResponsiveAppBar';
 import Footer from '@components/Footer';
+import styles from '@styles/styles.module.css';
 
 export default function BaseLayout({ children }) {
   return (
     <>
       <Head>
-        <title>My App</title>
+        <title>Itai Axelrad</title>
         <meta
           key='viewport'
           name='viewport'
@@ -15,15 +17,20 @@ export default function BaseLayout({ children }) {
         />
       </Head>
       <Box
-        pt={5}
         sx={{
           display: 'flex',
           flexDirection: 'column',
           gap: '1rem',
-          height: '100vh',
+          minHeight: '100vh',
         }}
+        className={styles.dots}
       >
-        <Container component='main' maxWidth='md' sx={{ flexGrow: 1 }}>
+        <ResponsiveAppBar />
+        <Container
+          component='main'
+          maxWidth='md'
+          sx={{ flexGrow: 1, padding: { xs: '1rem' } }}
+        >
           {children}
         </Container>
         <Footer />

@@ -11,7 +11,23 @@ export default class MyDocument extends Document {
         <Head>
           <meta name='theme-color' content={theme.palette.primary} />
           <meta charSet='UTF-8' />
-          <meta name='description' content='A next-mui starter' />
+          <meta name='description' content='Itai Axelrads portfolio' />
+          <meta property='og:image' content='/favicon.svg' />
+          <link href='/favicon.svg' rel='icon' type='image/svg+xml' />
+          <link rel='preconnect' href='https://fonts.googleapis.com' />
+          <link
+            rel='preconnect'
+            href='https://fonts.gstatic.com'
+            crossOrigin='true'
+          />
+          <link
+            rel='stylesheet'
+            href='https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;700;800&display=swap'
+          />
+          <link
+            rel='stylesheet'
+            href='https://fonts.googleapis.com/icon?family=Material+Icons'
+          />
         </Head>
         <body>
           <Main />
