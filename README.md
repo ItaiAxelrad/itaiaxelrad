@@ -1,6 +1,6 @@
 # Hi 👋
 
-I'm Itai Axelrad, an engineering consultant with a programming problem. My focus is in water and wastewater infrastructure. You can find me working in Golden or [climbing](https://www.axelradclimbing.com/) in the surrounding mountains. Check out my [portfolio site](https://www.itaiaxelrad.com) to learn more or get in touch!
+I'm Itai Axelrad, an engineer turned programmer. My focus is in front-end web development. You can find me working on my latest projects in Boulder or [climbing](https://www.axelradclimbing.com/) in the surrounding mountains. Check out my [portfolio site](https://www.itaiaxelrad.com) to learn more or get in touch!
 
 <h3>Things I code with</h3>
 <p>
@@ -34,7 +34,8 @@ I'm Itai Axelrad, an engineering consultant with a programming problem. My focus
 
 | Position         | Company                                        | Location            | Date From     | Date To     |
 | ---------------- | ---------------------------------------------- | ------------------- | ------------- | ----------- |
-| Project Engineer | [Leppert](https://leppertassociates.com/)      | Golden, CO          | June 2021     | Present     |
+| Web Developer    | [Portfolio](https://itaiaxelrad.com/)          | Boulder, CO         | November 2021 | Present     |
+| Project Manager  | [Leppert](https://leppertassociates.com/)      | Golden, CO          | June 2021     | October 2021|
 | Project Engineer | [Baseline](https://baselinecorp.com/)          | Golden, CO          | February 2019 | May 2021    |
 | Design Engineer  | [Cannon](https://cannoncorp.us/)               | Los Angeles, CA     | October 2015  | June 2017   |
 | Staff Engineer   | [Taylor & Syfan](https://www.taylorsyfan.com/) | San Luis Obispo, CA | May 2014      | August 2014 |

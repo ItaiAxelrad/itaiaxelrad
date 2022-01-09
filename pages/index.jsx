@@ -22,7 +22,7 @@ const HomePage = () => {
   return (
     <>
       <Container maxWidth='md' sx={{ paddingBlock: '2.5rem' }} id='about'>
-        <Typography variant='h1' gutterBottom sx={{ lineHeight: '1.3' }}>
+        <Typography variant='h1' gutterBottom sx={{ lineHeight: '1.4' }}>
           Hi there <span className={styles.wave}>👋</span>
         </Typography>
         <Typography variant='subtitle1' gutterBottom>
@@ -45,16 +45,21 @@ const HomePage = () => {
         <Box
           mt={2}
           sx={{
-            height: '55vh',
+            height: '60vh',
           }}
         >
           <Canvas
             orthographic
-            camera={{ zoom: 3, position: [0, 50, 150] }}
-            style={{ position: 'relative', width: '100%', height: '100%' }}
+            camera={{ zoom: 3.5, position: [0, 50, 150] }}
+            style={{
+              position: 'relative',
+              width: '100%',
+              height: '100%',
+              borderRadius: '8px',
+            }}
           >
-            <directionalLight intensity={0.1} />
-            <ambientLight intensity={0.1} />
+            <directionalLight intensity={0.25} />
+            <ambientLight intensity={0.25} />
             <Suspense fallback={null}>
               <Flatirons />
               <Environment preset='sunset' />
