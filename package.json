@@ -10,8 +10,13 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "export": "next build && next export",
     "lint": "next lint",
     "update": "npm i -g npm-check-updates && ncu -u && npm install && npm audit fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ItaiAxelrad/itaiaxelrad.git"
   },
   "dependencies": {
     "@emotion/cache": "^11.7.1",
@@ -37,5 +42,12 @@
     "eslint-config-prettier": "^8.3.0",
     "lint-staged": "^12.1.5",
     "prettier": "^2.5.1"
-  }
+  },
+  "browserslist": [
+    "last 3 and_chr versions",
+    "last 3 chrome versions",
+    "last 3 opera versions",
+    "last 3 ios_saf versions",
+    "last 3 safari versions"
+  ]
 }

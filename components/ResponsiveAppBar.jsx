@@ -1,5 +1,4 @@
 import NextLink from 'next/link';
-import Image from 'next/image';
 import { useState } from 'react';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';

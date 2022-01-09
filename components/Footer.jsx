@@ -1,6 +1,4 @@
-import Image from 'next/image';
 import Box from '@mui/material/Box';
-import Link from '@mui/material/Link';
 
 const Footer = () => {
   return (
