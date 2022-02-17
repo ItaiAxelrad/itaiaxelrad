@@ -122,9 +122,11 @@ const ResponsiveAppBar = () => {
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>
-            <IconButton href='https://github.com/ItaiAxelrad'>
-              <GitHubIcon />
-            </IconButton>
+            <Tooltip title='GitHub Profile'>
+              <IconButton href='https://github.com/ItaiAxelrad'>
+                <GitHubIcon />
+              </IconButton>
+            </Tooltip>
           </Box>
         </Toolbar>
       </Container>

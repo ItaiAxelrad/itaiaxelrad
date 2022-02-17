@@ -12,3 +12,8 @@ canvas {
 canvas:active {
   cursor: grabbing;
 }
+
+img {
+  display: block;
+  width: 100%;
+}
