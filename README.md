@@ -32,13 +32,13 @@ I'm Itai Axelrad, an engineer turned programmer. My focus is in front-end web de
 
 ## Experience
 
-| Position         | Company                                        | Location            | Date From     | Date To     |
-| ---------------- | ---------------------------------------------- | ------------------- | ------------- | ----------- |
-| Web Developer    | [Portfolio](https://itaiaxelrad.com/)          | Boulder, CO         | November 2021 | Present     |
-| Project Manager  | [Leppert](https://leppertassociates.com/)      | Golden, CO          | June 2021     | October 2021|
-| Project Engineer | [Baseline](https://baselinecorp.com/)          | Golden, CO          | February 2019 | May 2021    |
-| Design Engineer  | [Cannon](https://cannoncorp.us/)               | Los Angeles, CA     | October 2015  | June 2017   |
-| Staff Engineer   | [Taylor & Syfan](https://www.taylorsyfan.com/) | San Luis Obispo, CA | May 2014      | August 2014 |
+| Position         | Company                                        | Location            | Date From     | Date To       |
+| ---------------- | ---------------------------------------------- | ------------------- | ------------- | ------------- |
+| Product Manager  | [Dextrous](https://dextrousdev.wpengine.com/)  | Boulder, CO         | November 2021 | Present       |
+| Project Manager  | [Leppert](https://leppertassociates.com/)      | Golden, CO          | June 2021     | November 2021 |
+| Project Engineer | [Baseline](https://baselinecorp.com/)          | Golden, CO          | February 2019 | May 2021      |
+| Design Engineer  | [Cannon](https://cannoncorp.us/)               | Los Angeles, CA     | October 2015  | June 2017     |
+| Staff Engineer   | [Taylor & Syfan](https://www.taylorsyfan.com/) | San Luis Obispo, CA | May 2014      | August 2014   |
 
 ## Education
 
