@@ -8,7 +8,6 @@ import { CacheProvider } from '@emotion/react';
 import { deepmerge } from '@mui/utils';
 import createEmotionCache from '@lib/createEmotionCache';
 import globalTheme, { getDesignTokens } from '@styles/theme';
-import theme from '@styles/theme';
 import '@styles/global.css';
 
 // Client-side cache, shared for the whole session of the user in the browser.

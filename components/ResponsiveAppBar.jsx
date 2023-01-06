@@ -7,7 +7,6 @@ import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
-import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import Link from '@mui/material/Link';
 import Tooltip from '@mui/material/Tooltip';
@@ -37,8 +36,7 @@ const ResponsiveAppBar = () => {
       elevation={0}
       sx={{ bgcolor: 'transparent', border: 'none', color: 'inherit' }}
     >
-      <Container maxWidth='xl'>
-        <Toolbar disableGutters>
+        <Toolbar>
           <NextLink href='/' passHref>
             <Link underline='none' color='inherit'>
               <Typography
@@ -51,7 +49,6 @@ const ResponsiveAppBar = () => {
               </Typography>
             </Link>
           </NextLink>
-
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             <IconButton
               size='large'
@@ -120,7 +117,6 @@ const ResponsiveAppBar = () => {
               </NextLink>
             ))}
           </Box>
-
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title='GitHub Profile'>
               <IconButton href='https://github.com/ItaiAxelrad'>
@@ -129,7 +125,6 @@ const ResponsiveAppBar = () => {
             </Tooltip>
           </Box>
         </Toolbar>
-      </Container>
     </AppBar>
   );
 };

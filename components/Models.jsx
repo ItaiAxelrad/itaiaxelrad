@@ -1,10 +1,10 @@
-import { Suspense, useRef } from 'react';
+import { useRef } from 'react';
 import { useFrame } from '@react-three/fiber';
 import { useGLTF } from '@react-three/drei';
 
 export const Flatirons = (props) => {
   const group = useRef();
-  const { nodes, materials } = useGLTF('./models/flatirons.glb');
+  const { nodes } = useGLTF('./models/flatirons.glb');
 
   useFrame(() => (group.current.rotation.y += 0.00025));
 
@@ -26,7 +26,7 @@ useGLTF.preload('./models/ElCapitan.glb');
 
 export const ElCapitan = (props) => {
   const group = useRef();
-  const { nodes, materials } = useGLTF('./models/ElCapitan.glb');
+  const { nodes } = useGLTF('./models/ElCapitan.glb');
 
   useFrame(() => (group.current.rotation.y += 0.00025));
 

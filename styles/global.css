@@ -17,3 +17,9 @@ img {
   display: block;
   width: 100%;
 }
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+}
