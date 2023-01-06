@@ -1,0 +1,219 @@
+
+Most of my project ideas arise from my desire to control my own data. This project is no different. You can see the completed project at [vEleven.netlify.app](https://veleven.netlify.app/).
+
+## Introduction
+
+Love it or hate, [8a.nu](www.8a.nu) is a mainstay of the online climbing community. Its recent merger with (or acquisition by) [Vertical-Life](https://www.vertical-life.info/en/about) has left many folks scratching their heads - missing crag names, account issues, ranking/point tally errors, user experience concerns and the fear that the site will soon charge for the service. Seems like the highly anticipated 8a.nu refresh was more of a botched database migration than the simple server upgrade we were all hoping for. I got an early taste of the disappointment, as I had signed up with Vertical-Life to be a beta tester for the new site but was unable to login to my account. The issue was never resolved prior to the release, despite seeking help from several of the site's developers.
+
+Personally, I'm not all that upset about the update, but this project provides me with an opportunity to play with data - which is something I can't refuse. I do, however, find it very frustrating that the site does not offer a public API for us to consume. Sitting on such a treasure trove of information willingly collected by the users and not providing us with a way to access it feels out of touch with the times. Many users have requested an API to no avail, which leaves us with very few options.
+
+## The Scraper
+
+Scraping sites is admittedly an ethical gray area at best, and 8a.nu explicitly states in their [terms and conditions](https://www.vertical-life.info/en/legal/terms-and-conditions) that
+
+>“crawling” the Vertical-Life Service or otherwise using any automated means (including bots, scrapers, and spiders) to collect information from Vertical-Life is not permitted for any reason whatsoever.
+
+As such, parts of this project may be in violation the above terms and conditions and the Digital Millennium Copyright Act (DMCA). That being said, I only collected my own personal data on the site and will not use it for any monetary gains. Do with it what you will.
+
+After the release of the update, I searched for an open source scraper with very little hope. To my surprise I found one that, Vishaal, a buddy of mine had made. I recall seeing him walking the halls of the engineering building at UCLA covered in chalk. He informed me that he kept a hangboard in his backpack to get a set in at the gym between classes. A real *climber's climber*.
+
+At first, I encountered a few issues that were resolved with a quick pull request. After that we were smooth sailing. While I'll discuss the scraper code in the post below, I do not take credit for creating it. If you'd like, please take a look at the [source code](https://github.com/vishaalagartha/8a_scraper).
+
+The code breaks down into two distinct parts, the login function and the data scraper.
+
+## Browser Automation
+
+We'll be using WebDriver, which drives a browser natively (either locally or on a remote machine) using the Selenium server. The webdriver manager ensures the latest version and correct path are being used. After importing the required packages, we set the webdriver options and instantiate the install using the driver manager. In this case, we'll being using Chrome. The driver can navigate to the Vertical-Life user authentication page then find elements by id or class in order to login.
+
+```python
+def login():
+    chrome_options = webdriver.ChromeOptions()
+    chrome_options.add_argument("--headless")
+    chrome_options.add_argument("--disable-dev-shm-usage")
+    chrome_options.add_argument("--no-sandbox")
+    driver = webdriver.Chrome(
+        executable_path=ChromeDriverManager().install(), options=chrome_options)
+    driver.get('https://vlatka.vertical-life.info/auth/realms/Vertical-Life/protocol/openid-connect/auth?client_id=8a-nu&scope=openid%20email%20profile&response_type=code&redirect_uri=https%3A%2F%2Fwww.8a.nu%2Fcallback&resource=https%3A%2F%2Fwww.8a.nu&code_challenge=xBL05X4o7XhZ9mN1VGAjfT1HU2baawHrUqYJZT1Vrr4&code_challenge_method=S256')
+    #
+    driver.find_element_by_id('username').send_keys(os.getenv('_8A_USERNAME'))
+    driver.find_element_by_id('password').send_keys(os.getenv('_8A_PASSWORD'))
+    driver.find_element_by_id('kc-login').submit()
+    driver.find_elements_by_class_name('sign-in')[0].click()
+    return driver
+```
+
+The username/email and password are stored as environmental variables using `os.environ[]`.
+
+```python
+# set environmental variables for login
+os.environ["_8A_USERNAME"] = "yourlogin@email.com"
+os.environ["_8A_PASSWORD"] = "12345678"
+```
+
+## Data Mining
+
+Once the webdriver has successfully logged into the site, we can begin to scrape the data. This can be accomplished many different ways, but perhaps the most common of which is `Beautiful Soup`. `Beautiful Soup` is a Python library for pulling data out of HTML and XML files.
+
+First, we will set the user whose ascents we would like, and the category of climbing (`'bouldering' | 'sportclimbing'`)
+
+```python
+user = 'Metal F. DOOM'
+category = 'bouldering'
+```
+
+Next, we will slugify the username in order to format it into the base API url along with the category selected. The driver will then fetch the url. The returned JSON data is paginated, so we will use a recursive function to iterate over the page indices, with a predefined page size of 50. The ascents are added to an empty array, which is then returned.
+
+```python
+def get_user_ascents(user, category):
+    user = slugify(user)
+    driver = login()
+    base_url = 'https://www.8a.nu/api/users/{}/ascents?category={}&pageIndex={}&pageSize=50&sortfield=grade_desc&timeFilter=0&gradeFilter=0&typeFilter=&isAscented=true'
+    ascents = []
+    page_index = 0
+    while True:
+        url = base_url.format(user, category, page_index)
+        driver.get(url)
+        pre = driver.find_element_by_tag_name('pre').text
+        data = json.loads(pre)
+        if len(data['ascents']) == 0:
+            break
+        else:
+            ascents += data['ascents']
+            page_index += 1
+    return ascents
+```
+
+In order to retrieve and save the mined data for use in our SPA, we will save it to a JSON file.
+
+```python
+# run the script and print
+ascents = get_user_ascents(user, category)
+# Writing to a json file
+user_slug = slugify(user)
+dir_path = f"data/{user_slug}/"
+if not os.path.exists(dir_path):
+    os.makedirs(dir_path)
+
+with open(f"{dir_path}/{category}.json", "w") as outfile:
+    json.dump(ascents, outfile)
+```
+
+Note: The original repository also provides a function for retrieving user information and specific climb information if you're interested.
+
+## The Application
+
+Now that we have the required data, we can begin to build out the single page application. I decided to do so with vanilla javascript and modules. First, we must fetch the data from our JSON files. I have saved one file for each category of climbing as well as one that stores user information.
+
+Let's create an asynchronous data fetching function that we can `await` in our main script file within a `try` `catch` block.
+
+```javascript
+// fetch data from JSON file
+export const getData = async (path) => {
+
+  // fetch the data
+  const response = await fetch(path);
+  const data = await response.json();
+
+  return data
+
+};
+```
+
+### Latest Ascents
+
+The data contains individual climb objects with many keys, one of which is `date`. The first section in the application will be a 'latest sends' list containing the user's five most recent ascents. To sort the data we will use the `sort` method and a date comparison function prior to slicing it down to five elements.
+
+```javascript
+// sort sends by date
+const sortSends = (a, b) => {
+    return new Date(b.date).getTime() - new Date(a.date).getTime();
+}
+// create the sorted array and sliced array
+const sortedSends = data.sort(sortSends).slice(0,5)
+```
+
+The climbs can then be displayed in card components along with their respective tags and comments.
+
+![latest sends section](images/latestSends.png)
+
+### The Charts
+
+In order to generate charts similarly to 8a.nu's, we will be leveraging a javascript library called [Chart.js](https://www.chartjs.org/). Chart.js uses the versatile `canvas` element to render an interactive charts and graphs with many possibilities. There is plenty of documentation on this popular library, so I will only share the dynamic data loading function and custom tooltip below:
+
+```javascript
+// dynamically add data to chart
+export const addData = (chart, label, data1, data2) => {
+  // clear the data
+  chart.data.labels = new Array();
+  chart.data.datasets[0].data = new Array();
+  chart.data.datasets[1].data = new Array();
+  // add labels (font grades)
+  label.forEach((label) => {
+    chart.data.labels.push(label);
+  });
+  // add data (redpoints)
+  data1.forEach((pt) => {
+    chart.data.datasets[0].data.push(pt);
+  });
+  // add data (flash)
+  data2.forEach((pt) => {
+    chart.data.datasets[1].data.push(pt);
+  });
+  // update the chart
+  chart.update();
+};
+```
+
+In order to configure the default tooltip to display the added total of the two datasets in the stacked bar graph passed in the above code (redpoints and flashes), we will add a tooltip object within our chart object.
+
+```javascript
+tooltips: {
+      callbacks: {
+        footer: (tooltipItems, data) => {
+          let total = tooltipItems.reduce((a, b) => a + parseInt(b.xLabel), 0);
+          return 'Total: ' + total;
+        }
+      }
+    }
+```
+
+![The Line Chart](images/linechart.png)
+
+### The Table
+
+The table can be sorted by grade or by date, depending on the radio button input selection. The table data is generated using a `forEach` loop and template literal strings. Nothing fancy, just plain old html table elements. In order to avoid an initial excessive DOM size, we will only present the user with the first 50 ascents (either by date or grade) and provide a "Load All" button.
+
+```javascript
+const makeTable = (data, sorting, n=50) => {
+  
+  // DOM traversal and template code omitted for clarity
+  
+  // compare sends by grade
+  const sortByGrade = (a, b) => {
+      return b.gradeIndex - a.gradeIndex;
+  }
+  // sort using the default n value of 50
+  var sortedSends = data.sort(sortByGrade).slice(0,n);
+
+}  
+```
+
+Then, when the user clicks the "Load All" button, we can pass in the length of the dataset inseatd of using the default value.
+
+```javascript
+// load all ascents for table
+const loadAll = document.querySelector('#loadAll');
+loadAll.addEventListener('click', async(event) => {
+  try {
+    // get path
+    let path = setPath(user,style)
+    let data = await getData(path);
+    // add data to DOM
+    makeTable(data, sort, data.length);
+  } catch (error) {
+    console.log(error);
+  }
+});
+```
+
+![The Table](images/table.png)

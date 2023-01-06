@@ -50,6 +50,11 @@ let globalTheme = createTheme({
       main: 'hsl(215, 75%, 60%)',
     },
   },
+  components: {
+    MuiChip: {
+      defaultProps: { color: 'primary', variant: 'outlined' },
+    },
+  },
 });
 
 // a function that will return the palette based on the mode

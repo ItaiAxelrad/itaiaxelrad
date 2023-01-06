@@ -129,7 +129,7 @@ const About = () => {
             </TimelineItem>
             <TimelineItem>
               <TimelineOppositeContent color='text.secondary'>
-                2022-beyond
+                2023-beyond
               </TimelineOppositeContent>
               <TimelineSeparator>
                 <TimelineDot color='primary'>

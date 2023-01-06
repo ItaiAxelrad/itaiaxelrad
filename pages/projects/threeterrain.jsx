@@ -16,12 +16,12 @@ const ThreeTerrain = () => {
           ThreeTerrain
         </Typography>
         <Stack direction='row' spacing={1}>
-          <Chip label='Vite' color='primary' />
-          <Chip label='Google APIs' color='primary' />
-          <Chip label='Mapbox' color='primary' />
-          <Chip label='Three.js' color='primary' />
-          <Chip label='React' color='primary' />
-          <Chip label='Lambda Functions' color='primary' />
+          <Chip label='Vite' />
+          <Chip label='Google APIs' />
+          <Chip label='Mapbox' />
+          <Chip label='Three.js' />
+          <Chip label='React' />
+          <Chip label='Lambda Functions' />
         </Stack>
         <Divider sx={{ marginBlock: 5 }} />
         <Typography paragraph>Some description here...</Typography>
