@@ -22,4 +22,26 @@ export const Flatirons = (props) => {
   );
 };
 
-useGLTF.preload('./models/flatirons.glb');
+useGLTF.preload('./models/ElCapitan.glb');
+
+export const ElCapitan = (props) => {
+  const group = useRef();
+  const { nodes, materials } = useGLTF('./models/ElCapitan.glb');
+
+  useFrame(() => (group.current.rotation.y += 0.00025));
+
+  return (
+    <group ref={group} {...props} dispose={null}>
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.mesh_0.geometry}
+        material={nodes.mesh_0.material}
+        position={[-20, 20, 20]}
+        rotation={[-Math.PI / 2, 0, Math.PI / 4]}
+      ></mesh>
+    </group>
+  );
+};
+
+useGLTF.preload('./models/ElCapitan.glb');

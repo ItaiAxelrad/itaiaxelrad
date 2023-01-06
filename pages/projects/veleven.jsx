@@ -55,6 +55,7 @@ const Veleven = () => {
         </Typography>
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img alt='' src='/images/profile.png' />
+        
       </Container>
     </>
   );

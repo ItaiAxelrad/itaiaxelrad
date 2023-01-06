@@ -16,8 +16,8 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 
 const pages = [
   { title: 'About', link: '/about' },
-  { title: 'Portfolio', link: '/#portfolio' },
-  { title: 'Contact', link: '/#contact' },
+  { title: 'Portfolio', link: '/projects' },
+  { title: 'Contact', link: '/contact' },
 ];
 
 const ResponsiveAppBar = () => {
