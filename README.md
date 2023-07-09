@@ -1,31 +1,5 @@
 # Hi 👋
 
-Playground, add 
-- next-auth (JWT, local SQLite db)
-- Prisma (local SQLite db)
-- Postmark (move to server actions, vercel)
-- Typescript
-- CI/CD
-
-<https://github.com/mantinedev/next-app-template>
-<https://github.com/t3-oss/create-t3-app>
-
-Redo README
-Add project blog
-Add testimonials
-Move to vercel?
-
-Refactor:
-
-- [ ] Next 13 app router
-  - Server Action for contact form
-- [ ] Tailwind
-- [ ] Icons to emojis, html characters or local svg
-- [ ] TS
-- [ ] Jest (see mantine docs)
-- [ ] Storybook (see mantine docs)
-- [ ] CI/CD (husky, git commit, etc.)
-
 I'm Itai Axelrad, engineer turned programmer. My focus is in front-end web development. You can find me working on my latest projects in Boulder or [climbing](https://www.axelradclimbing.com/) in the surrounding mountains. Check out my [portfolio site](https://www.itaiaxelrad.com) to learn more or get in touch!
 
 <h3>Things I code with</h3>

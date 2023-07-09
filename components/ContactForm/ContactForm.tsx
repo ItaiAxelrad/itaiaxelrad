@@ -1,28 +1,58 @@
+'use client';
+
 export function ContactForm() {
+  async function handleSubmit(e) {
+    // Prevent the browser from reloading the page
+    e.preventDefault();
+
+    // Read the form data
+    const form = e.target;
+    const formData = new FormData(form);
+
+    // Or you can work with it as a plain object:
+    const formJson = Object.fromEntries(formData.entries());
+
+    // You can pass formData as a fetch body directly:
+    await fetch('/api/contact', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(formJson),
+    });
+  }
+
   return (
-    <form data-netlify='true' netlify-honeypot='bot-field'>
-      <div hidden aria-hidden='true'>
+    <form method='post' onSubmit={handleSubmit}>
+      <div className='flex flex-col gap-4'>
         <label>
-          Do not fill this out if you are human:
-          <input name='bot-field' />
+          Email
+          <input
+            type='text'
+            name='email'
+            placeholder='your@email.com'
+            className='rounded-md w-full border-slate-200 placeholder:text-slate-400'
+          />
         </label>
-      </div>
-      <div>
-        <label className='block'>Email</label>
-        <input
-          type='text'
-          placeholder='your@email.com'
-          className='rounded-md w-full border-slate-200 placeholder:text-slate-400'
-        />
-        <label className='block mt-4'>Message</label>
-        <textarea
-          placeholder='Hello world'
-          className='rounded-md w-full border-slate-200 placeholder:text-slate-400'
-        />
+        <label>
+          Subject
+          <input
+            type='text'
+            name='subject'
+            placeholder='Inquiry'
+            className='rounded-md w-full border-slate-200 placeholder:text-slate-400'
+          />
+        </label>
+        <label>
+          Message
+          <textarea
+            name='text'
+            placeholder='Hello world'
+            className='rounded-md w-full border-slate-200 placeholder:text-slate-400'
+          />
+        </label>
         <button
           type='submit'
           role='link'
-          className='my-4 block bg-blue-600 py-2 px-4 rounded-md font-semibold text-white hover:bg-blue-500 shadow-sm'
+          className='block bg-blue-600 py-2 px-4 rounded-md font-semibold text-white hover:bg-blue-500 shadow-sm'
         >
           Send <span aria-hidden='true'>📧</span>
         </button>

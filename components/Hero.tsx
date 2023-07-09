@@ -1,4 +1,3 @@
-import Terrain from '@components/three/Terrain';
 import styles from '@styles/styles.module.css';
 import Link from 'next/link';
 
@@ -71,7 +70,6 @@ export default function Hero() {
           />
         </div>
       </div>
-      <Terrain />
     </div>
   );
 }
