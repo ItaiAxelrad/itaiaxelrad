@@ -7,10 +7,10 @@ const ContentSecurityPolicy = `
 `;
 
 const securityHeaders = [
-  {
-    key: 'Content-Security-Policy',
-    value: ContentSecurityPolicy.replace(/\s{2,}/g, ' ').trim(),
-  },
+  // {
+  //   key: 'Content-Security-Policy',
+  //   value: ContentSecurityPolicy.replace(/\s{2,}/g, ' ').trim(),
+  // },
   {
     key: 'Strict-Transport-Security',
     value: 'max-age=63072000; includeSubDomains; preload',
@@ -46,7 +46,7 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   experimental: {
-    appDir: true,
+    mdxRs: true,
     serverActions: true,
   },
   async headers() {
@@ -60,4 +60,5 @@ const nextConfig = {
   },
 };
 
-module.exports = nextConfig;
+const withMDX = require('@next/mdx')();
+module.exports = withMDX(nextConfig);

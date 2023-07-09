@@ -1,4 +1,4 @@
-export default function ContactForm() {
+export function ContactForm() {
   return (
     <form data-netlify='true' netlify-honeypot='bot-field'>
       <div hidden aria-hidden='true'>

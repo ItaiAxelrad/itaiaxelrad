@@ -1,7 +1,5 @@
 import Footer from '@components/layouts/Footer';
 import Header from '@components/layouts/Header';
-import AuthContext from '@context/AuthContext';
-import SWRContext from '@context/SWRContext';
 import { inter } from '@styles/fonts';
 import '@styles/globals.css';
 import { Metadata } from 'next/types';
@@ -29,18 +27,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <AuthContext>
-      <SWRContext>
-        <html lang='en-US' dir='ltr'>
-          <body
-            className={`flex flex-col h-screen ${inter.className} bg-slate-50 text-slate-800 dark:text-slate-100 dark:bg-gray-900`}
-          >
-            <Header />
-            <main className='flex grow mx-auto py-4 my-4'>{children}</main>
-            <Footer />
-          </body>
-        </html>
-      </SWRContext>
-    </AuthContext>
+    <html lang='en-US' dir='ltr'>
+      <body
+        className={`flex flex-col h-screen ${inter.className} bg-slate-50 text-slate-800 dark:text-slate-100 dark:bg-gray-900`}
+      >
+        <Header />
+        <main className='flex grow mx-auto py-4 my-4'>{children}</main>
+        <Footer />
+      </body>
+    </html>
   );
 }
