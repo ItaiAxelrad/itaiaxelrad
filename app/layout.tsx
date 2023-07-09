@@ -29,7 +29,7 @@ export default function RootLayout({
   return (
     <html lang='en-US' dir='ltr'>
       <body
-        className={`flex flex-col h-screen ${inter.className} bg-slate-50 text-slate-800 dark:text-slate-100 dark:bg-gray-900`}
+        className={`flex flex-col h-screen scroll-smooth ${inter.className} bg-slate-50 text-slate-800 dark:text-slate-100 dark:bg-gray-900`}
       >
         <Header />
         <main className='flex grow mx-auto py-4 my-4'>{children}</main>

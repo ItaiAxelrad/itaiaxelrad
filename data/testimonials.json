@@ -1,0 +1,32 @@
+[
+  {
+    "company": "Dextrous",
+    "client": "Tyson N.",
+    "image": "/images/tyson.jpeg",
+    "testimonial": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+  },
+  {
+    "company": "Ascenture",
+    "client": "Thomas P.",
+    "image": "/images/thomas.jpeg",
+    "testimonial": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+  },
+  {
+    "company": "CHOSS",
+    "client": "Hunter D.",
+    "image": "/images/hunter.jpeg",
+    "testimonial": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+  },
+  {
+    "company": "JeffCo EDC",
+    "client": "Jansen T.",
+    "image": "/images/jansen.jpeg",
+    "testimonial": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+  },
+  {
+    "company": "FlavorHawk",
+    "client": "Joseph S.",
+    "image": "/images/joseph.webp",
+    "testimonial": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+  }
+]
