@@ -1,0 +1,28 @@
+[
+  {
+    "id": 1,
+    "title": "SprayBook",
+    "description": "A simpler logbook",
+    "link": "./projects/SprayBook",
+    "site": "https://spraybook.app",
+    "image": "/images/feed.png",
+    "stack": [
+      "React",
+      "Next.js",
+      "NextAuth",
+      "SWR",
+      "MUI",
+      "Mongodb",
+      "Chart.js"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "threeTerrain",
+    "description": "A three dimensional geospatial visualization tool. Search for your favorite mountain.",
+    "link": "./projects/threeTerrain",
+    "href": "https://threeterrain.app",
+    "image": "/images/threeterrain.png",
+    "stack": ["Vite", "Google", "Mapdiv", "Three.js"]
+  }
+]

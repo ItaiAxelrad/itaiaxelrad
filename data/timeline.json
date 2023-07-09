@@ -1,0 +1,38 @@
+[
+  {
+    "date": "1992",
+    "title": "Birth",
+    "description": "I have been taking things apart and putting things together as long as I can remember.",
+    "icon": "👶"
+  },
+  {
+    "date": "2010-2015",
+    "title": "School",
+    "description": "This curiosity and interest initially led me to pursue a bachelor's degree in civil engineering at the California Polytechnic State University (Cal Poly) in San Luis Obispo. Cal Poly provided me with a comprehensive understanding of the fundamentals of engineering along with an introduction into the world of programming.",
+    "icon": "👨‍🏫"
+  },
+  {
+    "date": "2015-2017",
+    "title": "Work",
+    "description": "In my first years in practice, I continually found myself reaching for programming when problem solving - creating tools to automate fee schedules, cost estimates, and display data.",
+    "icon": "💼"
+  },
+  {
+    "date": "2015-2017",
+    "title": "School",
+    "description": "I later pursued a master's degree in water resources and environmental engineering at the University of California in Los Angeles (UCLA). Throughout the program I utilized Fortran, Matlab, R, and Python to complete complex engineering problems and large scale data analysis. By the end of my master's program I had discovered and quickly fallen in love with web development - a perfect combination of creative and technical material.",
+    "icon": "👨‍🏫"
+  },
+  {
+    "date": "2018-2023",
+    "title": "Work",
+    "description": "While I continued my engineering career after graduation, a majority of my free time was spent programming. The last few years, I have worked on numerous web development projects as an obsessed hobbyist, in-house engineer, and freelance contractor.",
+    "icon": "💼"
+  },
+  {
+    "date": "2024-beyond",
+    "title": "Work",
+    "description": "Who knows",
+    "icon": "🤷"
+  }
+]
