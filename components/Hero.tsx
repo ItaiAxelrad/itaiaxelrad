@@ -22,7 +22,7 @@ export default function Hero() {
             }}
           />
         </div>
-        <div className='mx-auto max-w-lg py-12 sm:py-24 lg:py-32'>
+        <div className='mx-auto max-w-sm py-12 sm:py-24 lg:py-32 lg:max-w-lg'>
           <div className='hidden sm:mb-8 sm:flex sm:justify-center'>
             <div className='relative rounded-full px-3 py-1 text-sm leading-6 bg-slate-50 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20'>
               See my{' '}
@@ -69,25 +69,9 @@ export default function Hero() {
               </Link>
               <Link
                 href='/#more'
-                className='text-sm font-semibold leading-6 text-slate-800'
+                className='text-sm font-semibold text-slate-800 px-4 py-2.5 ring-1 ring-slate-400 rounded-md'
               >
-                Learn more{' '}
-                <span aria-hidden='true'>
-                  <svg
-                    xmlns='http://www.w3.org/2000/svg'
-                    fill='none'
-                    viewBox='0 0 24 24'
-                    strokeWidth='2'
-                    stroke='currentColor'
-                    className='inline w-4 h-4'
-                  >
-                    <path
-                      strokeLinecap='round'
-                      strokeLinejoin='round'
-                      d='M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3'
-                    />
-                  </svg>
-                </span>
+                Learn more
               </Link>
             </div>
           </div>
@@ -106,7 +90,7 @@ export default function Hero() {
         </div>
       </section>
       <section
-        className='mx-auto max-w-5xl items-center align-center grid grid-cols-2 gap-6 mb-24 scroll-mt-32'
+        className='mx-auto max-w-5xl items-center align-center grid grid-cols-1 gap-6 p-4 mb-24 scroll-mt-32 md:grid-cols-2'
         id='more'
       >
         <div className='p-4'>

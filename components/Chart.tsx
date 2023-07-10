@@ -64,14 +64,14 @@ export default function LineChart() {
     labels,
     datasets: [
       {
-        label: 'Dataset 1',
+        label: 'Blue',
         data: dataset,
         spanGaps: false,
         borderColor: '#2563eb',
         backgroundColor: '#2563eb',
       },
       {
-        label: 'Dataset 2',
+        label: 'Teal',
         data: getData(labels),
         spanGaps: false,
         borderColor: '#0d9488',

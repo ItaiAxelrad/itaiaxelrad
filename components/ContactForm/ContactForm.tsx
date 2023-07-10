@@ -21,7 +21,11 @@ export function ContactForm() {
   }
 
   return (
-    <form method='post' onSubmit={handleSubmit}>
+    <form
+      method='post'
+      onSubmit={handleSubmit}
+      className='p-4 rounded-md ring-1 ring-slate-100 bg-white shadow-lg'
+    >
       <div className='flex flex-col gap-4'>
         <label>
           Email
