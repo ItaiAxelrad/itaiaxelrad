@@ -1,5 +1,5 @@
 'use client';
 
-export default function Template() {
+export const Template = () => {
   return <div>Template</div>;
-}
+};

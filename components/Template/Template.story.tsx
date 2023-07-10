@@ -1,6 +1,6 @@
 // Template.stories.ts|tsx
 import type { Meta, StoryObj } from '@storybook/react';
-import Template from './Template';
+import { Template } from './Template';
 
 //👇 This default export determines where your story goes in the story list
 const meta: Meta<typeof Template> = {

@@ -17,6 +17,9 @@
   h4 {
     @apply text-lg;
   }
+  canvas {
+    @apply rounded-md;
+  }
 }
 
 @layer components {
@@ -28,8 +31,10 @@
 *,
 html {
   scroll-behavior: smooth !important;
+  scroll-snap-stop: normal !important;
 }
 
 section {
   scroll-margin-top: 8rem !important;
+  scroll-snap-stop: normal !important;
 }

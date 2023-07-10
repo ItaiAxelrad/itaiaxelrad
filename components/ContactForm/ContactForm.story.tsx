@@ -1,6 +1,6 @@
 // ContactForm.stories.ts|tsx
 import type { Meta, StoryObj } from '@storybook/react';
-import ContactForm from './ContactForm';
+import { ContactForm } from './ContactForm';
 
 //👇 This default export determines where your story goes in the story list
 const meta: Meta<typeof ContactForm> = {

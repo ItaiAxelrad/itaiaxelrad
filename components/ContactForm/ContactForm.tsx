@@ -1,6 +1,6 @@
 'use client';
 
-export default function ContactForm() {
+export function ContactForm() {
   async function handleSubmit(e) {
     // Prevent the browser from reloading the page
     e.preventDefault();

@@ -7,6 +7,7 @@ import { Chart } from 'react-chartjs-2';
 
 export const options = {
   responsive: true,
+  maintainAspectRatio: false,
   scales: {
     x: {
       grid: {
@@ -80,5 +81,13 @@ export default function LineChart() {
     ],
   };
 
-  return <Chart type='line' options={options} data={data} />;
+  return (
+    <Chart
+      type='line'
+      options={options}
+      data={data}
+      height={null}
+      width={null}
+    />
+  );
 }

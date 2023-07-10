@@ -8,20 +8,21 @@ type GLTFResult = GLTF & {
   nodes: {
     mesh_0: THREE.Mesh;
   };
-  materials: { ['default']: THREE.MeshStandardMaterial };
+  materials: {};
 };
 
 export default function ElCapitan(props: JSX.IntrinsicElements['group']) {
-  const { nodes, materials } = useGLTF('/models/ElCapitan.glb') as GLTFResult;
+  const { nodes } = useGLTF(`/models/ElCapitan.glb`, 's') as GLTFResult;
+
   return (
     <group {...props} dispose={null}>
       <mesh
         castShadow
-        receiveShadow
+        position={[0, -10, 0]}
+        rotation={[-Math.PI / 2, 0, 0]}
         geometry={nodes.mesh_0.geometry}
         material={nodes.mesh_0.material}
-        rotation={[-Math.PI / 2, 0, 0]}
-        material-color='SeaGreen'
+        material-color='LightSteelBlue'
       />
     </group>
   );

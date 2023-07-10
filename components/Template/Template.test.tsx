@@ -1,6 +1,6 @@
 import { describe, expect, it } from '@jest/globals';
 import { render } from '@testing-library/react';
-import Template from './Template';
+import { Template } from './Template';
 
 describe('Template component', () => {
   it('has div', () => {
