@@ -3,7 +3,7 @@ import timeline from '@data/timeline.json';
 const Event = ({ event }) => {
   return (
     <li className='mb-8 ml-4'>
-      <span className='absolute flex items-center justify-center w-8 h-8 bg-blue-100 rounded-full -left-4'>
+      <span className='absolute flex items-center justify-center w-8 h-8 bg-blue-100 dark:bg-blue-300 rounded-full -left-4'>
         {event.icon}
       </span>
       <div className='ml-4 mt-4'>
@@ -13,7 +13,7 @@ const Event = ({ event }) => {
         <time className='block mb-2 text-sm font-normal leading-none text-slate-400 '>
           {event.date}
         </time>
-        <p className='mb-4 text-base font-normal text-slate-800 dark:text-slate-200'>
+        <p className='mb-4 text-base font-normal text-slate-800 dark:text-slate-300'>
           {event.description}
         </p>
       </div>
@@ -23,9 +23,11 @@ const Event = ({ event }) => {
 
 export default function Page() {
   return (
-    <article className='max-w-xl my-8 p-2'>
-      <h2 className='text-2xl text-center my-6'>About</h2>
-      <ol className='relative border-l-2 border-blue-100 ml-4'>
+    <article className='max-w-xl my-16 px-4'>
+      <h2 className='my-6 font-semibold text-2xl text-center text-slate-600 dark:text-slate-400'>
+        About
+      </h2>
+      <ol className='relative border-l-2 border-blue-100 ml-4 dark:border-blue-300'>
         {timeline.map((event) => {
           return <Event key={event.date} event={event} />;
         })}

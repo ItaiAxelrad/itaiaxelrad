@@ -2,14 +2,14 @@ import Link from 'next/link';
 
 const ProjectCard = ({ project }) => {
   return (
-    <div className='bg-white ring-1 ring-slate-200 shadow-sm rounded-md p-4'>
+    <div className='bg-white ring-1 ring-slate-200 shadow-sm rounded-md p-4 dark:bg-slate-800 dark:ring-slate-700'>
       <Link
         href={project.link}
         className='font-semibold text-xl text-blue-500 block leading-6'
       >
         {project.title}
       </Link>
-      <small className='text-slate-500'>
+      <small className='text-slate-500 dark:text-slate-400'>
         {new Date(project.date).toLocaleString('en-US', {
           weekday: 'long',
           year: 'numeric',
@@ -17,7 +17,9 @@ const ProjectCard = ({ project }) => {
           day: 'numeric',
         })}
       </small>
-      <p className='text-slate-600 mt-2'>{project.description}</p>
+      <p className='text-slate-600 mt-2 dark:text-slate-300'>
+        {project.description}
+      </p>
     </div>
   );
 };

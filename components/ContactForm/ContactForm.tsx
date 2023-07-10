@@ -21,11 +21,7 @@ export function ContactForm() {
   }
 
   return (
-    <form
-      method='post'
-      onSubmit={handleSubmit}
-      className='p-4 rounded-md ring-1 ring-slate-100 bg-white shadow-lg'
-    >
+    <form method='post' onSubmit={handleSubmit} className='p-2 rounded-md'>
       <div className='flex flex-col gap-4'>
         <label>
           Email
@@ -33,7 +29,7 @@ export function ContactForm() {
             type='text'
             name='email'
             placeholder='your@email.com'
-            className='rounded-md w-full border-slate-200 placeholder:text-slate-400'
+            className='rounded-md w-full border-slate-200 placeholder:text-slate-400 dark:bg-slate-800 dark:border-slate-700'
           />
         </label>
         <label>
@@ -42,7 +38,7 @@ export function ContactForm() {
             type='text'
             name='subject'
             placeholder='Inquiry'
-            className='rounded-md w-full border-slate-200 placeholder:text-slate-400'
+            className='rounded-md w-full border-slate-200 placeholder:text-slate-400 dark:bg-slate-800 dark:border-slate-700'
           />
         </label>
         <label>
@@ -50,7 +46,7 @@ export function ContactForm() {
           <textarea
             name='text'
             placeholder='Hello world'
-            className='rounded-md w-full border-slate-200 placeholder:text-slate-400'
+            className='rounded-md w-full border-slate-200 placeholder:text-slate-400 dark:bg-slate-800 dark:border-slate-700'
           />
         </label>
         <button

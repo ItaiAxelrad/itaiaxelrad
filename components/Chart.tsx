@@ -11,19 +11,19 @@ export const options = {
   scales: {
     x: {
       grid: {
-        color: '#e2e8f0',
+        color: 'rgba(16, 24, 39, 0.15)',
         drawTicks: false,
       },
-      ticks: { precision: 0, padding: 10 },
+      ticks: { precision: 0, padding: 10, color: 'rgba(16, 24, 39, 0.75)' },
       beginAtZero: true,
       min: 0,
     },
     y: {
       grid: {
-        color: '#e2e8f0',
+        color: 'rgba(16, 24, 39, 0.15)',
         drawTicks: false,
       },
-      ticks: { precision: 0, padding: 10 },
+      ticks: { precision: 0, padding: 10, color: 'rgba(16, 24, 39, 0.75)' },
       beginAtZero: true,
       min: 0,
       max: 100,
