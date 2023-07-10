@@ -34,10 +34,13 @@
     "@react-three/fiber": "^8.13.4",
     "@types/mdx": "^2.0.5",
     "@types/three": "^0.153.0",
+    "chart.js": "^4.3.0",
+    "faker": "^6.6.6",
     "next": "^13.4.9",
     "nodemailer": "^6.9.3",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
+    "react-chartjs-2": "^5.2.0",
     "react-dom": "^18.2.0",
     "three": "^0.154.0"
   },

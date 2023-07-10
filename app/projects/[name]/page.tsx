@@ -1,4 +1,4 @@
-import Terrain from '@components/three/Terrain';
+import Terrain, { ElCap } from '@components/three/Terrain';
 
 export default function Page({ params }) {
   return (
@@ -7,6 +7,7 @@ export default function Page({ params }) {
       <p>Some info goes here...</p>
       <div className='h-96 w-full m-6 relative'>
         <Terrain />
+        <ElCap />
       </div>
     </div>
   );

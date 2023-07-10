@@ -1,0 +1,84 @@
+'use client';
+
+import type { ChartOptions } from 'chart.js';
+import 'chart.js/auto';
+import { useEffect, useState } from 'react';
+import { Chart } from 'react-chartjs-2';
+
+export const options = {
+  responsive: true,
+  scales: {
+    x: {
+      grid: {
+        color: '#e2e8f0',
+        drawTicks: false,
+      },
+      ticks: { precision: 0, padding: 10 },
+      beginAtZero: true,
+      min: 0,
+    },
+    y: {
+      grid: {
+        color: '#e2e8f0',
+        drawTicks: false,
+      },
+      ticks: { precision: 0, padding: 10 },
+      beginAtZero: true,
+      min: 0,
+      max: 100,
+    },
+  },
+} as ChartOptions<'line'>;
+
+const labels = [
+  'Jan',
+  'Feb',
+  'Mar',
+  'Apr',
+  'May',
+  'Jun',
+  'Jul',
+  'Aug',
+  'Sep',
+  'Oct',
+  'Nov',
+  'Dec',
+];
+
+function getData(labels) {
+  return labels.map(() => Math.random() * (90 - 10) + 10);
+}
+
+export default function LineChart() {
+  const [dataset, setDataset] = useState(getData(labels));
+
+  useEffect(() => {
+    setTimeout(function () {
+      setDataset(getData(labels));
+    }, 3000);
+    console.log(dataset);
+    return () => {};
+  }, [dataset]);
+
+  const data = {
+    labels,
+    datasets: [
+      {
+        label: 'Dataset 1',
+        data: dataset,
+        spanGaps: false,
+        borderColor: '#2563eb',
+        backgroundColor: '#2563eb',
+      },
+      {
+        label: 'Dataset 2',
+        data: getData(labels),
+        spanGaps: false,
+        borderColor: '#0d9488',
+        backgroundColor: '#0d9488',
+      },
+    ],
+  };
+
+  return <Chart type='line' options={options} data={data} />;
+}

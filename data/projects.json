@@ -5,7 +5,7 @@
     "description": "A simpler logbook",
     "link": "./projects/SprayBook",
     "site": "https://spraybook.app",
-    "image": "/images/feed.png",
+    "image": "/images/spraybook.png",
     "stack": [
       "React",
       "Next.js",

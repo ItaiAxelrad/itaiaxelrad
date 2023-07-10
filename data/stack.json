@@ -1,0 +1,38 @@
+[
+  {
+    "label": "React",
+    "image": "/images/react.png"
+  },
+  {
+    "label": "Next.js",
+    "image": "/images/next.png"
+  },
+  {
+    "label": "Auth.js",
+    "image": "/images/auth.png"
+  },
+  {
+    "label": "TypeScript",
+    "image": "/images/ts.png"
+  },
+  {
+    "label": "MongoDb",
+    "image": "/images/mongo.png"
+  },
+  {
+    "label": "Mantine",
+    "image": "/images/mantine.png"
+  },
+  {
+    "label": "Tailwind",
+    "image": "/images/tailwind.png"
+  },
+  {
+    "label": "Three.js",
+    "image": "/images/three.png"
+  },
+  {
+    "label": "GCP",
+    "image": "/images/gcp.png"
+  }
+]

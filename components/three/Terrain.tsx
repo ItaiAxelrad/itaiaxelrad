@@ -1,5 +1,6 @@
 'use client';
 
+import ElCapitan from '@components/three/ElCapitan';
 import Flatirons from '@components/three/Flatirons';
 import {
   Environment,
@@ -27,6 +28,25 @@ export default function Terrain() {
           rotation={[-Math.PI / 2, 0, 0]}
         />
         <Flatirons />
+        <Environment preset='sunset' background />
+        <OrbitControls />
+      </Suspense>
+    </Canvas>
+  );
+}
+
+export function ElCap() {
+  return (
+    <Canvas orthographic camera={{ zoom: 3.5, position: [0, 50, 150] }}>
+      <Suspense fallback={<Loader />}>
+        <directionalLight intensity={0.25} />
+        <ambientLight intensity={0.25} />
+        <pointLight
+          intensity={0.25}
+          position={[100, 50, 100]}
+          rotation={[-Math.PI / 2, 0, 0]}
+        />
+        <ElCapitan />
         <Environment preset='sunset' background />
         <OrbitControls />
       </Suspense>
