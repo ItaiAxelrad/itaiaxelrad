@@ -1,14 +1,14 @@
-// ContactForm.stories.ts|tsx
+// Template.stories.ts|tsx
 import type { Meta, StoryObj } from '@storybook/react';
-import ContactForm from './ContactForm';
+import Template from './Template';
 
 //👇 This default export determines where your story goes in the story list
-const meta: Meta<typeof ContactForm> = {
-  component: ContactForm,
+const meta: Meta<typeof Template> = {
+  component: Template,
 };
 
 export default meta;
-type Story = StoryObj<typeof ContactForm>;
+type Story = StoryObj<typeof Template>;
 
 export const Primary: Story = {
   args: {
