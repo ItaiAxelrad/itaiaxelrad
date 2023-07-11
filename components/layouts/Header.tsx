@@ -44,7 +44,7 @@ export default function Header() {
             <Link
               key={item.name}
               href={item.href}
-              className='text-sm font-semibold leading-6 hover:text-blue-600'
+              className='text-sm font-semibold leading-6'
             >
               <span className='text-slate-400'>/</span>
               {item.name}

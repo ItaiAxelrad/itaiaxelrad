@@ -17,6 +17,9 @@
   h4 {
     @apply text-lg;
   }
+  a {
+    @apply hover:text-blue-500;
+  }
   canvas {
     @apply rounded-md;
   }
@@ -24,7 +27,10 @@
 
 @layer components {
   .btn-primary {
-    @apply bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded;
+    @apply rounded-md shadow-md bg-blue-600 px-4 py-2.5 text-sm font-semibold text-slate-50  hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 hover:text-white;
+  }
+  .btn-secondary {
+    @apply bg-slate-50 text-sm font-semibold text-slate-800 hover:text-slate-900 px-4 py-2.5 rounded-md ring-1 ring-blue-100 hover:ring-blue-200 dark:ring-blue-900 dark:hover:ring-blue-800 dark:text-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 dark:hover:text-slate-100;
   }
 }
 

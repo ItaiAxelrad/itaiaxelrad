@@ -11,7 +11,7 @@ export default function Stack() {
         {stack.map((stack) => (
           <div
             key={stack.label}
-            className='bg-white px-4 py-2 rounded-full flex items-center justify-center gap-2 ring-1 ring-slate-200 text-lg dark:bg-slate-800 dark:ring-slate-700'
+            className='bg-white px-4 py-2 rounded-full flex items-center justify-center gap-2 ring-1 ring-slate-100 text-lg dark:bg-slate-800 dark:ring-slate-700'
           >
             <Image alt={stack.label} src={stack.image} width={32} height={32} />
             {stack.label}

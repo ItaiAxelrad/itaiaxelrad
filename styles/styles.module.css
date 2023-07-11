@@ -1,7 +1,9 @@
 .dots {
   background-image: radial-gradient(hsla(215, 75%, 60%, 15%) 1px, transparent 0),
     radial-gradient(hsla(215, 75%, 60%, 15%) 1px, transparent 0);
-  background-position: 0 0, 25px 25px;
+  background-position:
+    0 0,
+    25px 25px;
   background-size: 50px 50px;
 }
 
@@ -16,13 +18,13 @@
     transform: rotate(0deg);
   }
   25% {
-    transform: rotate(10deg);
+    transform: rotate(14deg);
   }
   50% {
-    transform: rotate(0deg);
+    transform: rotate(-2deg);
   }
   75% {
-    transform: rotate(-12deg);
+    transform: rotate(-14deg);
   }
   100% {
     transform: rotate(0deg);
