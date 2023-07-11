@@ -23,7 +23,7 @@ const Event = ({ event }) => {
 
 export default function Page() {
   return (
-    <article className='max-w-xl my-16 px-4'>
+    <div className='max-w-xl my-16 px-4'>
       <h2 className='my-6 font-semibold text-2xl text-center text-slate-600 dark:text-slate-400'>
         About
       </h2>
@@ -32,6 +32,6 @@ export default function Page() {
           return <Event key={event.date} event={event} />;
         })}
       </ol>
-    </article>
+    </div>
   );
 }

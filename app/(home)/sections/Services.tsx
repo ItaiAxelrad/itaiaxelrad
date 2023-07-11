@@ -32,7 +32,7 @@ export default function Services() {
             <ElCapitan />
           </Model>
         </div>
-        <div className='p-4 -order-1 lg:order-1'>
+        <div className='p-4 -order-1 md:order-1'>
           <p className='text-xl leading-8 font-semibold mb-4'>
             Grab attention <span>👀</span>
           </p>

@@ -29,7 +29,7 @@ export default function Header() {
               href={item.href}
               className='text-sm font-semibold leading-6'
             >
-              <span className='text-slate-400'>/</span>
+              <span className='text-slate-300 dark:text-slate-600'>/</span>
               {item.name}
             </Link>
           ))}

@@ -40,11 +40,11 @@ export default function Hero() {
           >
             👋
           </span>
-
-          <p className='mt-6 text-xl font-semibold leading-8 text-gray-700 dark:text-slate-300'>
-            I&apos;m a full-stack dev, specialized in dashboard UIs.
+          <p className='mt-6 text-3xl font-semibold leading-9 text-gray-700 dark:text-slate-300'>
+            I&apos;m a full-stack developer,
+            <br /> specialized in dashboard UI
           </p>
-          <p className='mt-6 text-md leading-8 text-gray-600 mx-auto max-w-[40ch] dark:text-slate-400'>
+          <p className='mt-6 text-md leading-7 text-gray-600 mx-auto max-w-[40ch] dark:text-slate-400'>
             You can find me working on my latest projects in Boulder or climbing
             in the surrounding mountains
           </p>

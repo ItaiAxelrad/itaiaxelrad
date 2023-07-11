@@ -1,38 +1,47 @@
 [
   {
     "label": "React",
-    "image": "/images/react.png"
+    "image": "/images/react.png",
+    "link": "https://react.dev/"
   },
   {
     "label": "Next.js",
-    "image": "/images/next.png"
+    "image": "/images/next.png",
+    "link": "https://nextjs.org/"
   },
   {
     "label": "Auth.js",
-    "image": "/images/auth.png"
+    "image": "/images/auth.png",
+    "link": "https://authjs.dev/"
   },
   {
     "label": "TypeScript",
-    "image": "/images/ts.png"
+    "image": "/images/ts.png",
+    "link": "https://www.typescriptlang.org/"
   },
   {
     "label": "MongoDb",
-    "image": "/images/mongo.png"
+    "image": "/images/mongo.png",
+    "link": "https://www.mongodb.com/"
   },
   {
     "label": "Mantine",
-    "image": "/images/mantine.png"
+    "image": "/images/mantine.png",
+    "link": "https://mantine.dev/"
   },
   {
     "label": "Tailwind",
-    "image": "/images/tailwind.png"
+    "image": "/images/tailwind.png",
+    "link": "https://tailwindcss.com/"
   },
   {
     "label": "Three.js",
-    "image": "/images/three.png"
+    "image": "/images/three.png",
+    "link": "https://threejs.org/"
   },
   {
     "label": "GCP",
-    "image": "/images/gcp.png"
+    "image": "/images/gcp.png",
+    "link": "https://cloud.google.com/"
   }
 ]

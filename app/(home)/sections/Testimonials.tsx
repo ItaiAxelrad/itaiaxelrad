@@ -10,7 +10,7 @@ function Testimonial({ testimonial }) {
           src={testimonial.image}
           width={32}
           height={32}
-          className='ring-2 ring-slate-200 rounded-full w-10 h-10'
+          className='ring-2 ring-slate-200 rounded-full w-10 h-10 dark:ring-slate-700'
         />
         <div className='flex flex-col align-middle pr-2'>
           <p className='font-semibold'>{testimonial.client}</p>
