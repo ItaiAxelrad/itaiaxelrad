@@ -1,6 +1,6 @@
+import LineChart from '@components/Chart';
 import ElCapitan from '@components/three/ElCapitan';
 import Model from '@components/three/Model';
-import LineChart from '../Chart';
 
 export default function Services() {
   return (
@@ -13,7 +13,7 @@ export default function Services() {
           <p className='text-xl leading-8 font-semibold mb-4'>
             Visualization that fits all your data needs
           </p>
-          <p className='leading-8 text-slate-600 dark:text-slate-300'>
+          <p className='leading-8 text-slate-600 dark:text-slate-400'>
             Whether it&apos;s client facing or administrative dashboards,
             I&apos;ve got your back with beautiful and interactive charts,
             graphs, and tables. All using the latest technology.
@@ -36,7 +36,7 @@ export default function Services() {
           <p className='text-xl leading-8 font-semibold mb-4'>
             Grab attention <span>👀</span>
           </p>
-          <p className='leading-8 text-slate-600 dark:text-slate-300'>
+          <p className='leading-8 text-slate-600 dark:text-slate-400'>
             Take advantage of amazing three-dimensional rendering and wow your
             customers or clients. The options are endless at the bleeding edge
             of web development!

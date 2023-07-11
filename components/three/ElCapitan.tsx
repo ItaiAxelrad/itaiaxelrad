@@ -18,6 +18,7 @@ export default function ElCapitan(props: JSX.IntrinsicElements['group']) {
     <group {...props} dispose={null}>
       <mesh
         castShadow
+        receiveShadow
         position={[0, -10, 0]}
         rotation={[-Math.PI / 2, 0, 0]}
         geometry={nodes.mesh_0.geometry}

@@ -13,21 +13,13 @@ import { Suspense } from 'react';
 
 function Loader() {
   const { progress } = useProgress();
-  return <Html center>{progress} % loaded</Html>;
+  return <Html center>{progress} % loaded </Html>;
 }
 
 export default function Model({ children }) {
   return (
     <Canvas shadows camera={{ position: [0, 50, 100], fov: 50 }}>
       <Suspense fallback={<Loader />}>
-        <directionalLight color='purple' intensity={0.25} />
-        <ambientLight color='purple' intensity={0.25} />
-        <pointLight
-          color='purple'
-          intensity={0.25}
-          position={[0, 50, 100]}
-          rotation={[-Math.PI / 2, 0, 0]}
-        />
         {children}
         <AccumulativeShadows
           temporal
