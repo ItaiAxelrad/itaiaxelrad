@@ -43,5 +43,15 @@
     "label": "GCP",
     "image": "/images/gcp.png",
     "link": "https://cloud.google.com/"
+  },
+  {
+    "label": "Stripe",
+    "image": "/images/stripe.png",
+    "link": "https://stripe.com/"
+  },
+  {
+    "label": "SendGrid",
+    "image": "/images/sendgrid.png",
+    "link": "https://sendgrid.com/"
   }
 ]

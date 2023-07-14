@@ -1,3 +1,4 @@
+import Heading from '@components/Heading';
 import stack from '@data/stack.json';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -5,9 +6,7 @@ import Link from 'next/link';
 export default function Stack() {
   return (
     <section className='mx-auto max-w-xl my-24'>
-      <h2 className='my-6 font-semibold text-2xl text-center text-slate-600 dark:text-slate-400'>
-        My Stack
-      </h2>
+      <Heading>Stack</Heading>
       <div className='p-4 my-4 flex flex-wrap justify-center items-center gap-4'>
         {stack.map((stack) => (
           <Link

@@ -1,3 +1,4 @@
+import Heading from '@components/Heading';
 import timeline from '@data/timeline.json';
 
 const Event = ({ event }) => {
@@ -23,10 +24,8 @@ const Event = ({ event }) => {
 
 export default function Page() {
   return (
-    <div className='max-w-xl my-16 px-4'>
-      <h2 className='my-6 font-semibold text-2xl text-center text-slate-600 dark:text-slate-400'>
-        About
-      </h2>
+    <div className='max-w-xl my-16 p-2'>
+      <Heading>About</Heading>
       <ol className='relative border-l-2 border-blue-100 ml-4 dark:border-blue-300'>
         {timeline.map((event) => {
           return <Event key={event.date} event={event} />;

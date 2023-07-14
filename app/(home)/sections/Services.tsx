@@ -1,10 +1,12 @@
 import LineChart from '@components/Chart';
+import Heading from '@components/Heading';
 import ElCapitan from '@components/three/ElCapitan';
 import Model from '@components/three/Model';
 
 export default function Services() {
   return (
     <div className='my-32'>
+      <Heading>Services</Heading>
       <section
         className='mx-auto max-w-5xl items-center align-center grid grid-cols-1 gap-6 p-4 mb-24 md:grid-cols-2'
         id='more'

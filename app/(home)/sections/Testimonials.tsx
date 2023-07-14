@@ -1,3 +1,4 @@
+import Heading from '@components/Heading';
 import testimonials from '@data/testimonials.json';
 import Image from 'next/image';
 
@@ -29,9 +30,7 @@ function Testimonial({ testimonial }) {
 export default function Testimonials() {
   return (
     <section className='my-24'>
-      <h2 className='my-6 font-semibold text-2xl text-center text-slate-600 dark:text-slate-400'>
-        Testimonials
-      </h2>
+      <Heading>Testimonials</Heading>
       <div className='mx-auto max-w-2xl h-full px-4 sm:py-8 lg:py-12 flex flex-wrap justify-center items-center gap-4'>
         {testimonials.map((testimonial) => (
           <Testimonial key={testimonial.client} testimonial={testimonial} />
