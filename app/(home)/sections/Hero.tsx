@@ -1,4 +1,4 @@
-import styles from '@styles/styles.module.css';
+import SwooshText from '@components/SwooshText';
 import Link from 'next/link';
 
 export default function Hero() {
@@ -35,14 +35,14 @@ export default function Hero() {
             Hi there
           </h1>
           <span
-            className={`${styles.wave} text-4xl ml-4 align-text-bottom`}
+            className='inline-block text-4xl ml-4 align-text-bottom animate-wiggle cursor-pointer'
             aria-hidden='true'
           >
             👋
           </span>
-          <p className='mt-6 text-3xl font-semibold leading-9 text-gray-700 dark:text-slate-300'>
+          <p className='mt-6 text-3xl font-semibold leading-9 text-gray-800 dark:text-slate-200'>
             I&apos;m a full-stack developer,
-            <br /> specialized in dashboard UI
+            <br /> specialized in <SwooshText>dashboard UI</SwooshText>
           </p>
           <p className='mt-6 text-md leading-7 text-gray-600 mx-auto max-w-[40ch] dark:text-slate-400'>
             You can find me working on my latest projects in Boulder or climbing

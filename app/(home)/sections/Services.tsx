@@ -21,7 +21,7 @@ export default function Services() {
             graphs, and tables. All using the latest technology.
           </p>
         </div>
-        <div className='h-80 min-h-full bg-white ring-1 ring-blue-50 rounded-md p-4 dark:bg-slate-200 dark:ring-slate-300'>
+        <div className='h-80 min-h-full bg-white ring-1 ring-blue-50 rounded-md p-2 dark:bg-slate-200 dark:ring-slate-300'>
           <LineChart />
         </div>
       </section>

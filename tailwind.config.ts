@@ -11,6 +11,15 @@ export default {
       fontFamily: {
         sans: ['Inter, system-ui, sans-serif'],
       },
+      keyframes: {
+        wiggle: {
+          '0%, 100%': { transform: 'rotate(0deg)' },
+          '50%': { transform: 'rotate(5deg)' },
+        },
+      },
+      animation: {
+        wiggle: 'wiggle 1s ease-in-out infinite',
+      },
     },
   },
   plugins: [require('@tailwindcss/forms')],

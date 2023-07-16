@@ -16,20 +16,23 @@ export default function Header() {
         aria-label='Global'
       >
         <div className='flex lg:flex-1'>
-          <Link href='/' className='-m-1.5 p-1.5'>
+          <Link
+            href='/'
+            className='rounded-full -m-1.5 p-1.5 hover:bg-blue-200/10 dark:hover:bg-blue-900/10'
+          >
             <span className='sr-only'>Itai Axelrad</span>
             <LogoIcon />
           </Link>
         </div>
         <DialogMenu navigation={navigation} />
-        <div className='hidden lg:flex lg:gap-x-12'>
+        <div className='hidden lg:flex lg:gap-x-8'>
           {navigation.map((item) => (
             <Link
               key={item.name}
               href={item.href}
-              className='text-sm font-semibold leading-6'
+              className='px-2.5 py-1 rounded-md text-sm font-semibold leading-6 hover:bg-blue-200/10 dark:hover:bg-blue-900/10'
             >
-              <span className='text-slate-300 dark:text-slate-600'>/</span>
+              <span className='text-blue-500/50'>/</span>
               {item.name}
             </Link>
           ))}
