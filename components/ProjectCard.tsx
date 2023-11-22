@@ -11,8 +11,6 @@ const ProjectCard = ({ project }) => {
         {project.title}
       </Link>
       <small className='text-slate-500 dark:text-slate-400'>
-        {project.date}
-        {new Date(project.date).toLocaleDateString('en-US')}
         {new Date(project.date).toLocaleString('en-US', {
           weekday: 'long',
           year: 'numeric',

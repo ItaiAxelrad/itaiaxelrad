@@ -2,10 +2,9 @@
 
 import type { MDXComponents } from 'mdx/types';
 import { useMDXComponent } from 'next-contentlayer/hooks';
-import Image from 'next/image';
 
 const mdxComponents: MDXComponents = {
-  img: ({ src, alt }) => <Image src={src as string} alt={alt ?? 'image'} />,
+  // img: ({ src, alt }) => <Image src={src as string} alt={alt ?? 'image'} />,
 };
 
 export function Mdx({ code }) {

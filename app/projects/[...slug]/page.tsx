@@ -21,7 +21,7 @@ const ProjectLayout = async ({ params }: ProjectPageProps) => {
   }
 
   return (
-    <article className='mt-12 pt-12'>
+    <article className='prose lg:prose-xl container max-w-2xl mx-auto px-4 py-24'>
       <a href='/projects'>&larr; Back to all projects</a>
       <h1 className='text-5xl'>{project.title}</h1>
       <p>{project?.description}</p>

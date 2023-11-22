@@ -9,10 +9,10 @@ const computedFields = {
     type: 'string',
     resolve: (doc) => `/${doc._raw.flattenedPath}`,
   },
-  // slugAsParams: {
-  //   type: 'string',
-  //   resolve: (doc) => doc._raw.flattenedPath.split('/').slice(1).join('/'),
-  // },
+  slugAsParams: {
+    type: 'string',
+    resolve: (doc) => doc._raw.flattenedPath.split('/').slice(1).join('/'),
+  },
   // headings: {
   //   type: 'json',
   //   resolve: async (doc) => {
@@ -76,8 +76,8 @@ export const Project = defineDocumentType(() => ({
 
 export const Blog = defineDocumentType(() => ({
   name: 'Blog',
-  filePathPattern: `blogs/**/*.md`,
-  contentType: 'md',
+  filePathPattern: `blogs/**/*.mdx`,
+  contentType: 'mdx',
   fields: {
     title: {
       type: 'string',

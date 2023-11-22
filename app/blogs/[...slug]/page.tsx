@@ -8,23 +8,22 @@ interface BlogPageProps {
 }
 
 export const generateStaticParams = async () =>
-  allBlogs.map((doc) => ({ slug: doc._raw.flattenedPath.split('/') }));
+  allBlogs.map((blog) => ({ slug: blog._raw.flattenedPath.split('/') }));
 
 const BlogLayout = async ({ params }: BlogPageProps) => {
   const slug = params.slug.join('/');
-  const doc = allBlogs.find((doc) => doc.slugAsParams === slug);
+  const blog = allBlogs.find((blog) => blog.slugAsParams === slug);
 
-  if (doc === undefined) {
+  if (blog === undefined) {
     return <p>Blog ({slug}) not found</p>;
   }
 
   return (
-    <article className='pt-12'>
+    <article className='prose lg:prose-xl container max-w-2xl mx-auto px-4 py-24'>
       <a href='/blogs'>&larr; Back to all blogs</a>
-      <h1>{doc.title}</h1>
-      <p>{doc.subtitle}</p>
-      <p>Published: {new Date(doc.date).toLocaleDateString('en-US')}</p>
-      <Mdx code={doc.body.code} />
+      <h1>{blog.title}</h1>
+      <p>Published: {new Date(blog.date).toLocaleDateString('en-US')}</p>
+      <Mdx code={blog.body.code} />
     </article>
   );
 };
