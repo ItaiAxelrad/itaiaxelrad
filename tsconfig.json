@@ -23,14 +23,8 @@
     "sourceMap": true,
     "baseUrl": ".",
     "paths": {
-      "@components/*": ["./components/*"],
-      "@content/*": ["./content/*"],
-      "@context/*": ["./context/*"],
-      "@data/*": ["./data/*"],
-      "@db/*": ["./db/*"],
-      "@hooks/*": ["./hooks/*"],
-      "@lib/*": ["./lib/*"],
-      "@styles/*": ["./styles/*"]
+      "@*": ["./*"],
+      "contentlayer/generated": ["./.contentlayer/generated"]
     },
     "plugins": [
       {
@@ -43,7 +37,8 @@
     "types/*.ts",
     "**/*.ts",
     "**/*.tsx",
-    ".next/types/**/*.ts"
+    ".next/types/**/*.ts",
+    ".contentlayer/generated"
   ],
   "exclude": ["node_modules"]
 }

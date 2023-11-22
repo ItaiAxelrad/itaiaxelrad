@@ -1,57 +1,62 @@
 [
   {
     "label": "React",
-    "image": "/images/react.png",
+    "image": "react.png",
     "link": "https://react.dev/"
   },
   {
     "label": "Next.js",
-    "image": "/images/next.png",
+    "image": "next.png",
     "link": "https://nextjs.org/"
   },
   {
+    "label": "Python",
+    "image": "python.png",
+    "link": "https://www.python.org/"
+  },
+  {
     "label": "Auth.js",
-    "image": "/images/auth.png",
+    "image": "auth.png",
     "link": "https://authjs.dev/"
   },
   {
     "label": "TypeScript",
-    "image": "/images/ts.png",
+    "image": "ts.png",
     "link": "https://www.typescriptlang.org/"
   },
   {
     "label": "MongoDb",
-    "image": "/images/mongo.png",
+    "image": "mongo.png",
     "link": "https://www.mongodb.com/"
   },
   {
     "label": "Mantine",
-    "image": "/images/mantine.png",
+    "image": "mantine.png",
     "link": "https://mantine.dev/"
   },
   {
     "label": "Tailwind",
-    "image": "/images/tailwind.png",
+    "image": "tailwind.png",
     "link": "https://tailwindcss.com/"
   },
   {
     "label": "Three.js",
-    "image": "/images/three.png",
+    "image": "three.png",
     "link": "https://threejs.org/"
   },
   {
     "label": "GCP",
-    "image": "/images/gcp.png",
+    "image": "gcp.png",
     "link": "https://cloud.google.com/"
   },
   {
     "label": "Stripe",
-    "image": "/images/stripe.png",
+    "image": "stripe.png",
     "link": "https://stripe.com/"
   },
   {
     "label": "SendGrid",
-    "image": "/images/sendgrid.png",
+    "image": "sendgrid.png",
     "link": "https://sendgrid.com/"
   }
 ]

@@ -2,31 +2,31 @@
   {
     "company": "Dextrous",
     "client": "Tyson N.",
-    "image": "/images/tyson.jpeg",
+    "image": "tyson.jpeg",
     "testimonial": "Couldn't have gotten it done without him"
   },
   {
     "company": "Ascenture",
     "client": "Thomas P.",
-    "image": "/images/thomas.jpeg",
+    "image": "thomas.jpeg",
     "testimonial": "Exactly what I expected"
   },
   {
     "company": "CHOSS",
     "client": "Hunter D.",
-    "image": "/images/hunter.jpeg",
+    "image": "hunter.jpeg",
     "testimonial": "Thanks dood!"
   },
   {
     "company": "JeffCo EDC",
     "client": "Jansen T.",
-    "image": "/images/jansen.jpeg",
+    "image": "jansen.jpeg",
     "testimonial": "Professional"
   },
   {
     "company": "FlavorHawk",
     "client": "Joseph S.",
-    "image": "/images/joseph.webp",
+    "image": "joseph.webp",
     "testimonial": "A competent individual"
   }
 ]

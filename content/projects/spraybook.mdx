@@ -1,13 +1,25 @@
 ---
-title: SprayBook
-tags: ['Next.js', 'TypeScript']
+title: 'SprayBook'
+description: 'A simpler logbook'
+date: '2023-01-01'
+image: '/images/spraybook.png'
+site: 'https://spraybook.app'
+published: true
+tags:
+  - 'React'
+  - 'Next.js'
+  - 'NextAuth'
+  - 'SWR'
+  - 'Mantine'
+  - 'Mongodb'
+  - 'Chart.js'
 ---
 
 Most of my project ideas arise from my desire to control my own data. This project is no different. You can see the completed project at [vEleven.netlify.app](https://veleven.netlify.app/).
 
 ## Introduction
 
-Love it or hate, [8a.nu](www.8a.nu) is a mainstay of the online climbing community. Its recent merger with (or acquisition by) [Vertical-Life](https://www.vertical-life.info/en/about) has left many folks scratching their heads - missing crag names, account issues, ranking/point tally errors, user experience concerns and the fear that the site will soon charge for the service. Seems like the highly anticipated 8a.nu refresh was more of a botched database migration than the simple server upgrade we were all hoping for. I got an early taste of the disappointment, as I had signed up with Vertical-Life to be a beta tester for the new site but was unable to login to my account. The issue was never resolved prior to the release, despite seeking help from several of the site's developers.
+Love it or hate, [8a.nu](https://www.8a.nu) is a mainstay of the online climbing community. Its recent merger with (or acquisition by) [Vertical-Life](https://www.vertical-life.info/en/about) has left many folks scratching their heads - missing crag names, account issues, ranking/point tally errors, user experience concerns and the fear that the site will soon charge for the service. Seems like the highly anticipated 8a.nu refresh was more of a botched database migration than the simple server upgrade we were all hoping for. I got an early taste of the disappointment, as I had signed up with Vertical-Life to be a beta tester for the new site but was unable to login to my account. The issue was never resolved prior to the release, despite seeking help from several of the site's developers.
 
 Personally, I'm not all that upset about the update, but this project provides me with an opportunity to play with data - which is something I can't refuse. I do, however, find it very frustrating that the site does not offer a public API for us to consume. Sitting on such a treasure trove of information willingly collected by the users and not providing us with a way to access it feels out of touch with the times. Many users have requested an API to no avail, which leaves us with very few options.
 
@@ -29,7 +41,7 @@ The code breaks down into two distinct parts, the login function and the data sc
 
 We'll be using WebDriver, which drives a browser natively (either locally or on a remote machine) using the Selenium server. The webdriver manager ensures the latest version and correct path are being used. After importing the required packages, we set the webdriver options and instantiate the install using the driver manager. In this case, we'll being using Chrome. The driver can navigate to the Vertical-Life user authentication page then find elements by id or class in order to login.
 
-```python
+```py
 def login():
     chrome_options = webdriver.ChromeOptions()
     chrome_options.add_argument("--headless")
@@ -136,7 +148,7 @@ const sortedSends = data.sort(sortSends).slice(0, 5);
 
 The climbs can then be displayed in card components along with their respective tags and comments.
 
-![latest sends section](images/latestSends.png)
+![latest sends section](/images/latestSends.png)
 
 ### The Charts
 
@@ -179,7 +191,7 @@ tooltips: {
 }
 ```
 
-![The Line Chart](images/linechart.png)
+![The Line Chart](/images/linechart.png)
 
 ### The Table
 
@@ -216,4 +228,4 @@ loadAll.addEventListener('click', async (event) => {
 });
 ```
 
-![The Table](images/table.png)
+![The Table](/images/table.png)

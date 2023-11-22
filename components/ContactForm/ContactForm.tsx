@@ -1,5 +1,7 @@
 'use client';
 
+import Button from '@components/Button';
+
 export function ContactForm() {
   async function handleSubmit(e) {
     // Prevent the browser from reloading the page
@@ -26,6 +28,7 @@ export function ContactForm() {
         <label>
           Email
           <input
+            required
             type='text'
             name='email'
             placeholder='your@email.com'
@@ -35,6 +38,7 @@ export function ContactForm() {
         <label>
           Subject
           <input
+            required
             type='text'
             name='subject'
             placeholder='Inquiry'
@@ -44,18 +48,18 @@ export function ContactForm() {
         <label>
           Message
           <textarea
+            required
             name='text'
             placeholder='Hello world'
             className='rounded-md w-full border-slate-200 placeholder:text-slate-400 dark:bg-slate-800 dark:border-slate-700'
           />
         </label>
-        <button
-          type='submit'
-          role='link'
-          className='block bg-blue-600 py-2 px-4 rounded-md font-semibold text-white hover:bg-blue-500 shadow-sm'
-        >
-          Send <span aria-hidden='true'>📧</span>
-        </button>
+        <Button type='submit' role='link'>
+          Send{' '}
+          <span aria-hidden='true' role='img' className='ml-2'>
+            📧
+          </span>
+        </Button>
       </div>
     </form>
   );

@@ -8,7 +8,7 @@ function Testimonial({ testimonial }) {
       <div className='flex gap-4 align-middle pb-2'>
         <Image
           alt={testimonial.client}
-          src={testimonial.image}
+          src={`/images/avatars/${testimonial.image}`}
           width={32}
           height={32}
           className='ring-2 ring-slate-200 rounded-full w-10 h-10 dark:ring-slate-700'

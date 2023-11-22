@@ -16,9 +16,18 @@ export const metadata: Metadata = {
   },
   generator: 'Next.js',
   applicationName: 'Itai Axelrad',
-  referrer: 'origin-when-cross-origin',
-  keywords: ['Itai', 'Axelrad', 'portfolio', 'freelance', 'web', 'development'],
   creator: 'Itai Axelrad',
+  referrer: 'origin-when-cross-origin',
+  keywords: [
+    'Itai',
+    'Axelrad',
+    'portfolio',
+    'software',
+    'environmental',
+    'engineer',
+    'web',
+    'developer',
+  ],
 };
 
 export default function RootLayout({

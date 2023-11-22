@@ -9,14 +9,18 @@ export default function Stack() {
       <Heading>Stack</Heading>
       <div className='p-4 my-4 flex flex-wrap justify-center items-center gap-4'>
         {stack.map((stack) => (
-          <Link
-            href={stack.link}
+          <div
             key={stack.label}
-            className='bg-white px-4 py-2 rounded-full shadow-lg flex items-center justify-center gap-2 ring-2 ring-slate-100 text-lg dark:bg-slate-800 dark:ring-slate-700'
+            className='bg-white px-4 py-2 rounded-full shadow-lg  flex items-center justify-center gap-2 ring-2 ring-slate-100 text-lg dark:bg-slate-800 dark:ring-slate-700'
           >
-            <Image alt={stack.label} src={stack.image} width={32} height={32} />
-            {stack.label}
-          </Link>
+            <Image
+              alt={stack.label}
+              src={`/images/stack/${stack.image}`}
+              width={32}
+              height={32}
+            />
+            <Link href={stack.link}>{stack.label}</Link>
+          </div>
         ))}
       </div>
     </section>

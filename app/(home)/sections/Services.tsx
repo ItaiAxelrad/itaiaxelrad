@@ -2,6 +2,7 @@ import LineChart from '@components/Chart';
 import Heading from '@components/Heading';
 import ElCapitan from '@components/three/ElCapitan';
 import Model from '@components/three/Model';
+import Image from 'next/image';
 
 export default function Services() {
   return (
@@ -13,7 +14,7 @@ export default function Services() {
       >
         <div className='p-4'>
           <p className='text-xl leading-8 font-semibold mb-4'>
-            Visualization that fits all your data needs
+            Data Analysis & Visualization <span role='img'>📈</span>
           </p>
           <p className='leading-8 text-slate-600 dark:text-slate-400'>
             Whether it&apos;s client facing or administrative dashboards,
@@ -36,13 +37,35 @@ export default function Services() {
         </div>
         <div className='p-4 -order-1 md:order-1'>
           <p className='text-xl leading-8 font-semibold mb-4'>
-            Grab attention <span>👀</span>
+            3D Design & Modeling <span role='img'>👀</span>
           </p>
           <p className='leading-8 text-slate-600 dark:text-slate-400'>
             Take advantage of amazing three-dimensional rendering and wow your
             customers or clients. The options are endless at the bleeding edge
             of web development!
           </p>
+        </div>
+      </section>
+      <section
+        className='mx-auto max-w-5xl items-center align-center grid grid-cols-1 gap-6 p-4 mb-24 md:grid-cols-2'
+        id='more'
+      >
+        <div className='p-4'>
+          <p className='text-xl leading-8 font-semibold mb-4'>
+            Thoughtful Design <span role='img'>⚙️</span>
+          </p>
+          <p className='leading-8 text-slate-600 dark:text-slate-400'>
+            Whether it&apos;s simple landing page, full-stack app or a water
+            reclamation facility...
+          </p>
+        </div>
+        <div className='h-80 min-h-full bg-white ring-1 ring-blue-50 rounded-md p-2 dark:bg-slate-200 dark:ring-slate-300'>
+          <Image
+            src='/images/gismap.png'
+            alt='GIS Map'
+            height={320}
+            width={484}
+          />
         </div>
       </section>
     </div>

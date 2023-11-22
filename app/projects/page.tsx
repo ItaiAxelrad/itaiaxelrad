@@ -1,14 +1,15 @@
 import Heading from '@components/Heading';
 import ProjectCard from '@components/ProjectCard';
-import projects from '@data/projects.json';
+import { allProjects } from 'contentlayer/generated';
 
 export default function Page() {
   return (
-    <div className='max-w-2xl my-16 p-2'>
+    <div className='container-sm my-16 p-2'>
       <Heading>Projects</Heading>
-      <div className='flex flex-col gap-4 max-w-lg mx-auto'>
-        {projects.map((project) => (
-          <ProjectCard key={project.id} project={project} />
+      <p className='pb-4'>I sometimes write a little about my projects</p>
+      <div className='flex flex-col gap-4 w-full mx-auto'>
+        {allProjects.map((project) => (
+          <ProjectCard key={project._id} project={project} />
         ))}
       </div>
     </div>

@@ -5,12 +5,14 @@ const ProjectCard = ({ project }) => {
   return (
     <Card>
       <Link
-        href={project.link}
+        href={project.slug}
         className='font-semibold text-xl text-blue-500 block leading-6'
       >
         {project.title}
       </Link>
       <small className='text-slate-500 dark:text-slate-400'>
+        {project.date}
+        {new Date(project.date).toLocaleDateString('en-US')}
         {new Date(project.date).toLocaleString('en-US', {
           weekday: 'long',
           year: 'numeric',
@@ -19,7 +21,7 @@ const ProjectCard = ({ project }) => {
         })}
       </small>
       <p className='text-slate-600 mt-2 dark:text-slate-300'>
-        {project.description}
+        {project?.description}
       </p>
     </Card>
   );

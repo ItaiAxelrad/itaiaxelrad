@@ -1,4 +1,8 @@
 out
+
+# contentlayer
+.contentlayer
+
 # Logs
 logs
 *.log

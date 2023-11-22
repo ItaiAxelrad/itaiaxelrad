@@ -1,6 +1,6 @@
 # Hi 👋
 
-I'm Itai Axelrad, engineer turned programmer. My focus is in front-end web development. You can find me working on my latest projects in Boulder or [climbing](https://www.axelradclimbing.com/) in the surrounding mountains. Check out my [portfolio site](https://www.itaiaxelrad.com) to learn more or get in touch!
+I'm Itai Axelrad, a software/environmental engineer. My focus is in front-end web development. You can find me working on my latest projects in Boulder or [climbing](https://www.axelradclimbing.com/) in the surrounding mountains. Check out my [portfolio site](https://www.itaiaxelrad.com) to learn more or get in touch!
 
 ## Experience
 

@@ -1,3 +1,5 @@
+const { withContentlayer } = require('next-contentlayer');
+
 const ContentSecurityPolicy = `
   default-src 'self';
   script-src 'self';
@@ -42,13 +44,9 @@ const securityHeaders = [
 ];
 
 /** @type {import('next').NextConfig} */
-const nextConfig = {
+module.exports = withContentlayer({
   reactStrictMode: true,
   swcMinify: true,
-  experimental: {
-    mdxRs: true,
-    serverActions: true,
-  },
   async headers() {
     return [
       {
@@ -58,7 +56,7 @@ const nextConfig = {
       },
     ];
   },
-};
-
-const withMDX = require('@next/mdx')();
-module.exports = withMDX(nextConfig);
+  compiler: {
+    styledComponents: true,
+  },
+});
