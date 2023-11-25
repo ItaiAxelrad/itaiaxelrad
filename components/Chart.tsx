@@ -57,7 +57,7 @@ export default function LineChart() {
     setTimeout(function () {
       setDataset(getData(labels));
     }, 3000);
-    console.log(dataset);
+
     return () => {};
   }, [dataset]);
 

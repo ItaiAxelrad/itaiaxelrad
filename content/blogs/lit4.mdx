@@ -1,0 +1,29 @@
+---
+author: Itai Axelrad
+date: 2017-11-21
+title: 'Optimization Methods for Groundwater Modeling and Management'
+description: 'By Yeh, W. W-G, Hydrogeology Journal, 23(6): 1051-1065, September 2015'
+published: true
+category: Literature Review
+tags:
+  - groundwater
+  - optimization
+  - management
+  - modeling
+---
+
+The subject paper offers a review of optimization methods that have been used in groundwater modeling as well as for the planning and management of groundwater systems. The coupling of the two models can be used to assist in decision-making in the planning and management of water resources. The most common objective of optimal conjunctive-use planning of surface water and groundwater is to minimize the operational costs of meeting water demand. The paper evaluates the various optimization methods based on model selection criteria and model discrimination. The optimization methods include mathematical programming techniques such as linear programming, quadratic programming, dynamic programming, stochastic programming, nonlinear programming, and the global search algorithms such as genetic algorithms, simulated annealing, and tabu search. It is important to determine whether the computational requirements of the optimization model may be excessive and therefore cost prohibitive.
+
+The inverse problem of parameter identification is vital to groundwater modeling. The three ways commonly used to accomplish this parameterization are the zonation method, the interpolation method, or a combination of the two. The typical groundwater flow model used for the discussion has two-dimensional unsteady flow in an inhomogeneous, isotropic and confined aquifer. It is assumed that the storage coefficient is known and the parameter to be identified is the spatially distributed transmissivity. The dimension of transmissivity must be reduced in order to obtain a unique solution to the inverse problem. This is achieved by parameterization. In the zonation method the aquifer is divided into a number of zones and a constant parameter value is used to characterize each zone. In the interpolation method, an interpolation function is used to approximate transmissivity.
+
+The least squares minimization problem is approached by assuming that transmissivity is parameterized into a number of zones. The decision variable to be minimized is displayed under the minimization operator and minimized over the proper choice of T. Several algorithms have been used to perform minimization that require the calculation of the gradient vector. These algorithms include the Gauss-Newton algorithm, the Levenberg-Marquardt algorithm and the Broyden–Fletcher–Goldfarb–Shanno (BFGS) algorithm. These algorithms use the Jacobian matrix to approximate the Hessian matrix, because the Jacobian only requires the calculation of the first derivatives. The elements of the Jacobian are the sensitivity coefficients of head at the observation wells with respect to each of the parameters and can be calculated sensitivity coefficients. The three methods used to calculate the sensitivity coefficients are the influence coefficient method, the sensitivity equation method, and the variational method.
+
+The inverse problem should identify the parameter dimension, parameter pattern and parameter values. The inverse problem of parameter structure identification seeks to select an appropriate parameterization scheme and then identify the three components associated with the parameterization scheme. Identifying a series of parameter structures with increasing parameter dimensions until the best structure is identified in order to avoid over-parameterization.
+
+Several model selection criteria have been used to determine the best zonation structure based on the log-likelihood theory. These include the Akaike information criterion, the Bayesian information criterion, the Hannan information criterion, and the Kashyap information criterion. The best model minimizes the selection criteria and has the least number of parameters. Selecting the simpler model with fewer parameters is called the parsimony principle.
+
+The goal of optimal experimental design is to select the observation locations and sampling frequency so the criterion is optimized subject to a set of constraints such as cost, reliability of the estimated parameters, and time and duration of the experiments. In groundwater modeling, the experimental design problem can be simplified to the determination of observation locations if the observations taken are assumed to be from the beginning of the pumping test to the end.
+
+The groundwater simulation model must be included in the constraint set in an optimization model to achieve an optimal management policy. One approach to coupling simulation with optimization is the embedding approach. In this approach, the governing equation is discretized into a system of finite-element equations. Other approaches used to approximate computationally expensive simulation models utilize surrogate models. The surrogate model is simpler, faster, and is derived from the response surface generated from the original simulation model.
+
+Conjunctive-use management of surface water and groundwater models are resource-allocation models of the water resources system. For these models, it is assumed that the water basin includes pumping wells and injection wells, and that the basin’s water demand can be met by groundwater pumping.

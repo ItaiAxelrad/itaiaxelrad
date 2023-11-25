@@ -15,14 +15,23 @@ const BlogLayout = async ({ params }: BlogPageProps) => {
   const blog = allBlogs.find((blog) => blog.slugAsParams === slug);
 
   if (blog === undefined) {
-    return <p>Blog ({slug}) not found</p>;
+    return (
+      <article className='prose dark:prose-invert container max-w-2xl mx-auto px-4 py-24'>
+        <a href='/blogs'>&larr; Back to all blogs</a>
+        <h1>
+          Blog <i>{slug}</i> not found
+        </h1>
+      </article>
+    );
   }
 
   return (
-    <article className='prose lg:prose-xl container max-w-2xl mx-auto px-4 py-24'>
+    <article className='prose dark:prose-invert container max-w-2xl mx-auto px-4 py-24'>
       <a href='/blogs'>&larr; Back to all blogs</a>
+      <p className='my-2 text-sm uppercase text-slate-400'>
+        Published: {new Date(blog.date).toLocaleDateString('en-US')}
+      </p>
       <h1>{blog.title}</h1>
-      <p>Published: {new Date(blog.date).toLocaleDateString('en-US')}</p>
       <Mdx code={blog.body.code} />
     </article>
   );

@@ -1,5 +1,8 @@
+'use client';
+
 import LogoIcon from '@components/icons/LogoIcon';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import DialogMenu from './DialogMenu';
 
 const navigation = [
@@ -9,6 +12,8 @@ const navigation = [
 ];
 
 export default function Header() {
+  const pathname = usePathname();
+
   return (
     <header className='absolute inset-x-0 top-0 z-50'>
       <nav
@@ -21,7 +26,7 @@ export default function Header() {
             className='rounded-full -m-1.5 p-1.5 hover:bg-blue-200/10 dark:hover:bg-blue-900/10'
           >
             <span className='sr-only'>Itai Axelrad</span>
-            <LogoIcon />
+            <LogoIcon className={`${pathname === '/' && 'text-blue-500'}`} />
           </Link>
         </div>
         <DialogMenu navigation={navigation} />
@@ -30,7 +35,9 @@ export default function Header() {
             <Link
               key={item.name}
               href={item.href}
-              className='px-2.5 py-1 rounded-md text-sm font-semibold leading-6 hover:bg-blue-200/10 dark:hover:bg-blue-900/10'
+              className={`px-2.5 py-1 rounded-md text-sm font-semibold leading-6 hover:bg-blue-200/10 dark:hover:bg-blue-900/10 ${
+                pathname.includes(item.href) && 'text-blue-500 '
+              }`}
             >
               <span className='text-blue-500/50'>/</span>
               {item.name}
