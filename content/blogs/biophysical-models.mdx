@@ -1,0 +1,52 @@
+---
+author: Itai Axelrad
+title: Biophysical Models
+category: Notes
+date: 2017-10-02
+published: false
+---
+
+Biophysical models simulate vegetation as the determinant in land surface interaction with the atmosphere. The simulated land/atmosphere exchange processes involve several budgetary calculations:
+
+1. surface energy budget:
+
+- calculate net surface radiation,
+- including albedo and
+- partitions between latent sensible and ground heat fluxes;
+
+2. surface water balance:
+
+- canopy transpiration,
+- interception evaporation by canopy,
+- ground evaporation,
+- runoff,
+- soil moisture,
+- canopy water,
+- and snow water equivalent;
+
+3. The model also calculates:
+
+- Carbon fluxes,
+- air turbulence,
+- stomatal resistance,
+- and soil and air temperatures;
+
+The model INPUTs include:
+
+- Meteorological forcing
+- Downward shortwave radiation [W/m2]
+- Downward longwave radiation [W/m2]
+- Surface air pressure [Pa]
+- Precipitation rate [mm/sec]
+- Air temperature [K] at the reference height
+- Air moisture/humidity [kg/kg]
+- Wind velocity at reference height [m/s]
+- CO2 concentration [ppm]
+
+The Simplified Simple Biosphere (SSiB) model [Xue et al., 1991, 1996 (SSiB-1), Sun and Xue, 2001 (SSiB-3), Zhan et al., 2003 (SSiB-2), Zhang et al, 2015 (SSiB-4)] was written in FORTRAN 77 and 90 languages to run on UNIX workstations and used GrADS to displaying the simulation results.
+
+The land scheme simulates
+• soil evaporation and vegetation evapotranspiration;
+• runoff, soil moisture, and snow changes;
+• Radiation, energy, and CO2 transfers and budgets;
+• interactions between the vegetated land surface and the lower troposphere
