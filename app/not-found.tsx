@@ -9,7 +9,7 @@ const NotFound = () => {
         The page you are looking for cannot be found. Please try again
       </p>
       <Link href='/' className='btn-primary'>
-        &larr; Go back
+        &larr; Go home
       </Link>
     </div>
   );

@@ -13,25 +13,6 @@ const computedFields = {
     type: 'string',
     resolve: (doc) => doc._raw.flattenedPath.split('/').slice(1).join('/'),
   },
-  // headings: {
-  //   type: 'json',
-  //   resolve: async (doc) => {
-  //     const slugger = new GithubSlugger();
-  //     const regXHeader = /\n(?<flag>#{1,6})\s+(?<content>.+)/g;
-  //     const headings = Array.from(doc.body.raw.matchAll(regXHeader)).map(
-  //       ({ groups }) => {
-  //         const flag = groups?.flag;
-  //         const content = groups?.content;
-  //         return {
-  //           level: flag.length,
-  //           text: content,
-  //           slug: content ? slugger.slug(content) : undefined,
-  //         };
-  //       },
-  //     );
-  //     return headings;
-  //   },
-  // },
 };
 
 export const Project = defineDocumentType(() => ({
@@ -83,6 +64,10 @@ export const Blog = defineDocumentType(() => ({
       type: 'string',
       required: true,
     },
+    description: {
+      type: 'string',
+      required: false,
+    },
     author: {
       type: 'string',
       required: false,
@@ -117,6 +102,9 @@ export const Blog = defineDocumentType(() => ({
 export default makeSource({
   contentDirPath: './content',
   documentTypes: [Project, Blog],
+  markdown: {
+    remarkPlugins: [remarkGfm],
+  },
   mdx: {
     remarkPlugins: [remarkGfm],
     rehypePlugins: [

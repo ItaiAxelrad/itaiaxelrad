@@ -56,7 +56,7 @@ module.exports = withContentlayer({
       },
     ];
   },
-  compiler: {
-    styledComponents: true,
-  },
+  // compiler: {
+  //   styledComponents: true,
+  // },
 });
