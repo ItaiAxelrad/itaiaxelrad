@@ -4,9 +4,9 @@ import timeline from '@data/timeline.json';
 const Event = ({ event }) => {
   return (
     <li className='mb-8 ml-4'>
-      <span className='absolute flex items-center justify-center w-8 h-8 bg-blue-100 dark:bg-blue-300 rounded-full -left-4'>
-        {event.icon}
-      </span>
+      <div className='absolute flex items-center justify-center w-8 h-8 bg-blue-100 dark:bg-blue-300 rounded-full -left-4'>
+        <span className='text-xl'>{event.icon}</span>
+      </div>
       <div className='ml-4 mt-4'>
         <h3 className='flex items-center my-1 text-lg font-semibold text-blue-500'>
           {event.title}

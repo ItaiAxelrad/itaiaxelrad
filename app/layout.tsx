@@ -37,11 +37,17 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en-US' dir='ltr'>
+      <head>
+        <link
+          rel='stylesheet'
+          href='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css'
+        />
+      </head>
       <body
-        className={`flex flex-col h-screen scroll-smooth ${inter.className} bg-slate-50 text-slate-800 dark:text-slate-100 dark:bg-gray-900`}
+        className={`flex flex-col h-screen scroll-smooth ${inter.className} bg-slate-50 text-slate-800 dark:text-slate-100 dark:bg-gray-900 bg-[url('/svg/grid.svg')]`}
       >
         <Header />
-        <main className='flex grow mx-auto'>{children}</main>
+        <main className='flex grow mx-auto '>{children}</main>
         <Footer />
       </body>
     </html>

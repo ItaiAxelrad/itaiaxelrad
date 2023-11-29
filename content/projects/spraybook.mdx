@@ -77,7 +77,7 @@ user = 'Metal F. DOOM'
 category = 'bouldering'
 ```
 
-Next, we will slugify the username in order to format it into the base API url along with the category selected. The driver will then fetch the url. The returned JSON data is paginated, so we will use a recursive function to iterate over the page indices, with a predefined page size of 50. The ascents are added to an empty array, which is then returned.
+Next, we will slugify the username to format it into the base API url along with the category selected. The driver will then fetch the url. The returned JSON data is paginated, so we will use a recursive function to iterate over the page indices, with a predefined page size of 50. The ascents are added to an empty array, which is then returned.
 
 ```python
 def get_user_ascents(user, category):

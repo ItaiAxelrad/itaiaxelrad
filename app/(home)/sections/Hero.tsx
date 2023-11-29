@@ -1,11 +1,10 @@
-import SwooshText from '@components/SwooshText';
 import Link from 'next/link';
 
 export default function Hero() {
   return (
     <section className='relative isolate h-screen'>
-      <div className='mx-auto max-w-lg h-full flex flex-col items-center justify-center p-2'>
-        <div className='mb-8 flex justify-center'>
+      <div className='mx-auto max-w-4xl h-full flex flex-col items-center justify-center p-2'>
+        {/* <div className='mb-8 flex justify-center'>
           <div className='relative rounded-full py-1 px-3 text-sm leading-6 text-slate-600 ring-1 ring-blue-100 hover:ring-blue-200 dark:text-slate-400 dark:ring-slate-700 dark:hover:ring-slate-600'>
             See my{' '}
             <Link href='/projects' className='font-semibold text-blue-600'>
@@ -29,30 +28,29 @@ export default function Hero() {
               </span>
             </Link>
           </div>
-        </div>
+        </div> */}
         <div className='text-center'>
-          <h1 className='leading-3 text-4xl font-bold tracking-tight text-transparent bg-clip-text bg-gradient-to-tr from-blue-600 to-blue-400 inline sm:text-6xl'>
+          <p className='text-xl text-slate-700 dark:text-slate-300'>
             Hi there
-          </h1>
-          <span
-            className='inline-block text-4xl ml-4 align-text-bottom animate-wiggle cursor-pointer'
-            aria-hidden='true'
-          >
-            👋
-          </span>
-          <p className='mt-6 text-3xl font-semibold leading-9 text-gray-800 dark:text-slate-200'>
-            <span className='text-gray-700 dark:text-slate-300'>
-              I&apos;m a
-            </span>{' '}
-            Software{' '}
-            <span className='text-gray-700 dark:text-slate-300'>&</span>
-            <br />
-            Environmental <SwooshText>Engineer</SwooshText>
+            <span
+              className='mx-2 inline-block animate-wiggle cursor-pointer'
+              aria-hidden='true'
+            >
+              👋
+            </span>
+            I&apos;m an
           </p>
-          <p className='mt-6 text-md leading-7 text-gray-600 mx-auto max-w-[40ch] dark:text-slate-400'>
+          <h1 className='leading-3 text-4xl font-bold tracking-tight text-transparent bg-clip-text bg-gradient-to-br from-cyan-500 to-blue-600 inline sm:text-6xl'>
+            Environmental{' '}
+            <span className='text-slate-600 dark:text-slate-400'>&</span>
+            <br />
+            Software Engineer
+          </h1>
+          <p className='mt-6 text-xl leading-7 text-slate-700 mx-auto max-w-[40ch] dark:text-slate-400'>
             You can find me working on my latest projects in Boulder or climbing
             in the surrounding mountains
           </p>
+
           <div className='mt-10 flex items-center justify-center gap-x-4'>
             <Link href='/contact' className='btn-primary'>
               Hire me
@@ -63,9 +61,6 @@ export default function Hero() {
           </div>
         </div>
       </div>
-
-      {/* <div className='absolute inset-0 top-0 -z-20 bg-[radial-gradient(45rem_50rem_at_top,theme(colors.blue.100), slate-50)] opacity-10 dark:bg-[radial-gradient(45rem_50rem_at_top,theme(colors.blue.100), slate-900)]' />
-      <div className='absolute inset-y-0 right-1/2 -z-20 mr-0 w-[200%] origin-bottom-left skew-x-[-20deg] shadow-lg shadow-blue-400/10 ring-1 ring-blue-50 sm:mr-28 lg:mr-0 xl:mr-16 xl:origin-center rounded-md dark:ring-slate-950' /> */}
 
       <div
         className='absolute max-w-full left-0 top-0 -z-20 transform-gpu overflow-hidden blur-3xl sm:-top-32'

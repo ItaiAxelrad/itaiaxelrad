@@ -8,12 +8,12 @@ export default function Services() {
   return (
     <div className='container p-2 mx-auto max-w-5xl' id='more'>
       <Heading>Services</Heading>
-      <p className='max-w-2xl mx-auto text-center leading-6 text-slate-700 dark:text-slate-300 mb-12'>
+      {/* <p className='max-w-2xl mx-auto text-center leading-6 text-slate-700 dark:text-slate-300 mb-12'>
         I&apos;m a detail-oriented and results-driven water environmental
         engineering professional with a strong background in data analysis and
         software development.
-      </p>
-      <div className='flex flex-col items-center align-center gap-20'>
+      </p> */}
+      <div className='mt-12 flex flex-col items-center align-center gap-20'>
         <section className='grid grid-cols-1 gap-6 md:grid-cols-2'>
           <div className='p-4'>
             <p className='text-xl leading-8 font-semibold mb-4'>
@@ -34,12 +34,12 @@ export default function Services() {
               graphs, and tables. All using the latest technology.
             </p> */}
           </div>
-          <div className='h-80 min-h-full bg-white ring-1 ring-blue-50 rounded-md p-2 dark:bg-slate-200 dark:ring-slate-300'>
+          <div className='h-80 min-h-full bg-white ring-1 ring-blue-50 rounded-lg shadow-lg p-2 dark:bg-slate-200 dark:ring-slate-300'>
             <LineChart />
           </div>
         </section>
         <section className='grid grid-cols-1 gap-6 md:grid-cols-2'>
-          <div className='h-80 min-h-full rounded-md'>
+          <div className='h-80 min-h-full rounded-lg shadow-lg'>
             <Model>
               <ElCapitan />
             </Model>
@@ -67,7 +67,8 @@ export default function Services() {
               reclamation facility...
             </p>
           </div>
-          <div className='relative flex items-center min-h-full bg-gradient-to-r from-cyan-400/80 to-blue-400/80 overflow-hidden rounded-md border border-dashed border-slate-200/20'>
+
+          <div className='relative flex items-center min-h-full bg-gradient-to-r from-cyan-400/80 to-blue-400/80 overflow-hidden rounded-lg shadow-lg border border-dashed border-slate-200/20'>
             <svg
               className='absolute inset-0 h-full w-full stroke-slate-200/20'
               fill='none'
@@ -91,7 +92,9 @@ export default function Services() {
                 height='100%'
               ></rect>
             </svg>
-            <Animate />
+            <div className='w-[320px] h-[320px] mx-auto flex justify-center overflow-hidden'>
+              <Animate />
+            </div>
           </div>
         </section>
       </div>

@@ -1,5 +1,6 @@
 import { defineDocumentType, makeSource } from 'contentlayer/source-files';
 import rehypeAutolinkHeadings from 'rehype-autolink-headings';
+import highlight from 'rehype-highlight';
 import rehypeSlug from 'rehype-slug';
 import remarkGfm from 'remark-gfm';
 
@@ -104,11 +105,13 @@ export default makeSource({
   documentTypes: [Project, Blog],
   markdown: {
     remarkPlugins: [remarkGfm],
+    rehypePlugins: [highlight],
   },
   mdx: {
     remarkPlugins: [remarkGfm],
     rehypePlugins: [
       rehypeSlug,
+      highlight,
       [
         rehypeAutolinkHeadings,
         {
